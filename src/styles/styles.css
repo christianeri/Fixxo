@@ -1,0 +1,286 @@
+/* 
+     fixa
+     0  General, buttons, footer: -------- styles.css
+     1  Navbar: -------------------------- navbar.css
+     2  Hero: ---------------------------- hero-section.css
+     3  Information: --------------------- information-section.css
+     4  Categories: ---------------------- categories.section.css
+     5  New Arrivals: -------------------- showcase-sections.css
+     6  New Customer Discount: ----------- promo-section.css
+     7  Featured Products: --------------- showcase-sections.css
+     8  Flash Sale: ---------------------- promo-sections.css 
+     9  Top Sellers: --------------------- showcase-sections.css
+     10 Subscribe ------------------------ subscribe-section.css 
+     11 Login/register ------------------- login-register.css      
+*/
+
+@import url('navbar.css');
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700;800&display=swap');
+
+:root {
+     --fixxo-theme: #FF7373;
+     --fixxo-dark: #23262A;
+     --fixxo-grey-1: #616365;
+     --fixxo-grey-2: #BEBEBE;
+     --fixxo-grey-3: #F5F5F5;
+     --color-white: #FFFFFF;
+
+     --color-facebook: #3B5998;
+     --color-google: #4285F4;
+
+     --font-poppins:'Poppins', sans-serif;
+
+     --font-w-medium: 500;
+     --font-w-semibold: 600;
+     --font-w-bold: 700;
+     --font-w-extrabold: 800; 
+
+     --size-13: 0.8rem;
+     --size-14: 0.9rem;
+     --size-16: 1rem;
+     --size-18: 1.13rem;
+     --size-20: 1.25rem;
+     --size-35: 2.2rem;
+     --size-45: 2.8rem;
+     --size-65: 4rem;
+     
+     --border-radius-small: 8px;
+     --border-radius-medium: 25px;
+     --border-radius-rounded: 50%;
+}
+
+/* @import url('root.css'); */
+
+/* @import url('hero-section.css');
+@import url('information-section.css');
+@import url('categories-section.css');
+@import url('showcase-sections.css');
+@import url('promo-sections.css');
+@import url('subscribe-section.css');
+
+@import url('login-register.css'); */
+
+
+
+
+
+/* general elements */
+
+html, body, a {
+     font-size: 16px;
+     line-height: 1.5;
+     font-family: var(--font-poppins);
+     font-weight: var(--font-weight-regular);
+     text-decoration: none;
+}
+
+h1, p {
+     margin: 0;
+     padding: 0;
+}
+
+h2 {
+     font-size: var(--size-45);
+     font-weight: var(--font-w-bold);
+     margin: 0;
+     padding: 0;
+}
+
+h3 {
+     font-size: var(--size-18);
+     font-weight: var(--font-w-semibold);
+     color: var(--fixxo-dark);
+}
+
+h4 {
+     font-size: var(--size-16);
+     font-weight: var(--font-w-semibold);
+     color: var(--fixxo-dark);
+     text-transform: capitalize;
+}
+
+h5 {
+     font-size: var(--size-13);
+     font-weight: var(--font-w-medium);
+     color: var(--fixxo-grey-2);
+     text-transform: capitalize;
+}
+
+.container-xxl {
+     padding: 0;
+}
+
+.left {
+     border: 1px solid red;
+}
+.center {
+     border: 1px solid red;
+}
+.right {
+     border: 1px solid red;
+}
+
+.text-box-start {
+     margin: 2rem 2rem 6rem 2rem;
+}
+
+
+
+
+
+
+/* buttons */
+
+.fixxo-button {
+     position: relative;
+
+     height: 50px;
+     width: 150px;    
+     border: none;
+
+     font-size: var(--size-16);
+     font-weight: var(--font-w-semibold);
+     color: var(--color-white);
+     text-transform: uppercase;
+     transition: 0.2s;
+
+     margin-top: 1rem;
+}
+
+     .fixxo-button::before {
+          content: "";
+          height: 15px;
+          width: 15px;
+          position: absolute;
+          top: 8px;
+          left: 8px;
+          border-top: 2px solid var(--color-white);
+          border-left: 2px solid var(--color-white);
+     }
+
+     .fixxo-button::after {
+          content: "";
+          height: 15px;
+          width: 15px;
+          position: absolute;
+          bottom: 8px;
+          right: 8px;
+          border-bottom: 2px solid var(--color-white);
+          border-right: 2px solid var(--color-white);
+     }
+
+     .fixxo-button:hover {
+          transform: scale(110%);
+          filter: brightness(103%);
+     }
+
+.button-theme {
+     background-color: var(--fixxo-theme);
+}
+
+.button-dark {
+     background-color: var(--fixxo-dark);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* section-1 */
+
+/* .section-1 {
+     display: flex;
+     height: 500px;
+}
+     .section-1 div {
+          justify-content: flex-start;
+          align-items: end;
+     }
+     .section-1 .left {
+          background-image: url(/img/img-5.svg);
+          background-size: cover;
+          flex: 65;
+
+     }
+     .section-1 .right {
+          background-image: url(/img/img-6.svg);
+          background-size: cover;
+          flex: 35;
+     } */
+
+
+
+
+
+/* section-2 */
+
+.section-2 {
+     width: 960px;
+     height: 700px;
+}
+
+.showcase-card {
+     display: block;
+     height: 65%;
+     width: 255px;
+}
+.card-imagebox {
+     height: 210px;
+     width: 100%;
+     background-color: #F5F5F5;
+}
+
+.card-textbox {
+     height: 35%;
+     width: 100%;
+     text-align: center;     
+}
+.card-textbox span{
+     display: flex;
+     justify-content: center;
+     gap: 0.5rem;
+}
+
+.card-rating {
+     color: #FF7373;
+}
+
+.card-previous-price {
+     color: #BEBEBE;
+     font-weight: var(--font-w-regular);
+     text-decoration: line-through;
+}
+
+.card-current-price {
+     font-weight: var(--font-w-semibold);
+     color: var(--fixxo-dark);
+}
+
+
+
+
+
+/* section-3 */
+
+.section-3 {
+     background-color: #e7e7e7;
+}
