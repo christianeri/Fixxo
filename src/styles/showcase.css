@@ -1,0 +1,38 @@
+.__showcase .__container {
+     display: flex;
+     justify-content: space-between;
+}
+     .__showcase .__container > div {
+          position: relative;
+     }
+
+.__showcase .__left img {
+     z-index: 1;
+} 
+
+.__showcase .__right img {
+     z-index: 1;
+}
+
+.__showcase-textbox {
+     position: absolute;
+     bottom: 100px;
+     left: 0;
+     margin: 2rem;
+     z-index: 2;
+}
+     .__showcase-textbox p {
+          margin-top: 1rem;
+     }
+
+/* showcase 60/40 */
+
+     .__showcase6040 .__left {
+          position: relative;
+          flex: 6;
+     }
+
+     .__showcase6040 .__right {
+          position: relative;
+          flex: 4;
+     }

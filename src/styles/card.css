@@ -1,0 +1,64 @@
+/* card */
+
+.card {
+     display: block;
+     height: 325px;
+     width: 255px;
+}
+.card-img-top {
+     height: 210px;
+     width: 100%;
+     background-color: #F5F5F5;
+}
+
+.card-body {
+     height: 115px;
+     width: 100%;
+     text-align: center;     
+}
+.card-body span{
+     display: flex;
+     justify-content: center;
+     gap: 0.5rem;
+}
+
+.__card-rating {
+     color: #FF7373;
+     margin: 0.2rem 0;
+}
+
+.__card-previous-price {
+     color: #BEBEBE;
+     font-weight: var(--font-w-regular);
+     text-decoration: line-through;
+}
+
+.__card-current-price {
+     font-weight: var(--font-w-semibold);
+     color: var(--fixxo-dark);
+}
+
+/* information-card */
+
+.__information-card {
+     height: 230px;
+     width: 490px;
+     display: flex;
+     justify-content: center;     
+     align-items: center;
+}
+
+
+.__information-card .__left {
+     flex: 1;
+     height: 100%;
+
+     background-color: var(--color-white);
+}
+
+.__information-card .__right {
+     flex: 1;
+     height: 100%;
+
+     background-color: var(--fixxo-grey-2);
+}
