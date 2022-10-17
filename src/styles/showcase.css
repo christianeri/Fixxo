@@ -16,9 +16,8 @@
 
 .__showcase-textbox {
      position: absolute;
-     bottom: 100px;
-     left: 0;
-     margin: 2rem;
+     left: 2rem;
+     bottom: 0;
      z-index: 2;
 }
      .__showcase-textbox p {
@@ -27,12 +26,25 @@
 
 /* showcase 60/40 */
 
-     .__showcase6040 .__left {
-          position: relative;
-          flex: 6;
-     }
+.__showcase6040 .__left {
+     position: relative;
+     flex: 6;
+}
 
-     .__showcase6040 .__right {
-          position: relative;
-          flex: 4;
-     }
+.__showcase6040 .__right {
+     position: relative;
+     flex: 4;
+}
+
+.__showcase6040 .__showcase-textbox {
+     margin-bottom: 9rem;
+}
+
+.__showcase5050 .__left .__showcase-textbox {
+     margin-left: 50%;
+     margin-bottom: 5rem;
+}
+
+.__showcase5050 .__right .__showcase-textbox {
+     margin-bottom: 5rem;
+}

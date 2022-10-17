@@ -48,6 +48,8 @@
      --border-radius-small: 8px;
      --border-radius-medium: 25px;
      --border-radius-rounded: 50%;
+
+     --wsxga: 1680px;
 }
 
 /* general elements */
@@ -98,25 +100,20 @@ section {
 
 .__container {
      display: flex;
+     justify-content: center;
+     align-items: center;
      width: 1680px;
      margin: auto;
      padding: 0;
 }
 
 .__section-title {
-     height: 100px;
+     height: 6rem ;
      text-align: center;
+     margin: auto;
+     padding-top: 3rem;
 }
 
-.__left {
-     border: 1px solid red;
-}
-.__center {
-     border: 1px solid red;
-}
-.__right {
-     border: 1px solid red;
-}
 
 /* fixa */
 .br {
@@ -184,17 +181,16 @@ section {
 
 /* our speciality */
 
-.__our-speciality {
-
+.__our-speciality .__section-title {
+     width: var(--wsxga);
      background-color: var(--fixxo-grey-3);
 }
-     .__our-speciality .__container {
-          display: flex;
-          height: 100%;
-          justify-content: center;
-          align-items: center;
-          gap: 2rem;
-     }
+
+.__our-speciality .__container {
+     background-color: var(--fixxo-grey-3);
+     gap: 2rem;
+     padding-bottom: 6rem;
+}
 
 
 
