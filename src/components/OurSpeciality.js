@@ -1,15 +1,18 @@
 import React from 'react'
-import InformationCard from './InformationCard'
+import InfoCard from './InfoCard'
 
 const OurSpeciality = () => {
   return (
     <div>
           <section className='__our-speciality'>
-               <div className='__container br'>
-                  <InformationCard/>
-                  <InformationCard/>
-                  <InformationCard/>
-               </div>
+                <div className='__section-title br'>
+                          <h3>Our Speciality</h3>
+                </div>
+                <div className='__container br'>
+                      <InfoCard title='Track Your Order'/>
+                      <InfoCard title='Make a Return'/>
+                      <InfoCard title='Request a Price Adjustment'/>                      
+                </div>
           </section>
     </div>
   )

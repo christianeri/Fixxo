@@ -5,6 +5,7 @@
      height: 325px;
      width: 255px;
 }
+
 .card-img-top {
      height: 210px;
      width: 100%;
@@ -16,6 +17,7 @@
      width: 100%;
      text-align: center;     
 }
+
 .card-body span{
      display: flex;
      justify-content: center;
@@ -38,27 +40,40 @@
      color: var(--fixxo-dark);
 }
 
-/* information-card */
+/* info-card */
 
-.__information-card {
+.__info-card {
      height: 230px;
      width: 490px;
      display: flex;
-     justify-content: center;     
-     align-items: center;
 }
 
+.__info-card h3 {
+     color: var(--fixxo-dark);
+     font-size: var(--size-20);
+     font-weight: var(--font-w-semibold);     
+}
 
-.__information-card .__left {
+.__info-card .__left {
      flex: 1;
      height: 100%;
-
      background-color: var(--color-white);
+     position: relative;
 }
 
-.__information-card .__right {
+.__info-card .__left .__textbox {
+     position: absolute;
+     left: 2rem;
+     bottom: 5rem;
+}
+
+.__info-card .__left a {
+     color: var(--fixxo-dark);
+     border-bottom: 1px solid var(--fixxo-dark);
+}
+
+.__info-card .__right {
      flex: 1;
      height: 100%;
-
      background-color: var(--fixxo-grey-2);
 }
