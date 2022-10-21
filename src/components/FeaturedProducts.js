@@ -4,21 +4,18 @@ import Card from './Card'
 const FeaturedProducts = () => {
   return (
      <div>
-          <section class="__featured-products">
+          <section className="__featured-products">
+               <div className='container-md br'>
+                    <Card/>
+                    <Card/>
+                    <Card/>
+                    <Card/>
+               </div>
                <div className='container-md'>
-               
-                    <div class="row g-0">
-                         <div class="col"><Card/></div>
-                         <div class="col"><Card/></div>
-                         <div class="col"><Card/></div>
-                         <div class="col"><Card/></div>
-                    </div>
-                    <div class="row g-0">
-                         <div class="col"><Card/></div>
-                         <div class="col"><Card/></div>
-                         <div class="col"><Card/></div>
-                         <div class="col"><Card/></div> 
-                    </div>               
+                    <Card/>
+                    <Card/>
+                    <Card/>
+                    <Card/>
                </div>
           </section>
      </div>

@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 
-     // changing color of navbar when scrolling 
+     // change color of navbar when scrolling 
      const Navbar = () => {
           let [color, setColor] = useState(false)
           let changeColor = () => {

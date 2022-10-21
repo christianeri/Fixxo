@@ -22,7 +22,7 @@
      --fixxo-theme: #FF7373;
      --fixxo-dark: #23262A;
      --fixxo-grey-1: #616365;
-     --fixxo-grey-2: #BEBEBE;
+     --fixxo-grey-2: #BBBBBB;
      --fixxo-grey-3: #F5F5F5;
      --color-white: #FFFFFF;
 
@@ -98,6 +98,13 @@ section {
      margin-bottom: 4rem;
 }
 
+.container-md {
+     width: 1140px;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+}
+
 .__container {
      display: flex;
      justify-content: center;
@@ -118,6 +125,12 @@ section {
 /* fixa */
 .br {
      border: 1px solid red;  
+}
+.by {
+     border: 1px solid yellow;  
+}
+.bb {
+     border: 1px solid blue;  
 }
 
 
@@ -177,6 +190,20 @@ section {
 .__button-dark {
      background-color: var(--fixxo-dark);
 }
+
+.__button-light {
+     background-color: var(--color-white);
+     color: var(--fixxo-dark);
+}
+     .__button-light::before {
+          border-top: 2px solid var(--fixxo-dark);
+          border-left: 2px solid var(--fixxo-dark);
+     }
+
+     .__button-light::after {
+          border-bottom: 2px solid var(--fixxo-dark);
+          border-right: 2px solid var(--fixxo-dark);
+     }
 
 
 /* our speciality */

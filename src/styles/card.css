@@ -3,7 +3,8 @@
 .card {
      display: block;
      height: 325px;
-     width: 255px;
+     width: 260px;
+     border: none;
 }
 
 .card-img-top {

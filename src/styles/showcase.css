@@ -24,7 +24,7 @@
           margin-top: 1rem;
      }
 
-/* showcase 60/40 */
+/* banner 60-40 */
 
 .__showcase6040 .__left {
      position: relative;
@@ -40,11 +40,85 @@
      margin-bottom: 9rem;
 }
 
-.__showcase5050 .__left .__showcase-textbox {
+/* showcase grid 2by4 */
+
+.__featured-products .container-md {
+     display: flex;
+     justify-content: center;
+     gap: 2rem;
+     padding: 1rem;
+}
+
+
+/* banner 50-50 */
+
+.__banner5050 .__left .__showcase-textbox {
      margin-left: 50%;
      margin-bottom: 5rem;
 }
 
-.__showcase5050 .__right .__showcase-textbox {
+.__banner5050 .__right .__showcase-textbox {
      margin-bottom: 5rem;
+}
+
+/*  showcase grid */
+
+.__showcase-1-1 {
+     height: 682px;
+     justify-content: center;
+     gap: 2rem;
+     margin: 2rem auto;
+}
+     .__showcase-1-1 > * {
+          width: 50%; 
+     }
+
+     .__showcase-1-1 .__showcase-container-1x1 {
+          height: 100%;
+          background-color: var(--fixxo-grey-2);
+     }
+          .__showcase-container-1x1 .__showcase-textbox {
+               display: block;
+               position: relative;
+               text-align: center;
+               left: 0;
+          }
+
+     .__showcase-1-1 .__showcase-container-2x2 {
+          display: flex;
+          align-items: center;
+     }
+     #showcase-container-2x2-upper {
+          justify-content: left;
+     }
+     #showcase-container-2x2-lower {
+          justify-content: right;
+     }
+
+.__grid {     
+     display: grid;
+     width: min-content;
+     gap: 2rem;
+     grid-template-columns: repeat(2, minmax(260px, 325px));
+     grid-template-rows: repeat(2, minmax(260px, 325px));
+}
+
+#grid-tile-sm-tl {
+     grid-column: 1 / 2;
+     grid-row: 1 / 2;
+}
+
+#grid-tile-sm-tr {
+     grid-column: 2 / -1;
+     grid-row: 1 / 2;
+}
+
+#grid-tile-sm-bl {
+     grid-column: 1 / 2;
+     grid-row: 2 / -1;
+}
+
+#grid-tile-sm-br {
+     grid-column: 2 / -1;
+     grid-row: 2 / -1;
 }

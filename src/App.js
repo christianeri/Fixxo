@@ -1,11 +1,13 @@
 
 import './App.css';
-import Hero from './components/Hero';
 import Navbar from './components/Navbar';
+import Hero from './components/Hero';
 import Showcase6040 from './components/Showcase6040';
 import FeaturedProducts from './components/FeaturedProducts';
-import Showcase5050 from './components/Showcase5050';
+import Banner5050 from './components/Banner5050';
 import OurSpeciality from './components/OurSpeciality';
+import ShowcaseGrid from './components/ShowcaseGrid';
+import SingleBanner from './components/SingleBanner';
 
 function App() {
   return (
@@ -14,8 +16,10 @@ function App() {
         <Hero/>
         <Showcase6040/>
         <FeaturedProducts/>
-        <Showcase5050/>
+        <Banner5050/>
         <OurSpeciality/>
+        <ShowcaseGrid/>
+        <SingleBanner/>
     </>
   );
 }

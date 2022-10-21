@@ -1,9 +1,9 @@
 import React from 'react'
 
-const Card = () => {
+const Card = ({id}) => {
   return (
     <div>
-          <div className="card">
+          <div className="card" id={id}>
                <img src='...' className='card-img-top'/>
                <div className="card-body border">
                     <h5 className='card-title' id="product-category">category</h5>
