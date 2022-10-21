@@ -7,7 +7,8 @@ import FeaturedProducts from './components/FeaturedProducts';
 import BannerDouble from './components/BannerDouble';
 import OurSpeciality from './components/OurSpeciality';
 import ShowcaseGrid from './components/ShowcaseGrid';
-import SingleBanner from './components/BannerSingle';
+import BannerSingle from './components/BannerSingle';
+import ShowcaseColumns from './components/ShowcaseColumns';
 
 function App() {
   return (
@@ -19,7 +20,8 @@ function App() {
         <BannerDouble/>
         <OurSpeciality/>
         <ShowcaseGrid/>
-        <SingleBanner/>
+        <BannerSingle/>
+        <ShowcaseColumns/>
     </>
   );
 }

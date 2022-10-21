@@ -1,21 +1,21 @@
 import React from 'react'
-import Card from './Card'
+import CardTall from './CardTall'
 
 const FeaturedProducts = () => {
   return (
      <div>
           <section className="__featured-products">
-               <div className='container br'>
-                    <Card/>
-                    <Card/>
-                    <Card/>
-                    <Card/>
+               <div className='container'>
+                    <CardTall/>
+                    <CardTall/>
+                    <CardTall/>
+                    <CardTall/>
                </div>
                <div className='container'>
-                    <Card/>
-                    <Card/>
-                    <Card/>
-                    <Card/>
+                    <CardTall/>
+                    <CardTall/>
+                    <CardTall/>
+                    <CardTall/>
                </div>
           </section>
      </div>

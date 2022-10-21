@@ -3,10 +3,10 @@ import React from 'react'
 const Card = ({id}) => {
   return (
     <div>
-          <div className="card" id={id}>
-               <img src='...' className='card-img-top'/>
-               <div className="card-body border">
-                    <h5 className='card-title' id="product-category">category</h5>
+          <div className="__tall-card" id={id}>
+               <img src='...' className='__card-img'/>
+               <div className="__card-body">
+                    <h5 className='__card-title' id="product-category">category</h5>
                     <h4 id="product-title">modern black blouse</h4>
 
                     <div iv className="__card-rating" id="product-rating">

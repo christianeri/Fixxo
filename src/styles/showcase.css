@@ -1,3 +1,6 @@
+
+/* showcase general */
+
 .__showcase .__container-wide {
      display: flex;
      justify-content: space-between;
@@ -26,7 +29,7 @@
 
 
 
-/* showcase grid 2by4 */
+/* showcase grid 2x4 "featured products" */
 
 .__featured-products .container {
      display: flex;
@@ -63,12 +66,12 @@
           display: flex;
           align-items: center;
      }
-     #showcase-container-2x2-upper {
-          justify-content: left;
-     }
-     #showcase-container-2x2-lower {
-          justify-content: right;
-     }
+          #showcase-container-2x2-upper {
+               justify-content: left;
+          }
+          #showcase-container-2x2-lower {
+               justify-content: right;
+          }
 
 .__grid {     
      display: grid;
@@ -97,3 +100,20 @@
      grid-column: 2 / -1;
      grid-row: 2 / -1;
 }
+
+
+
+/* showcase columns "product top lists" */
+
+.__showcase-columns .container {
+     justify-content: space-between;
+     gap: 2rem;  
+}
+
+.__showcase-columns .container > div {
+     display: flex;
+     flex-wrap: wrap;
+     gap: 2rem;
+     flex: 1;
+}
+

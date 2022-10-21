@@ -1,33 +1,25 @@
+
 /* card */
 
-.card {
-     display: block;
-     height: 325px;
-     width: 260px;
+.__card-img {
+     background-color: #F5F5F5;
      border: none;
 }
 
-.card-img-top {
-     height: 210px;
-     width: 100%;
-     background-color: #F5F5F5;
+.__card-body {
+     text-align: center;      
 }
+     .__card-body > * {
+          margin-top: 0.5rem;     
+     }
 
-.card-body {
-     height: 115px;
-     width: 100%;
-     text-align: center;     
-}
-
-.card-body span{
+.__card-body span {
      display: flex;
-     justify-content: center;
      gap: 0.5rem;
 }
 
 .__card-rating {
      color: #FF7373;
-     margin: 0.2rem 0;
 }
 
 .__card-previous-price {
@@ -40,6 +32,53 @@
      font-weight: var(--font-w-semibold);
      color: var(--fixxo-dark);
 }
+
+
+
+/* tall card */
+
+.__tall-card {
+     display: block;
+     height: 325px;
+     width: 260px;
+     border: none;
+}
+     .__tall-card .__card-img {
+          height: 60%;
+          width: 100%;
+     }
+
+     .__tall-card .__card-body {
+          height: 40%;
+          width: 100%;
+     }
+          .__tall-card .__card-body span {
+               justify-content: center;
+          }
+          .__tall-card .__card-title {
+               margin-top: 1rem;     
+          }
+
+
+
+.__wide-card {
+     display: flex;
+     align-items: center;
+     height: 150px;
+     width: 100%;
+}
+     .__wide-card .__card-img {
+          height: 100%;
+          width: 150px;          
+          background-color: #F5F5F5;
+     }
+     .__wide-card .__card-body {
+          text-align: left;
+          padding-left: 1rem;      
+     }
+          .wide-card .__card-body span {
+               justify-content: left;
+          }
 
 /* info-card */
 
