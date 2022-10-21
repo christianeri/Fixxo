@@ -12,7 +12,7 @@
      display: flex;
      z-index: 9;
 }
-     .__top-navbar .__container {
+     .__top-navbar .__container-wide {
           display: flex;
      }
 
@@ -24,7 +24,7 @@
      color: var(--fixxo-theme);
 }
 
-.__container > div {
+.__container-wide > div {
      display: flex;
      justify-content: center;
      align-items: center;

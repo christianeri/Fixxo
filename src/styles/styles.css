@@ -1,17 +1,15 @@
-/* 
-     fixa
-     0  General, buttons, footer: -------- styles.css
-     1  Navbar: -------------------------- navbar.css
-     2  Hero: ---------------------------- hero-section.css
-     3  Information: --------------------- information-section.css
-     4  Categories: ---------------------- categories.section.css
-     5  New Arrivals: -------------------- showcase-sections.css
-     6  New Customer Discount: ----------- promo-section.css
-     7  Featured Products: --------------- showcase-sections.css
-     8  Flash Sale: ---------------------- promo-sections.css 
-     9  Top Sellers: --------------------- showcase-sections.css
-     10 Subscribe ------------------------ subscribe-section.css 
-     11 Login/register ------------------- login-register.css      
+/*   fixa                                                     
+     0  General, buttons, footer ---------------------      styles.css
+     1  Navbar ---------------------------------------      navbar.css
+     2  Hero -----------------------------------------      hero.css
+     3  "Winter Clearence" & "New Arrivals" ----------      banner.css         
+     4  "Featured Products" --------------------------      showcase.css
+     5  "Pamela Reif's" & "Let's be Conscious" -------      banner.css
+     6  "Our Speciality" / Customer Info -------------      styles.css
+     7  Promotion box & 2x2 product display grid -----      showcase.css    
+     8  "70% off" promotion banner -------------------      banner.css 
+     9  Product top list 3 column product display grid      showcase.css
+     10 Customer/Shopping info ---------------------------- banner.css  
 */
 
 
@@ -51,6 +49,8 @@
 
      --wsxga: 1680px;
 }
+
+
 
 /* general elements */
 
@@ -98,14 +98,14 @@ section {
      margin-bottom: 4rem;
 }
 
-.container-md {
+.container {
      width: 1140px;
      display: flex;
      justify-content: center;
      align-items: center;
 }
 
-.__container {
+.__container-wide {
      display: flex;
      justify-content: center;
      align-items: center;
@@ -122,7 +122,9 @@ section {
 }
 
 
+
 /* fixa */
+
 .br {
      border: 1px solid red;  
 }
@@ -132,9 +134,6 @@ section {
 .bb {
      border: 1px solid blue;  
 }
-
-
-
 
 
 
@@ -206,6 +205,7 @@ section {
      }
 
 
+
 /* our speciality */
 
 .__our-speciality .__section-title {
@@ -213,7 +213,7 @@ section {
      background-color: var(--fixxo-grey-3);
 }
 
-.__our-speciality .__container {
+.__our-speciality .__container-wide {
      background-color: var(--fixxo-grey-3);
      gap: 2rem;
      padding-bottom: 6rem;

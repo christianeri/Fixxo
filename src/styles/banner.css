@@ -1,15 +1,42 @@
-/* single banner */
+/* banner split */
 
-.__single-banner {
+.__banner-split .__left {
+     position: relative;
+     flex: 6;
+}
+
+.__banner-split .__right {
+     position: relative;
+     flex: 4;
+}
+
+.__banner-split .__showcase-textbox {
+     margin-bottom: 9rem;
+}
+
+/* banner double */
+
+.__banner-double .__left .__showcase-textbox {
+     margin-left: 50%;
+     margin-bottom: 5rem;
+}
+
+.__banner-double .__right .__showcase-textbox {
+     margin-bottom: 5rem;
+}
+
+/* banner single */
+
+.__banner-single {
      height: 326px;
 }
 
-.__single-banner .container-md {
+.__banner-single .container {
      height: 100%;
      background-color: var(--fixxo-grey-1);
 }
 
-.__single-banner .__showcase-textbox {
+.__banner-single .__showcase-textbox {
      display: block;
      position: relative;
      text-align: center;

@@ -2,11 +2,11 @@ import React from 'react'
 import Showcase_5 from '../img/img-5.svg'
 import Showcase_6 from '../img/img-6.svg'
 
-const Showcase6040 = () => {
+const BannerSplit = () => {
   return (
      <div>
           <section className='__showcase'>
-               <div className='__container __showcase6040'>
+               <div className='__container-wide __banner-split'>
                     <div className='__left'>
                          <img src={Showcase_5} alt="silouette"/>
                          <div className="__showcase-textbox">
@@ -36,4 +36,4 @@ const Showcase6040 = () => {
   )
 }
 
-export default Showcase6040
+export default BannerSplit

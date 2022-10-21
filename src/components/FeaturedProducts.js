@@ -5,13 +5,13 @@ const FeaturedProducts = () => {
   return (
      <div>
           <section className="__featured-products">
-               <div className='container-md br'>
+               <div className='container br'>
                     <Card/>
                     <Card/>
                     <Card/>
                     <Card/>
                </div>
-               <div className='container-md'>
+               <div className='container'>
                     <Card/>
                     <Card/>
                     <Card/>

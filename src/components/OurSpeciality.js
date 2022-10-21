@@ -8,7 +8,7 @@ const OurSpeciality = () => {
                 <div className='__section-title'>
                       <h3>Our Speciality</h3>
                 </div>
-                <div className='__container'>
+                <div className='__container-wide'>
                       <InfoCard title='Track Your Order'/>
                       <InfoCard title='Make a Return'/>
                       <InfoCard title='Request a Price Adjustment'/>                      

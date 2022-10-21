@@ -1,8 +1,8 @@
-.__showcase .__container {
+.__showcase .__container-wide {
      display: flex;
      justify-content: space-between;
 }
-     .__showcase .__container > div {
+     .__showcase .__container-wide > div {
           position: relative;
      }
 
@@ -24,42 +24,17 @@
           margin-top: 1rem;
      }
 
-/* banner 60-40 */
 
-.__showcase6040 .__left {
-     position: relative;
-     flex: 6;
-}
-
-.__showcase6040 .__right {
-     position: relative;
-     flex: 4;
-}
-
-.__showcase6040 .__showcase-textbox {
-     margin-bottom: 9rem;
-}
 
 /* showcase grid 2by4 */
 
-.__featured-products .container-md {
+.__featured-products .container {
      display: flex;
      justify-content: center;
      gap: 2rem;
      padding: 1rem;
 }
 
-
-/* banner 50-50 */
-
-.__banner5050 .__left .__showcase-textbox {
-     margin-left: 50%;
-     margin-bottom: 5rem;
-}
-
-.__banner5050 .__right .__showcase-textbox {
-     margin-bottom: 5rem;
-}
 
 /*  showcase grid */
 

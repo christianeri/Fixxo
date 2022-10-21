@@ -15,7 +15,7 @@ import React, { useState } from 'react'
 
      return (
           <nav className={color ? '__top-navbar __bg-white' : '__top-navbar'}>          
-               <div className='__container'>
+               <div className='__container-wide'>
                     <div className="__left">
                          <h1 className="__logo">Fixxo.</h1>
                     </div>

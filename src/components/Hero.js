@@ -6,7 +6,7 @@ const Hero = () => {
   return (
      <div>
           <section className='__hero'>
-               <div className='__container'>
+               <div className='__container-wide'>
                     <img src={Hero_2} alt="silouette" className='__left'/>
                     <div className='__center'>
                          <h1>sale up</h1>

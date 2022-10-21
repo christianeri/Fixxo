@@ -1,10 +1,10 @@
 import React from 'react'
 
-const SingleBanner = () => {
+const BannerSingle = () => {
   return (
     <div>
-          <section className='__single-banner'>
-               <div className='container-md'>
+          <section className='__banner-single'>
+               <div className='container'>
                     <div className="__showcase-textbox">
                          <h2>Up to 70% off*</h2>
                          <p>Women's, Men's & Kids' Winter Fashion</p>
@@ -18,4 +18,4 @@ const SingleBanner = () => {
   )
 }
 
-export default SingleBanner
+export default BannerSingle

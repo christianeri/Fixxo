@@ -5,7 +5,7 @@ const ShowcaseGrid = () => {
   return (
       <div>
           <section className='__showcase-grid'>
-                    <div className='__container __showcase-1-1'>
+                    <div className='__container-wide __showcase-1-1'>
                          <div className='__showcase-container-1x1'>
                               <div className='__showcase-textbox'>
                                    <h2>2 FOR USD $29</h2>
@@ -23,7 +23,7 @@ const ShowcaseGrid = () => {
                               </div>
                          </div>
                     </div>
-                    <div className='__container __showcase-1-1'> 
+                    <div className='__container-wide __showcase-1-1'> 
                          <div className='__showcase-container-2x2' id='showcase-container-2x2-lower'>
                               <div className='__grid'>
                                    <Card id='grid-tile-sm-tl'/>
