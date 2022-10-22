@@ -2,24 +2,24 @@ import React, { useState } from 'react'
 
      // change color of navbar when scrolling 
      const Navbar = () => {
-          let [color, setColor] = useState(false)
-          let changeColor = () => {
-               if (window.scrollY >= 880) {
-                    setColor(true) 
+          let [colorWhite, setColorWhite] = useState(false)
+          let changeColorWhite = () => {
+               if (window.scrollY >= 200) {
+                    setColorWhite(true) 
                } else {
-                    setColor(false)
+                    setColorWhite(false)
                }
           }
-          window.addEventListener('scroll', changeColor)
+          window.addEventListener('scroll', changeColorWhite)
           console.log(window.scrollY);
 
      return (
-          <nav className={color ? '__top-navbar __bg-white' : '__top-navbar'}>          
+          <nav className={colorWhite ? '__top-navbar __bg-white' : '__top-navbar'}>          
                <div className='__container-wide'>
                     <div className="__left">
                          <h1 className="__logo">Fixxo.</h1>
                     </div>
-                    <div className="__center">
+                    <div className='__center'>
                          <a href="">Home</a>
                          <a href="">Categories</a>
                          <a href="">Products</a>

@@ -10,6 +10,7 @@ import ShowcaseGrid from './components/ShowcaseGrid';
 import BannerSingle from './components/BannerSingle';
 import ShowcaseColumns from './components/ShowcaseColumns';
 import CustomerInformation from './components/CustomerInformation';
+import Footer from './components/Footer';
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
         <BannerSingle/>
         <ShowcaseColumns/>
         <CustomerInformation/>
+        <Footer/>
     </>
   );
 }

@@ -8,8 +8,23 @@
 }
 
 .__hero .__container-wide {
-     height: 100%;   
+     height: 100%;     
+     position: relative;
      justify-content: space-between;
+     z-index: 1;
+}
+
+/* kolla */
+/* .__hero .__center-hide {
+     display: block;
+     text-align: center;
+     visibility: hidden;
+} */
+
+.__hero .__left {
+     position: relative;
+     top: 0;
+     left: -120px;
 }
 
 .__hero .__center {
@@ -29,3 +44,9 @@
           font-weight: var(--font-w-regular);
           margin: 1rem 0 1rem 0;
      }
+
+.__hero .__right {
+     position: relative;
+     top: 0;
+     right: -120px;
+}

@@ -4,9 +4,9 @@ const InfoBox = ({link}, {icon}, {title}, {text}) => {
   return (
     <div>
           <div className='__infobox'>
-               <a href="{link}">
+               <a href={link}>
                     <button className="__navbar-button" id="share">
-                         <i className="{icon}"></i>
+                         <i className={icon}></i>
                          <div className="__navbar-button-badge"></div>
                     </button>
                </a>

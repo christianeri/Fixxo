@@ -6,6 +6,12 @@
      transition: 0.1s;
 }
 
+/* kolla */
+.__bg-grey {
+     
+     transition: 0.1s;
+}
+
 .__top-navbar {  
      position: fixed;
      height: 80px ;
@@ -16,14 +22,13 @@
      .__top-navbar .__container-wide {
           display: flex;
      }
-
-.__top-navbar a {
-     color: var(--fixxo-dark);
-     transition: 0.3s;
-}
-.__top-navbar a:hover {
-     color: var(--fixxo-theme);
-}
+     .__top-navbar a {
+          color: var(--fixxo-dark);
+          transition: 0.3s;
+     }
+     .__top-navbar a:hover {
+          color: var(--fixxo-theme);
+     }
 
 .__container-wide > div {
      display: flex;

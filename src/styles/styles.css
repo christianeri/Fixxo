@@ -60,6 +60,7 @@ html, body, a {
      font-family: var(--font-poppins);
      font-weight: var(--font-weight-regular);
      text-decoration: none;
+     color: var(--fixxo-dark);
 }
 
 h1, h4, p {
@@ -108,7 +109,7 @@ section {
 
 .__container-wide {
      display: flex;
-     justify-content: center;
+
      align-items: center;
      width: 1680px;
      margin: auto;
@@ -230,20 +231,62 @@ section {
      padding-bottom: 6rem;
 }
 
+
+
 /* customer information */
 
 .__customer-information .container {
      height: 300px;
-     border-top: 2px solid var(--fixxo-grey-2);
+     border-top: 1px solid var(--fixxo-grey-2);
 }
 
 .__infobox {
      display: flex;
      justify-content: center;
      align-items: center;
+     text-align: center;
+     
 }
-     .__infobox {
+     .__infobox h3 {
+          text-transform: capitalize;
+     }
+     .__infobox .__navbar-button {
+          width: 60px;
+          height: 60px;
+          box-shadow: 0px 7px 10px var(--fixxo-grey-2);
+          margin-bottom: 1.5rem; 
+     }
+     .__infobox p {
+          color: var(--fixxo-grey-2);
+     }
+
+          .__infobox a > * {
+               margin-bottom: 1rem;
+               
+          }
+
+
+
+/* footer */
+
+footer {
+     height: 100px;
+     display: flex;
+     align-items: center;
+     background-color: #F8F8F8;
+     border-top: 1px solid var(--fixxo-grey-2);
+}
+     footer .container {
+          display: block;
           text-align: center;
+
+     }
+     footer .container h6 {
+          padding-top: 0.5rem;
+     }
+     footer span > * {
+          margin: 0rem 0.4rem 0rem 0.4rem;
+          font-size: var(--size-20);
      }
 
 
