@@ -2,12 +2,54 @@
 /* card */
 
 .__card-img {
+     position: relative;
      background-color: #F5F5F5;
      border: none;
+     z-index: 1; 
+}
+
+.__card-overlay {
+     height: 195px;
+     width: 100%;
+     position: absolute;
+     top: 400px;
+     left: 0;
+
+     filter: brightness(100%);
+
+     z-index: 1;
+     transition: 0.3s;
+}
+     .__card-overlay .__fixxo-button {
+          width: 100%;
+          position: absolute;
+          left: 0;      
+          bottom: 0;
+     }
+          .__fixxo-button:hover {
+               transform: scale(100%);
+               filter: brightness(100%);
+          }
+
+     .__card-img:hover .__card-overlay {
+          top: 0;
+     }
+
+.__card-overlay-menu {
+     height: 150px;
+     width: 80px;
+     display: flex;
+     flex-direction: column;
+     justify-content: space-around;
+     align-items: baseline;
+     list-style: none;
+}
+.__card-overlay-menu a {
+     text-align: center;
 }
 
 .__card-body {
-     text-align: center;      
+     text-align: center;     
 }
      .__card-body > * {
           margin-top: 0.5rem;     

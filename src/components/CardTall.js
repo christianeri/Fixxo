@@ -4,7 +4,40 @@ const Card = ({id}) => {
   return (
     <div>
           <div className="__tall-card" id={id}>
-               <img src='...' className='__card-img'/>
+               <div className='__card-img'>
+                    <img src='...' />
+
+                    <div className='__card-overlay bb'>                    
+                         <ul className='__card-overlay-menu br'>
+                              <li>
+                                   <a href="">
+                                        <button className="__navbar-button" id="search">
+                                             <i className="fa-regular fa-magnifying-glass"></i>
+                                             <div className="__navbar-button-badge"></div>
+                                        </button>
+                                   </a>
+                              </li>
+                              <li>
+                                   <a href="">
+                                        <button className="__navbar-button" id="search">
+                                             <i className="fa-regular fa-magnifying-glass"></i>
+                                             <div className="__navbar-button-badge"></div>
+                                        </button>
+                                   </a>
+                              </li>
+                              <li>
+                                   <a href="">
+                                        <button className="__navbar-button" id="search">
+                                             <i className="fa-regular fa-magnifying-glass"></i>
+                                             <div className="__navbar-button-badge"></div>
+                                        </button>
+                                   </a>
+                              </li>
+                         </ul>
+                         <button className='__fixxo-button __button-theme'>quick view</button>
+                    </div>
+
+               </div>               
                <div className="__card-body">
                     <h5 className='__card-title' id="product-category">category</h5>
                     <h4 id="product-title">modern black blouse</h4>
