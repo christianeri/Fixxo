@@ -115,6 +115,12 @@ section {
      padding: 0;
 }
 
+.__flex-center {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+}
+
 .__section-title {
      height: 6rem ;
      text-align: center;
@@ -224,32 +230,39 @@ section {
      padding-bottom: 6rem;
 }
 
+/* customer information */
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* section-3 */
-
-.section-3 {
-     background-color: #e7e7e7;
+.__customer-information .container {
+     height: 300px;
+     border-top: 2px solid var(--fixxo-grey-2);
 }
+
+.__infobox {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+}
+     .__infobox {
+          text-align: center;
+     }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

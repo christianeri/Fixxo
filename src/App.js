@@ -9,6 +9,7 @@ import OurSpeciality from './components/OurSpeciality';
 import ShowcaseGrid from './components/ShowcaseGrid';
 import BannerSingle from './components/BannerSingle';
 import ShowcaseColumns from './components/ShowcaseColumns';
+import CustomerInformation from './components/CustomerInformation';
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
         <ShowcaseGrid/>
         <BannerSingle/>
         <ShowcaseColumns/>
+        <CustomerInformation/>
     </>
   );
 }
