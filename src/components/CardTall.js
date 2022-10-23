@@ -3,11 +3,11 @@ import React from 'react'
 const Card = ({id}) => {
   return (
     <div>
-          <div className="__tall-card" id={id}>
+          <div className="card __tall-card" id={id}>
                <div className='__card-img'>
                     <img src='...' />
 
-                    <div className='__card-overlay bb'>                    
+                    <div className='__card-overlay'>                    
                          <ul className='__card-overlay-menu br'>
                               <li>
                                    <a href="">

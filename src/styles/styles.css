@@ -97,6 +97,9 @@ h5 {
 
 section {
      margin-bottom: 4rem;
+     position: relative;
+     background-color:  #FFFFFF;
+     z-index: 1;
 }
 
 .container {

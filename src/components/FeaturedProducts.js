@@ -5,7 +5,7 @@ const FeaturedProducts = () => {
   return (
      <div>
           <section className="__featured-products">
-               <div className='container'>
+               <div className='container br'>
                     <CardTall/>
                     <CardTall/>
                     <CardTall/>

@@ -31,11 +31,20 @@
 
 /* showcase grid 2x4 "featured products" */
 
+.__featured-products {
+     /* position: relative;
+     background-color:  #FFFFFF;
+     z-index: 9; */
+}
+
 .__featured-products .container {
      display: flex;
      justify-content: center;
      gap: 2rem;
-     padding: 1rem;
+     margin-bottom: 2rem; 
+     /* position: relative;
+     background-color:  #FFFFFF;
+     z-index: 1; */
 }
 
 
