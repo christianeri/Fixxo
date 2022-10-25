@@ -1,0 +1,100 @@
+
+/* fonts */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700;800&display=swap');
+
+
+
+/* general elements */
+
+html, body, a {
+     font-size: 16px;
+     line-height: 1.5;
+     font-family: var(--font-poppins);
+     font-weight: var(--font-weight-regular);
+     text-decoration: none;
+     color: var(--fixxo-dark);
+}
+
+h1, h4, p {
+     margin: 0;
+     padding: 0;
+}
+
+h2 {
+     font-size: var(--size-45);
+     font-weight: var(--font-w-bold);
+     margin: 0;
+     padding: 0;
+}
+
+h3 {
+     font-size: var(--size-20);
+     font-weight: var(--font-w-bold);
+     color: var(--fixxo-dark);
+}
+
+h4 {
+     font-size: var(--size-16);
+     font-weight: var(--font-w-semibold);
+     color: var(--fixxo-dark);
+     text-transform: capitalize;
+}
+
+h5 {
+     font-size: var(--size-13);
+     font-weight: var(--font-w-medium);
+     color: var(--fixxo-grey-2);
+     text-transform: capitalize;
+}
+
+section {
+     margin-bottom: 4rem;
+     position: relative;
+     background-color:  #FFFFFF;
+     z-index: 1;
+}
+
+.container {
+     width: 1140px;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     padding: 0;
+}
+
+.__container-wide {
+     display: flex;
+
+     align-items: center;
+     width: 1680px;
+     margin: auto;
+     padding: 0;
+}
+
+.__flex-center {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+}
+
+.__section-title {
+     height: 6rem ;
+     text-align: center;
+     margin: auto;
+     padding-top: 3rem;
+}
+
+
+
+/* fixa */
+
+.br {
+     border: 1px solid red;  
+}
+.by {
+     border: 1px solid yellow;  
+}
+.bb {
+     border: 1px solid blue;  
+}

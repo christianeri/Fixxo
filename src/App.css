@@ -4,6 +4,15 @@
 @import "./styles/card.css";
 @import "./styles/banner.css";
 
+/* general */
+
+@import "./assets/css/general.css";
+@import "./assets/css/variables.css";
+
+/* sections */
+
+@import "./assets/css/sections/NavigationSection.css";
+
 /*   fixa                                                     
      0  General, buttons, footer ---------------------      app.css
      1  Navbar ---------------------------------------      navbar.css
@@ -27,8 +36,11 @@
      --fixxo-dark: #23262A;
      --fixxo-grey-1: #616365;
      --fixxo-grey-2: #BBBBBB;
-     --fixxo-grey-3: #F5F5F5;
+     --fixxo-grey-3: #F8F8F8;
      --color-white: #FFFFFF;
+
+     --gradient-dark: #E6E6E6;
+     --gradient-light: #F5F5F5;
 
      --color-facebook: #3B5998;
      --color-google: #4285F4;
@@ -282,7 +294,7 @@ footer {
      height: 100px;
      display: flex;
      align-items: center;
-     background-color: #F8F8F8;
+     background-color: var(--fixxo-grey-3);
      border-top: 1px solid var(--fixxo-grey-2);
 }
      footer .container {
