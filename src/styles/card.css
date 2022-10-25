@@ -2,65 +2,86 @@
 /* card */
 
 .card {
-     /* margin-bottom: 1rem; */
-}
-
-.__card-img {
-     height: 200px;
-     position: relative;
-     background-color: var(--fixxo-grey-3);
      border: none;
-     z-index: 1; 
 }
 
+.card .__fixxo-button {
+     width: 100%;
+     position: absolute;
+     left: 0;      
+     bottom: 0;
+     z-index: 1;
+     transition: 0.3s;
+}
+     .card:hover .__fixxo-button {
+          bottom: 130px;
+     }
+          .card .__fixxo-button:hover {
+               transform: none;
+               filter: none;
+               background-color: var(--fixxo-dark);
+          }
+
+.card:hover .__card-overlay {
+     height: 200px;
+     top: 0;
+}
 .__card-overlay {
      height: 200px;
      width: 100%;
      position: absolute;
-     top: 100%;
+     bottom: 0;
      left: 0;
 
      filter: brightness(100%);
 
-     z-index: 0;
-     transition: 0.3s;
+     z-index: 1;
+     transition: 1s;
 }
-     .__card-overlay .__fixxo-button {
-          width: 100%;
-          position: absolute;
-          left: 0;      
-          bottom: 0;
-          z-index: 0;
-     }
-          .__fixxo-button:hover {
-               transform: scale(100%);
-               filter: brightness(100%);
-          }
 
-.__card-overlay-menu {
+
+.card:hover .__card-overlay-menu {
      height: 150px;
-     width: 80px;
-     position: absolute;
      top: 0;
+}
+.__card-overlay-menu {
+     height: 130px;
+     width: 80px;
+     
+     position: absolute;
+     top: 200px;
      right: 0;
+     z-index: 1;
+     
      display: flex;
      flex-direction: column;
      justify-content: space-around;
+     
      list-style: none;
-     z-index: 0;
+     padding-top: 0.5rem;
+     padding-bottom: 0.5rem;
+
+     transition: 0.3s;
 }
      .__card-overlay-menu a {
           text-align: center;
      }
 
+.__card-img {
+     height: 200px;
+     position: relative;
+     background-color: var(--fixxo-grey-3);
+     z-index: 0; 
+}
+
 .__card-body {     
      height: 130px;
      position: relative;
-     top: 0;
+     bottom: 0;
      left: 0;
      background-color: #FFFFFF;
      text-align: center;
-     z-index: 1;   
+     z-index: 2;   
 
 }
      .__card-body span {
@@ -81,10 +102,6 @@
 .__card-current-price {
      font-weight: var(--font-w-semibold);
      color: var(--fixxo-dark);
-}
-
-.card:hover .__card-overlay {
-     top: 0;
 }
 
 
