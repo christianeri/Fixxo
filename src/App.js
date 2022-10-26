@@ -2,18 +2,6 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 import './App.css';
 
-import Navbar from './components/Navbar';
-import Hero from './components/Hero';
-import BannerSplit from './components/BannerSplit';
-import FeaturedProducts from './components/FeaturedProducts';
-import BannerDouble from './components/BannerDouble';
-import OurSpeciality from './components/OurSpeciality';
-import ShowcaseGrid from './components/ShowcaseGrid';
-import BannerSingle from './components/BannerSingle';
-import ShowcaseColumns from './components/ShowcaseColumns';
-import CustomerInformation from './components/CustomerInformation';
-import Footer from './components/Footer';
-
 import HomeView from './views/HomeView';
 import CategoriesView from './views/CategoriesView';
 import ProductsView from './views/ProductsView';
@@ -24,6 +12,8 @@ import CompareView from './views/CompareView';
 import WishListView from './views/WishListView';
 
 import NotFoundView from './views/NotFoundView';
+import FooterSection from './sections/FooterSection';
+
 
 
 function App() {
@@ -45,20 +35,9 @@ function App() {
 
       </Routes>
 
+      <FooterSection/>
+      
     </BrowserRouter>
-    // <>     
-    //     <Navbar/>
-    //     <Hero/>
-    //     <BannerSplit/>
-    //     <FeaturedProducts/>
-    //     <BannerDouble/>
-    //     <OurSpeciality/>
-    //     <ShowcaseGrid/>
-    //     <BannerSingle/>
-    //     <ShowcaseColumns/>
-    //     <CustomerInformation/>
-    //     <Footer/>
-    // </>
   );
 }
 

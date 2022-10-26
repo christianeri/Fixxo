@@ -1,5 +1,6 @@
 import React from 'react'
 import Card from './CardTall'
+import FixxoButton from './FixxoButton'
 
 const ShowcaseGrid = () => {
   return (
@@ -9,9 +10,7 @@ const ShowcaseGrid = () => {
                          <div className='__showcase-container-1x1'>
                               <div className='__showcase-textbox'>
                                    <h2>2 FOR USD $29</h2>
-                                   <button className="__fixxo-button __button-light">
-                                        flash sale
-                                   </button>
+                                   <FixxoButton label='flash sale' color='light'/>
                               </div>
                          </div>
                          <div className='__showcase-container-2x2' id='showcase-container-2x2-upper'>
@@ -35,9 +34,7 @@ const ShowcaseGrid = () => {
                          <div className='__showcase-container-1x1'>
                               <div className='__showcase-textbox'>
                                    <h2>2 FOR USD $49</h2>
-                                   <button className="__fixxo-button __button-light">
-                                        flash sale
-                                   </button>
+                                   <FixxoButton label='flash sale' color='light'/>
                               </div>
                          </div>
                     </div>               

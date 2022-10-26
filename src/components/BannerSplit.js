@@ -1,6 +1,7 @@
 import React from 'react'
 import Showcase_5 from '../img/img-5.svg'
 import Showcase_6 from '../img/img-6.svg'
+import FixxoButton from './FixxoButton'
 
 const BannerSplit = () => {
   return (
@@ -15,9 +16,7 @@ const BannerSplit = () => {
                               <p>
                                    Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem apriam eaque ipsa quae ab illo inventore.
                               </p>
-                              <button className="__fixxo-button __button-dark">
-                                   shop now
-                              </button>
+                              <FixxoButton label='shop now' color='dark'/>
                          </div>
                     </div>
                     <div className='__right'>
@@ -25,9 +24,7 @@ const BannerSplit = () => {
                          <div className="__showcase-textbox">
                               <h2>New</h2>
                               <h2>Arrivals</h2>
-                              <button className="__fixxo-button __button-dark">
-                                   shop now
-                              </button>
+                              <FixxoButton label='shop now' color='dark'/>
                          </div>
                     </div>
                </div>

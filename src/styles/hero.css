@@ -1,51 +1,44 @@
 /* hero */
 
-.__hero {
+.hero-section {
      height: 100%;
      background-color: var(--fixxo-grey-3); /* For browsers that do not support gradients */
-     background-image: linear-gradient(to right, #e7e7e7, var(--fixxo-grey-3));
+     background-image: linear-gradient(to right, var(--gradient-dark), var(--gradient-light));
      padding-top: 80px;
 }
 
-.__hero .__container-wide {
+.hero-section .__container-wide {
      height: 100%;     
      position: relative;
      justify-content: space-between;
      z-index: 1;
 }
 
-/* kolla */
-/* .__hero .__center-hide {
-     display: block;
-     text-align: center;
-     visibility: hidden;
-} */
-
-.__hero .__left {
+.hero-section .__left {
      position: relative;
      top: 0;
      left: -120px;
 }
 
-.__hero .__center {
+.hero-section .__center {
      display: block;
      text-align: center;
 }
-     .__hero .__center h1{
+     .hero-section .__center h1{
           font-size: var(--size-65);
           font-weight: var(--font-w-extrabold);
      }
-          .__hero .__center h1:first-child {
+          .hero-section .__center h1:first-child {
                text-transform: uppercase;
           }
 
-     .__hero .__center p {
+     .hero-section .__center p {
           font-size: var(--size-20);
           font-weight: var(--font-w-regular);
           margin: 1rem 0 1rem 0;
      }
 
-.__hero .__right {
+.hero-section .__right {
      position: relative;
      top: 0;
      right: -120px;

@@ -1,0 +1,26 @@
+.breadcrumb {
+     height: 80px;
+     width: 100%;
+     align-items: center;
+     list-style: none;
+     margin: 80px 0 0 0;
+}
+     .breadcrumb ul {
+          margin: 0;
+          padding: 0;
+     }
+          .breadcrumb li {
+               display: inline-block;
+          }
+               .breadcrumb li:hover {
+                    color: var(--fixxo-dark);
+               }
+     .breadcrumb .active {
+          color: var(--fixxo-theme);
+     }
+
+     
+     /* kolla */
+     /* .breadcrumb li + li:before {
+          content: "/\00a0"
+     } */

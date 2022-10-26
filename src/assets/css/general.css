@@ -64,10 +64,9 @@ section {
 }
 
 .__container-wide {
+     width: calc(1680px - 3rem);
      display: flex;
-
      align-items: center;
-     width: 1680px;
      margin: auto;
      padding: 0;
 }

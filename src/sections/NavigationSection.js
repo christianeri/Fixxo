@@ -6,7 +6,7 @@ import NavbarButton from '../components/NavbarButton'
      const NavigationSection = () => {
           let [colorWhite, setColorWhite] = useState(false)
           let changeColorWhite = () => {
-               if (window.scrollY >= 200) {
+               if (window.scrollY >= 1) {
                     setColorWhite(true) 
                } else {
                     setColorWhite(false)
@@ -33,7 +33,7 @@ import NavbarButton from '../components/NavbarButton'
                     <NavbarButton link='/search' icon='fa-regular fa-magnifying-glass'/>
                     <NavbarButton link='/compare' icon='fa-solid fa-retweet'/>
                     <NavbarButton link='/wishlist' icon='fa-regular fa-heart'/>
-                    <NavbarButton link='/shoppingcart' icon='fa-regular fa-bag-shopping'/>
+                    <NavbarButton link='/shoppingcart' icon='fa-regular fa-bag-shopping' quantity='4'/>
                </div>
           </div>
      </nav>

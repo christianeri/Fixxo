@@ -1,0 +1,30 @@
+footer {
+     height: 100px;
+     width: 100%;
+
+     position: fixed;
+     left: 0;
+     bottom: 0;
+
+     background-color: var(--fixxo-grey-3);
+     border-top: 1px solid var(--fixxo-grey-2);
+}
+     footer .container {
+          display: block;
+          text-align: center;
+     }
+          footer .container h6 {
+               color: var(--fixxo-grey-1);
+               padding-top: 0.5rem;
+          }
+               footer .container i {
+                    transition: 0.2s;
+               }
+                    footer .container a:hover i {
+                         color: var(--fixxo-theme);
+                         transform: scale(1.1);
+                    }
+
+          footer span > * {
+               font-size: var(--size-20);
+          }

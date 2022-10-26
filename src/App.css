@@ -12,6 +12,13 @@
 /* sections */
 
 @import "./assets/css/sections/NavigationSection.css";
+@import "./assets/css/sections/FooterSection.css";
+@import "./assets/css/sections/ContactSection.css";
+
+/* components */
+
+@import "./assets/css/components/breadcrumb.css";
+@import "./assets/css/components/FixxoButton.css";
 
 /*   fixa                                                     
      0  General, buttons, footer ---------------------      app.css
@@ -72,7 +79,7 @@
 
 /* general elements */
 
-html, body, a {
+/* html, body, a {
      font-size: 16px;
      line-height: 1.5;
      font-family: var(--font-poppins);
@@ -148,7 +155,7 @@ section {
      text-align: center;
      margin: auto;
      padding-top: 3rem;
-}
+} */
 
 
 
@@ -211,7 +218,7 @@ section {
      }
 
      .__fixxo-button:hover {
-          transform: scale(110%);
+          transform: scale(107%);
           filter: brightness(103%);
      }
 
