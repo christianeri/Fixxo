@@ -7,7 +7,7 @@ const InfoCard = ({title}) => {
                   <div className='__left'>
                         <div className='__textbox'>
                               <h3>{title}</h3>                              
-                              <a href=''>Get Started<i class="fa-solid fa-chevron-right"></i></a>
+                              <a href=''>Get Started<i className="fa-solid fa-chevron-right"></i></a>
                         </div>
                   </div>
                   <div className='__right'>

@@ -13,7 +13,7 @@ import NavbarButton from '../components/NavbarButton'
                }
           }
           window.addEventListener('scroll', changeColorWhite)
-          console.log(window.scrollY);
+          // console.log(window.scrollY);
 
   return (
      <nav className={colorWhite ? '__top-navbar __bg-white' : '__top-navbar'}>          

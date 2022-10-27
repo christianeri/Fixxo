@@ -1,5 +1,6 @@
 import React from 'react'
 import CardWide from './CardWide'
+import ProductCard from './ProductCard'
 
 const ShowcaseColumns = () => {
   return (
@@ -8,9 +9,7 @@ const ShowcaseColumns = () => {
                <div className='container'>
                     <div className='__column-left'>
                          <h4>Latest Products</h4>
-                         <CardWide/>    
-                         <CardWide/>    
-                         <CardWide/>
+                         <ProductCard orientation='horizontal'/>
                     </div>
                     <div className='__column-center'>
                          <h4>Best Selling Products</h4>

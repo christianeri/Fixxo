@@ -52,6 +52,7 @@
 
 .button-dark {
      background-color: var(--fixxo-dark);
+     color: var(--color-white);
 }
 
 .button-light {
