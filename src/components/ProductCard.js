@@ -8,22 +8,23 @@ const ProductCard = ({orientation, id}) => {
 
      const cardOrientation = (orientation) => {
           switch (orientation) {
-               case 'horizontal': {
+               case 'horizontal': 
                     horizontal = 'horizontal'
-                    vertical = ''
-               }
-               case 'vertical': {
-                    horizontal = ''
+                    vertical = 'hide'
+               
+               case 'vertical': 
+                    horizontal = 'hide'
                     vertical = 'vertical';
-               }
+               
                break;
+               default:
           }
      }
      cardOrientation(orientation)
 
   return (
 <>
-     <div className={`card ${horizontal}-card ${vertical}-card`} id={id}>
+     <div className={`${vertical}-card bb`} id={id}>
           <div className='__card-img'>
                <img src='...'/>
           </div>               
@@ -77,7 +78,7 @@ const ProductCard = ({orientation, id}) => {
           </div>
      </div>
 
-     <div className={`${horizontal}-card ${vertical}-card`} id={id}>
+     <div className={`card ${horizontal}-card br`} id={id}>
 
           <div className='__card-img'>
                <img src='...'/>

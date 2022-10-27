@@ -68,27 +68,13 @@
           text-align: center;
      }
 
-.__card-img {
-     height: 200px;
+.__card-img {     
      position: relative;
      background-color: var(--fixxo-grey-3);
      z-index: 0; 
 }
 
-.__card-body {     
-     height: 130px;
-     position: relative;
-     bottom: 0;
-     left: 0;
-     background-color: #FFFFFF;
-     text-align: center;
-     z-index: 2;   
 
-}
-     .__card-body span {
-          display: flex;
-          gap: 0.5rem;
-     }
 
 .__card-rating {
      color: #FF7373;
@@ -107,7 +93,7 @@
 
 
 
-/* tall card */
+/* vertical card */
 
 .vertical-card {
      display: block;
@@ -116,12 +102,29 @@
      border: none;
 }
      .vertical-card  .__card-img {
+          height: 200px;
           width: 100%;
      }
 
      .vertical-card  .__card-body {
           width: 100%;
+          height: 130px;
+          position: relative;
+          bottom: 0;
+          left: 0;
+          background-color: #FFFFFF;
+          text-align: center;
+          z-index: 2;   
+     
      }
+          .__card-body span {
+               display: flex;
+               gap: 0.5rem;
+          }
+
+
+
+
           .vertical-card  .__card-body span {
                justify-content: center;
           }
@@ -140,9 +143,10 @@
      .horizontal-card .__card-img {
           height: 100%;
           width: 150px;          
-          background-color: #F5F5F5;
      }
      .horizontal-card .__card-body {
+          height: 100%;
+          width: 150px; 
           text-align: left;
           padding-left: 1rem;      
      }
@@ -150,7 +154,9 @@
                justify-content: left;
           }
 
-
+.hide-card {
+     display: none;
+}
           
 /* info-card */
 
