@@ -4,7 +4,7 @@ import { NavLink } from 'react-router-dom'
 const Breadcrumb = ({view}) => {
   return (
      <div className='container'>
-          <div className='breadcrumb bb'>
+          <div className='breadcrumb'>
                <ul>
                     <li>
                          <NavLink to="/" end>Home /&nbsp;</NavLink> 

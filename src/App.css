@@ -17,7 +17,7 @@
 
 /* components */
 
-@import "./assets/css/components/breadcrumb.css";
+@import "./assets/css/components/Breadcrumb.css";
 @import "./assets/css/components/FixxoButton.css";
 
 /*   fixa                                                     
@@ -38,7 +38,7 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700;800&display=swap');
 
-:root {
+/* :root {
      --fixxo-theme: #FF7373;
      --fixxo-dark: #23262A;
      --fixxo-grey-1: #616365;
@@ -73,7 +73,7 @@
      --border-radius-rounded: 50%;
 
      --wsxga: 1680px;
-}
+} */
 
 
 
@@ -175,18 +175,18 @@ section {
 
 /* buttons */
 
-.__fixxo-button {
+/* .__fixxo-button {
      position: relative;
 
      height: 50px;
      width: 150px;    
      border: none;
-     border-radius: 2px;
+     border-radius: 2px; */
 
      /* kolla */
      /* box-shadow: 0px 0px 1px var(--fixxo-dark); */
 
-     font-size: var(--size-16);
+     /* font-size: var(--size-16);
      font-weight: var(--font-w-semibold);
      color: var(--color-white);
      text-transform: uppercase;
@@ -242,7 +242,7 @@ section {
      .__button-light::after {
           border-bottom: 2px solid var(--fixxo-dark);
           border-right: 2px solid var(--fixxo-dark);
-     }
+     } */
 
 
 
