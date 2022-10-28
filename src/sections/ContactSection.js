@@ -22,20 +22,22 @@ const ContactSection = () => {
                <div className='contact-form'>
                     <h4>Come in Contact with Us</h4>
                     <form noValidate>
-                         <div>
+                         <div className='input-container'>
                               <input id='name' type='text' placeholder='Your name' className='' onKeyUp={validate(event)}/>
                               {/* <input id='name' type='text' placeholder='Your name' className='error'/> */}
                               <div className='error-message' id='nameErrorMsg'>You must enter a name</div>
                          </div>
-                         <div>
+                         <div className='input-container'>
                               <input id='email' type='email' placeholder='Your email' className=''/>
                               {/* <input id='email' type='email' placeholder='Your email' className='error'/> */}
                               <div className='error-message' id='emailErrorMsg'>You must enter a valid email address</div>
                          </div>
                          <div>
-                              <textarea id='comment' type='text' placeholder='Your message' className=''/>
-                              {/* <textarea id='comment' type='text' placeholder='Your message' className='error'/> */}
-                              <div className='error-message' id='commentErrorMsg'>You must enter a message</div>
+                              <div className='input-container'>
+                                   <textarea id='comment' type='text' placeholder='Your message' className=''/>
+                                   {/* <textarea id='comment' type='text' placeholder='Your message' className='error'/> */}
+                                   <div className='error-message' id='commentErrorMsg'>You must enter a message</div>                                   
+                              </div>
                               <button type='submit' >Post Comments</button>
                          </div>
                     </form>

@@ -1,0 +1,221 @@
+
+/* card */
+
+.card {
+     border: none;
+}
+
+.card-img {     
+     position: relative;
+     background-color: var(--fixxo-grey-3);
+     z-index: 0; 
+}
+
+.card-body span {
+     display: flex;
+     gap: 0.5rem;
+}
+
+.card-rating {
+     color: #FF7373;
+}
+
+.card-previous-price {
+     color: #BEBEBE;
+     font-weight: var(--font-w-regular);
+     text-decoration: line-through;
+}
+
+.card-current-price {
+     font-weight: var(--font-w-semibold);
+     color: var(--fixxo-dark);
+}
+
+
+
+/* vertical card */
+
+.vertical-card {
+     display: block;
+     height: 330px;
+     width: 260px;
+     border: none;
+}
+     .vertical-card .card-img {
+          height: 200px;
+          width: 100%;
+     }
+
+     .vertical-card .card-body {
+          width: 100%;
+          height: 130px;
+          position: relative;
+          bottom: 0;
+          left: 0;
+          background-color: #FFFFFF;
+          text-align: center;
+          z-index: 2;    
+     }
+
+          .vertical-card .card-body span {
+               justify-content: center;
+          }
+
+          .vertical-card .fixxo-button {
+               width: 100%;
+               border: none;
+               position: absolute;
+               left: 0;      
+               bottom: 0;
+               z-index: 1;
+               transition: 0.3s;
+          }
+               .vertical-card:hover .fixxo-button {
+                    bottom: 125px;
+               }
+                    .vertical-card .fixxo-button:hover {
+                         transform: none;
+                         filter: none;
+                         background-color: var(--fixxo-dark);
+                    }
+          
+
+          .vertical-card:hover .card-overlay {
+               height: 200px;
+               top: 0;
+          }
+          .vertical-card .card-overlay {
+               height: 200px;
+               width: 100%;
+               position: absolute;
+               bottom: 0;
+               left: 0;
+          
+               filter: brightness(100%);
+          
+               z-index: 1;
+               transition: 1s;
+          }
+
+          
+          .vertical-card:hover .card-overlay-menu {
+               height: 150px;
+               top: 0;
+          }
+          .vertical-card .card-overlay-menu {
+               height: 130px;
+               width: 80px;
+               
+               position: absolute;
+               top: 200px;
+               right: 0;
+               z-index: 1;
+               
+               display: flex;
+               flex-direction: column;
+               justify-content: space-around;
+               
+               list-style: none;
+               padding-top: 0.5rem;
+               padding-bottom: 0.5rem;
+          
+               transition: 0.3s;
+          }
+               .card-overlay-menu a {
+                    text-align: center;
+               }
+
+
+
+.horizontal-card  {
+     display: flex;
+     align-items: center;
+     height: 150px;
+     width: 100%;
+}
+     .horizontal-card .card-img {
+          height: 100%;
+          width: 150px;          
+     }
+     .horizontal-card .card-body {
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: left;
+          align-items: center;
+
+          height: 100%;
+          width: 150px; 
+          text-align: left;
+          padding-left: 1rem;      
+     }
+          .horizontal-card .card-body h5 {
+               padding-top: 0.5rem;
+          }
+          .horizontal-card .card-body h3 {
+               font-size: 1em;
+          }
+
+     .horizontal-card .fixxo-button {
+          display: none;
+     }     
+     .horizontal-card .card-overlay {
+          display: none;
+     }          
+     .card-overlay-menu {
+          display: none;
+     }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          
+/* info-card */
+
+.__info-card {
+     height: 230px;
+     width: 490px;
+     display: flex;
+}
+
+.__info-card h3 {
+     color: var(--fixxo-dark);
+     font-size: var(--size-20);
+     font-weight: var(--font-w-semibold);     
+}
+
+.__info-card .__left {
+     flex: 1;
+     height: 100%;
+     background-color: var(--color-white);
+     position: relative;
+}
+
+.__info-card .__left .__textbox {
+     position: absolute;
+     left: 2rem;
+     bottom: 5rem;
+}
+
+.__info-card .__left a {
+     color: var(--fixxo-dark);
+     border-bottom: 1px solid var(--fixxo-dark);
+}
+
+.__info-card .__right {
+     flex: 1;
+     height: 100%;
+     background-color: var(--fixxo-grey-2);
+}

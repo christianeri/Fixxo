@@ -1,4 +1,3 @@
-import React, { useState } from 'react'
 import Hero_2 from '../img/img-2.svg'
 import Hero_1 from '../img/img-1.svg'
 import FixxoButton from '../components/FixxoButton'

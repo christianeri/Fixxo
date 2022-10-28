@@ -17,16 +17,6 @@
      z-index: 1;
 }
 
-.__showcase-textbox {
-     position: absolute;
-     left: 2rem;
-     bottom: 0;
-     z-index: 2;
-}
-     .__showcase-textbox p {
-          margin-top: 1rem;
-     }
-
 
 
 /* showcase grid 2x4 "featured products" */

@@ -1,15 +1,17 @@
 import React from 'react'
 import NavigationSection from '../sections/NavigationSection'
 
-import Hero from '../components/Hero';
-import BannerSplit from '../components/BannerSplit';
-import FeaturedProducts from '../components/FeaturedProducts';
-import BannerDouble from '../components/BannerDouble';
-import OurSpeciality from '../components/OurSpeciality';
-import ShowcaseGrid from '../components/ShowcaseGrid';
-import BannerSingle from '../components/BannerSingle';
-import ShowcaseColumns from '../components/ShowcaseColumns';
-import CustomerInformation from '../components/CustomerInformation';
+import HeroSection from '../sections/HeroSection';
+import SplitBanner from '../sections/SplitBanner';
+import FeaturedProducts from '../sections/FeaturedProductsSection';
+import BannerDouble from '../sections/DoubleBannerSection';
+import OurSpeciality from '../sections/CustomerInformationPromoSection';
+import ShowcaseGrid from '../sections/ShowcaseGridSection';
+import BannerSingle from '../sections/SingleBannerSection';
+import ShowcaseColumns from '../sections/ProductTopListsSection';
+import CustomerInformation from '../sections/CustomerInformationSection';
+
+import FooterSection from '../sections/FooterSection';
 
 
 
@@ -17,8 +19,8 @@ const HomeView = () => {
   return (
     <>
       <NavigationSection/>
-      <Hero/>
-      <BannerSplit/>
+      <HeroSection/>
+      <SplitBanner/>
       <FeaturedProducts/>
       <BannerDouble/>
       <OurSpeciality/>
@@ -26,6 +28,7 @@ const HomeView = () => {
       <BannerSingle/>
       <ShowcaseColumns/>
       <CustomerInformation/>
+      <FooterSection/>
     </>
   )
 }

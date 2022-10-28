@@ -1,0 +1,71 @@
+.banner-box {
+     position: relative;
+}
+
+.banner-textbox {
+     z-index: 2;
+}
+     .banner-textbox p {
+          margin-top: 1rem;
+     }
+
+/* split banner */
+
+.split-banner .__left {
+     position: relative;
+     flex: 6;
+}
+
+.split-banner .__right {
+     position: relative;
+     flex: 4;
+}
+
+.split-banner .banner-textbox {
+     width: 500px;
+     position: absolute;
+     bottom: 7rem;
+     left: 4rem;     
+}
+
+/* double banner */
+
+.double-banner .__left {
+     position: relative;
+}
+     .double-banner .__left .banner-textbox {
+          width: max-content;
+          position: absolute;
+          bottom: 6rem;
+          right: 4rem;
+     }
+
+.double-banner .__right {
+     position: relative;
+}
+     .double-banner .__right .banner-textbox {
+          position: absolute;
+          bottom: 6rem;
+          left: 4rem;
+     }
+
+
+
+/* single-banner */
+
+.single-banner {
+     height: 326px;
+}
+
+.single-banner .container {
+     height: 100%;
+     background-color: var(--fixxo-grey-1);
+}
+
+.single-banner .banner-textbox {
+     display: block;
+     position: relative;
+     text-align: center;
+     left: 0;
+     color: var(--color-white);
+}

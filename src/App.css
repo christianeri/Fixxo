@@ -1,8 +1,3 @@
-@import "./styles/navbar.css";
-@import "./styles/hero.css";
-@import "./styles/showcase.css";
-@import "./styles/card.css";
-@import "./styles/banner.css";
 
 /* general */
 
@@ -14,11 +9,17 @@
 @import "./assets/css/sections/NavigationSection.css";
 @import "./assets/css/sections/FooterSection.css";
 @import "./assets/css/sections/ContactSection.css";
+@import "./assets/css/sections/HeroSection.css";
+@import "./assets/css/sections/HeroSection.css";
+@import "./assets/css/sections/BannerSections.css";
+@import "./assets/css/sections/ShowcaseSections.css";
 
 /* components */
 
 @import "./assets/css/components/Breadcrumb.css";
 @import "./assets/css/components/FixxoButton.css";
+@import "./assets/css/components/ProductCard.css";
+
 
 /*   fixa                                                     
      0  General, buttons, footer ---------------------      app.css

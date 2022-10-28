@@ -1,6 +1,5 @@
 import React from 'react'
-import CardTall from './CardTall'
-import ProductCard from './ProductCard'
+import ProductCard from '../components/ProductCard'
 
 const FeaturedProducts = () => {
   return (
@@ -8,19 +7,15 @@ const FeaturedProducts = () => {
           <section className="__featured-products">
                <div className='container'>
                     <ProductCard orientation='vertical'/>
-
-                    {/* <CardTall/>
-                    <CardTall/>
-                    <CardTall/>
-                    <CardTall/> */}
+                    <ProductCard orientation='vertical'/>
+                    <ProductCard orientation='vertical'/>
+                    <ProductCard orientation='vertical'/>
                </div>
                <div className='container'>
                     <ProductCard orientation='vertical'/>
-
-                    {/* <CardTall/>
-                    <CardTall/>
-                    <CardTall/>
-                    <CardTall/> */}
+                    <ProductCard orientation='vertical'/>
+                    <ProductCard orientation='vertical'/>
+                    <ProductCard orientation='vertical'/>
                </div>
           </section>
      </div>
