@@ -56,7 +56,7 @@ section {
 }
 
 .container {
-     width: 1140px;
+     max-width: 1140px;
      display: flex;
      justify-content: center;
      align-items: center;
@@ -64,7 +64,7 @@ section {
 }
 
 .__container-wide {
-     width: calc(1680px - 3rem);
+     max-width: calc(1680px - 3rem);
      display: flex;
      align-items: center;
      margin: auto;
@@ -88,12 +88,15 @@ section {
 
 /* fixa */
 
-.br {
+.rd {
      border: 1px solid red;  
 }
-.by {
-     border: 1px solid yellow;  
+.gr {
+     border: 1px solid green;  
 }
-.bb {
+.bl {
      border: 1px solid blue;  
+}
+.yl {
+     border: 1px solid yellow;  
 }

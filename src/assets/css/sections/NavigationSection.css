@@ -1,64 +1,105 @@
 /* navbar */
+.__top-navbar {
+     height: 80px;
+     width: 100vw; 
+
+     position: fixed;
+     z-index: 9;
+}
+
+
+.__top-navbar .__container-wide {
+     display: grid;
+     grid-template-areas:     "left right"
+                              "center center"
+}
+     .__top-navbar .__container-wide > div {
+          display: flex;
+          align-items: center;
+          gap: 1rem;     
+     }
+
+     .__top-navbar .__left {
+          grid-area: left;
+          width: fit-content;
+          justify-self: start;
+          justify-content: flex-start;
+          margin-left: 0.5rem;
+     }
+
+     .__top-navbar .__right {
+          grid-area: right;
+          height: 100%;
+          width: fit-content;
+          justify-self: end;
+          justify-content: end;
+          margin-right: 0.5rem;
+     } 
+
+     .__top-navbar .__center {
+          grid-area: center;
+          justify-content: space-between;
+          font-size: var(--size-16);
+          font-weight: var(--font-w-medium);
+          margin: 0.5rem;
+     }
+
+@media (min-width: 1600px) {
+     .__top-navbar {
+          height: 80px;
+          width: 100%;
+          
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+     
+          position: fixed;
+          z-index: 9;
+     }
+     
+     .__top-navbar .__container-wide {
+          display: flex;
+          width: 100%;
+     }
+          .__top-navbar .__container-wide > div {
+               display: flex;
+               gap: 1rem;     
+          }
+     
+          .__top-navbar .__left {
+               justify-content: flex-start;
+               flex: 1;
+          }
+     
+          .__top-navbar .__center {              
+               font-size: var(--size-16);
+               font-weight: var(--font-w-medium);
+          }
+     
+          .__top-navbar .__right {
+               flex: 1;
+               gap: 1rem;
+               justify-content: end;
+          } 
+}
+
+.__top-navbar NavLink {
+     color: var(--fixxo-dark);
+     transition: 0.3s;
+}
+
+.__top-navbar .__center NavLink:hover {
+     color: var(--fixxo-theme);
+}
+.__top-navbar .__center .active {
+     color: var(--fixxo-theme);
+     text-decoration: none;
+}
 
 .__bg-white {
      background-color: var(--color-white);
      box-shadow: 0px 0px 10px var(--fixxo-grey-2);
      transition: 0.2s;
-}
-
-.__top-navbar {  
-     position: fixed;
-     height: 80px ;
-     width: 100%;
-     display: flex;
-     z-index: 9;
-}
-     .__top-navbar .__container-wide {
-          display: flex;
-     }
-     .__top-navbar NavLink {
-          color: var(--fixxo-dark);
-          transition: 0.3s;
-     }
-
-
-.__container-wide > div {
-     display: flex;
-     justify-content: center;
-     align-items: center;
-     gap: 1rem;     
-}
-
-.__top-navbar .__left {
-     justify-content: flex-start;
-     padding: auto;
-     flex: 2;
-}
-
-.__top-navbar .__center {
-     flex: 6;
-     font-size: var(--size-16);
-     font-weight: var(--font-w-medium);
-}
-     .__top-navbar .__center NavLink:hover {
-          color: var(--fixxo-theme);
-     }
-     .__top-navbar .__center .active {
-          color: var(--fixxo-theme);
-          text-decoration: none;
-     }
-
-.__top-navbar .__right {
-     flex: 2;
-     gap: 1rem;
-     justify-content: end;
-}
-
-
-.__top-navbar {
-     display: flex;
-     justify-content: space-between;
-     align-items: center;
 }
 
 .__logo {
