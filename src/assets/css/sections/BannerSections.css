@@ -11,6 +11,8 @@
 
 /* split banner */
 
+@media (min-width: 1600px) {}
+
 .split-banner .__left {
      position: relative;
      flex: 6;
