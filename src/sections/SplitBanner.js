@@ -10,7 +10,7 @@ const SplitBanner = () => {
      <section className='split-banner'>
           <div className='__container-wide'>
                <div className='__left'>
-                    <img src={Showcase_5} alt="silouette"/>
+                    <img src={Showcase_5} alt="silouette" className=''/>
                     <div className="banner-textbox">
                          <h2>Winter Clearance</h2>
                          <h2>Up to 70% Off!</h2>

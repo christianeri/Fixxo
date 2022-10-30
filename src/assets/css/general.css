@@ -49,7 +49,7 @@ h5 {
 }
 
 section {
-     margin-bottom: 4rem;
+     margin-bottom: 0rem;
      position: relative;
      background-color:  #FFFFFF;
      z-index: 1;
@@ -64,7 +64,7 @@ section {
 }
 
 .__container-wide {
-     max-width: calc(1680px - 3rem);
+     max-width: 1680px;
      display: flex;
      align-items: center;
      margin: auto;
@@ -84,7 +84,15 @@ section {
      padding-top: 3rem;
 }
 
+@media (min-width: 1600px) {
 
+     section {
+          margin-bottom: 4rem;
+          /* position: relative;
+          background-color:  #FFFFFF;
+          z-index: 1; */
+     }
+}
 
 /* fixa */
 
