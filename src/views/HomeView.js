@@ -10,6 +10,7 @@ import ShowcaseGrid from '../sections/ShowcaseGridSection';
 import BannerSingle from '../sections/SingleBannerSection';
 import ShowcaseColumns from '../sections/ProductTopListsSection';
 import CustomerInformation from '../sections/CustomerInformationSection';
+import FeaturedProductsSection from '../sections/FeaturedProductsSection';
 
 import FooterSection from '../sections/FooterSection';
 
@@ -21,10 +22,9 @@ const HomeView = () => {
       <NavigationSection/>
       <HeroSection/>
       <SplitBanner/>
-      <FeaturedProducts/>
       {/* <BannerDouble/> */}
       {/* <OurSpeciality/> */}
-      {/* <ShowcaseGrid/> */}
+      <FeaturedProductsSection/>
       {/* <BannerSingle/> */}
       {/* <ShowcaseColumns/> */}
       {/* <CustomerInformation/> */}

@@ -2,7 +2,7 @@ import React from 'react'
 import { NavLink } from 'react-router-dom'
 import productImg from '../img/Product-001.png'
 
-const ProductCard = ({orientation, id}) => {
+const ProductCard = ({orientation, id, productName}) => {
 
      // let horizontal
      // let vertical
@@ -54,7 +54,7 @@ const ProductCard = ({orientation, id}) => {
                
                <div className="card-body">
                     <h5 className='card-title' id="product-category">category</h5>
-                    <h4 id="product-title">modern black blouse</h4>
+                    <h4 id="product-title">{productName}</h4>
 
                     <div iv className="card-rating" id="product-rating">
                          <i className="fa-solid fa-star"></i>
