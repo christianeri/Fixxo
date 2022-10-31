@@ -21,25 +21,25 @@
 }
 
 .split-banner .__left {
+     height: fit-content;
      position: relative;
      background-color: var(--fixxo-purplegray);
 }
      .split-banner .__left img {
-          visibility: hidden;
+          display: none;
      }
      .split-banner .__left .banner-textbox {
           width: 100vw;
-          position: absolute;
-          bottom: 3rem;
-          left: 0;
-          padding: 0 1rem;     
+          position: relative;
+          padding: 2rem 1rem;     
      }
 
 .split-banner .__right {
-     position: relative;
+     display: none;
+     /* position: relative;
      display: flex;
      justify-content: center;
-     align-items: center;
+     align-items: center; */
 }
      .split-banner .__right img {
           position: relative;
@@ -64,20 +64,26 @@
 
      .split-banner .__left {
           flex: 6;
+          position: relative;
      }
           .split-banner .__left img {
-               visibility: visible;
+               display: block;
           }
           .split-banner .__left .banner-textbox {
                width: 500px;
+               position: absolute;
                bottom: 7rem;
-               left: 4rem;     
+               left: 4rem;
+               padding: 0 1rem;      
           }
      
      .split-banner .__right {
+          display: block;
           flex: 4;
+          position: relative;
      }   
           .split-banner .__right .banner-textbox {
+               position: absolute;
                bottom: 7rem;
                left: 3rem;
                text-align: start;     
