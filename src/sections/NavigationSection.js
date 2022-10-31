@@ -22,9 +22,9 @@ import NavbarButton from '../components/NavbarButton'
           }
 
   return (
-     <nav className={colorWhite ? '__top-navbar __bg-white' : '__top-navbar rd'}>          
-          <div className='__container-wide gr'>
-               <div className="__left bl">
+     <nav className={colorWhite ? '__top-navbar __bg-white' : '__top-navbar'}>          
+          <div className='__container-wide'>
+               <div className="__left">
                     <NavLink to='/' end>
                          <h1 className="__logo">Fixxo.</h1>
                     </NavLink>                    
@@ -35,7 +35,7 @@ import NavbarButton from '../components/NavbarButton'
                     <NavLink to='/products' end>Products</NavLink>
                     <NavLink to='/contact' end>Contact</NavLink>
                </div>
-               <div className="__right bl">
+               <div className="__right">
                     <NavbarButton to='/search' icon='fa-regular fa-magnifying-glass'/>
                     <NavbarButton to='/compare' icon='fa-solid fa-retweet' hideOnMobile={true}/>
                     <NavbarButton to='/wishlist' icon='fa-regular fa-heart'hideOnMobile={true}/>
@@ -43,7 +43,7 @@ import NavbarButton from '../components/NavbarButton'
                     <button onClick={toggleMenu} className="navbar-button triple-bar-button"><i className='fa-regular fa-bars'></i>
                     </button>
                </div>
-               <div className={!showMenu ? "mobile-menu invisible" : "mobile-menu bl"}>
+               <div className={!showMenu ? "mobile-menu invisible" : "mobile-menu"}>
                     <NavLink to='/' end>Home</NavLink>
                     <NavLink to='/categories' end>Categories</NavLink>
                     <NavLink to='/products' end>Products</NavLink>

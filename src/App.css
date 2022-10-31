@@ -13,6 +13,7 @@
 @import "./assets/css/sections/HeroSection.css";
 @import "./assets/css/sections/BannerSections.css";
 @import "./assets/css/sections/ShowcaseSections.css";
+@import "./assets/css/sections/FeaturedProductsSection.css";
 
 /* components */
 
@@ -300,7 +301,7 @@ section {
 
 
 /* footer */
-
+/* 
 footer {
      height: 100px;
      display: flex;
@@ -319,7 +320,7 @@ footer {
      footer span > * {
           margin: 0rem 0.4rem 0rem 0.4rem;
           font-size: var(--size-20);
-     }
+     } */
 
 
 

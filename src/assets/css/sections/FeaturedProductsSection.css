@@ -1,0 +1,12 @@
+/* showcase grid 2x4 "featured products" */
+.__featured-products .container {
+     display: block;
+     text-align: center;
+     padding: 2rem 0;
+}
+.__featured-products .container .row {
+     margin-left: auto;
+     margin-left: auto;
+}
+
+@media (min-width: 1140px) {}

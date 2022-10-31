@@ -22,12 +22,12 @@ const HomeView = () => {
       <HeroSection/>
       <SplitBanner/>
       <FeaturedProducts/>
-      <BannerDouble/>
-      <OurSpeciality/>
-      <ShowcaseGrid/>
-      <BannerSingle/>
-      <ShowcaseColumns/>
-      <CustomerInformation/>
+      {/* <BannerDouble/> */}
+      {/* <OurSpeciality/> */}
+      {/* <ShowcaseGrid/> */}
+      {/* <BannerSingle/> */}
+      {/* <ShowcaseColumns/> */}
+      {/* <CustomerInformation/> */}
       <FooterSection/>
     </>
   )

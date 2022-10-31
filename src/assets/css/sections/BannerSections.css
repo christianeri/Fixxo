@@ -96,6 +96,10 @@
 
 /* double banner */
 
+.double-banner .__container-wide {
+     gap: 2rem;
+}
+
 .double-banner .__left {
      position: relative;
 }

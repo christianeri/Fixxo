@@ -1,5 +1,6 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom'
+import productImg from '../img/Product-001.png'
 
 const ProductCard = ({orientation, id}) => {
 
@@ -27,33 +28,29 @@ const ProductCard = ({orientation, id}) => {
      <div className='card'>
           <div className={`${orientation}-card`} id={id}>
                <div className='card-img'>
-                    <img src='...'/>
+                    <img src={productImg}/>
                </div>               
                <div className='card-overlay'></div>
                <ul className='card-overlay-menu'>
                     <li>
-                         <NavLink>
-                              <button className="__navbar-button" id="search">
-                                   <i class="fa-regular fa-heart"></i>        
-                              </button>
-                         </NavLink>
+                         <button className="navbar-button" id="search">
+                              <i class="fa-regular fa-heart"></i>        
+                         </button>
                     </li>
                     <li>
-                         <NavLink>
-                              <button className="__navbar-button" id="search">
-                                   <i class="fa-regular fa-code-compare"></i>
-                              </button>
-                         </NavLink>
+                         <button className="navbar-button" id="search">
+                              <i class="fa-regular fa-code-compare"></i>
+                         </button>
                     </li>
                     <li>
-                         <NavLink>
-                              <button className="__navbar-button" id="search">
-                                   <i class="fa-regular fa-bag-shopping"></i>  
-                              </button>
-                         </NavLink>
+                         <button className="navbar-button" id="search">
+                              <i class="fa-regular fa-bag-shopping"></i>  
+                         </button>
                     </li>
                </ul>
-               <button className='fixxo-button button-theme'>quick view</button>
+               <NavLink to='/products/#'>
+                    <button className='fixxo-button button-theme'>quick view</button>
+               </NavLink>
                
                <div className="card-body">
                     <h5 className='card-title' id="product-category">category</h5>

@@ -8,9 +8,9 @@ const BannerDouble = () => {
     <div>
           <section className='double-banner'>               
                <div className='__container-wide'>
-                    <div className='__left bb'>
+                    <div className='__left'>
                          <img src={Showcase_3} alt="silouette"/>
-                         <div className="banner-textbox br">
+                         <div className="banner-textbox">
                               <h2>Pamela Reif's</h2>
                               <h2>Top Picks</h2>
                               <FixxoButton label='shop now' color='dark'/>
