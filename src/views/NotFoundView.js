@@ -1,11 +1,12 @@
 import React from 'react'
+import NotFound from '../components/NotFound'
 import NavigationSection from '../sections/NavigationSection'
 
 const NotFoundView = () => {
   return (
     <>
       <NavigationSection/>
-      <div>404 - Page Not Found</div>
+      <NotFound/>
     </>    
   )
 }

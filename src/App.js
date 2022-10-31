@@ -10,7 +10,7 @@ import ContactView from './views/ContactView';
 import SearchView from './views/SearchView';
 import CompareView from './views/CompareView';
 import WishListView from './views/WishListView';
-
+import ShoppingCartView from './views/ShoppingCartView';
 import NotFoundView from './views/NotFoundView';
 
 function App() {
@@ -27,6 +27,7 @@ function App() {
         <Route path="/search" element={<SearchView/>} />
         <Route path="/compare" element={<CompareView/>} />
         <Route path="/wishlist" element={<WishListView/>} />
+        <Route path="/shoppingcard" element={<ShoppingCartView/>} />
 
         <Route path="*" element={<NotFoundView/>} />
 
