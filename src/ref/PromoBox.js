@@ -1,5 +1,5 @@
 import React from 'react'
-import FixxoButton from './FixxoButton'
+import FixxoButton from '../components/FixxoButton'
 
 const PromoBox = (image, alt, title, titleTop, text, buttonLabel, buttonColor, align) => {
   return (

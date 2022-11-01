@@ -50,9 +50,6 @@
                }
                .contact-form form .error {
                     border: 1px solid red;
-                    color: red;
-                    padding-top: 0.25rem;
-
                }
                .contact-form .input-container .error-message {
                     color: red;
@@ -61,6 +58,4 @@
                     position: absolute; 
                     bottom: -20px;
                     left: 0;
-                    
-                    visibility: hidden;
                }

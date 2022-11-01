@@ -32,7 +32,7 @@ import NavbarButton from '../components/NavbarButton'
                <div className='__center'>
                     <NavLink to='/' end>Home</NavLink>
                     <NavLink to='/categories' end>Categories</NavLink>
-                    <NavLink to='/products' end>Products</NavLink>
+                    <NavLink to='/products'>Products</NavLink>
                     <NavLink to='/contact' end>Contact</NavLink>
                </div>
                <div className="__right">

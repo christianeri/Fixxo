@@ -1,4 +1,5 @@
 Fixa active state på Navbar buttons.
-Fixa components för horizontal och vertical ProductCard.
-Implementera responsiv navbar. Se video.
-Påbörja userStates. Se video.
+Lägg till OnKeyUp validering i Contact Form
+Fixa styling Footer
+Fixa ProductGrid component
+

@@ -1,7 +1,7 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom'
 
-const Breadcrumb = ({view}) => {
+const Breadcrumb = ({currentPage}) => {
   return (
      <div className='container'>
           <div className='breadcrumb'>
@@ -10,7 +10,7 @@ const Breadcrumb = ({view}) => {
                          <NavLink to="/" end>Home /&nbsp;</NavLink> 
                     </li>
                     <li className='active'>
-                         <NavLink>{view}</NavLink>
+                         <NavLink>{currentPage}</NavLink>
                     </li>
                </ul>
           </div>
