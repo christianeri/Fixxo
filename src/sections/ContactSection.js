@@ -97,10 +97,26 @@ const ContactSection = () => {
                return null
           }
 
+          
+
+          const submitData = async (url, method, data, contentType = 'application/json') => {
+
+               const result = await fetch(url, {
+                    method: method,
+                    headers: {'Content-Type': contentType},
+                    body: data
+               })
+
+               console.log("Fetch status:", result.status);
+
+               if (result.status === 200) {
+                    return true                
+               } return false
+          }
 
 
       
-        const handleSubmit = (event) => {
+     const handleSubmit = async (event) => {
           event.preventDefault()
           setFormErrors(validate(event, {name, email, comments}))
         
@@ -113,29 +129,22 @@ const ContactSection = () => {
                setComments('')
                setFormErrors({})
 
-               fetch('https://win22-webapi.azurewebsites.net/api/contactform', {
-                    method: 'POST',
-                    headers: {
-                         'Content-Type': 'application/json'
-                    }, body: json
+               let result = await submitData('https://win22-webapi.azurewebsites.net/api/contactform', 'POST', json, )
 
-               }).then(result => {
-                    console.log(result.status)
-
-                    if (result.status === 200) {
-                         setSubmitted(true)
-                         setfailedSubmit(false)
-                    } else {
-                         setSubmitted(false)
-                         setfailedSubmit(true)
-                    }
-               }) 
+               if (result) {
+                    setfailedSubmit(false)
+                    setSubmitted(true)
+               } else {
+                    setSubmitted(false)
+                    setfailedSubmit(true)
+               }
 
           } else {
                setSubmitted(false)
                setfailedSubmit(true)
           }
      }
+
 
   return (
     <section className='contact-section'>          
@@ -144,11 +153,11 @@ const ContactSection = () => {
                <Iframe url="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10998.376637945414!2d77.61423294193482!3d12.938969174075833!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae155228d8e435%3A0x5060149e7b0a19e5!2sFixxo%20-%20Apple%20Repair%20Experts!5e0!3m2!1ssv!2sse!4v1666808466835!5m2!1ssv!2sse" width="100%" height="100%" style="border:0;" loading="lazy" referrerPolicy="no-referrer-when-downgrade"/>          
           </div>
           <div className='container'>
-               <div className={submitted ? 'alert alert-success mt-5' : 'd-none'}>
+               <div className={submitted ? 'alert alert-success mt-5 text-center' : 'd-none'}>
                     <h1>Thank you,</h1>
                     <h4>Your comment was submitted successfully!</h4>
                </div>
-               <div className={failedSubmit ? 'alert alert-warning mt-5' : 'd-none'}>
+               <div className={failedSubmit ? 'alert alert-warning mt-5 text-center' : 'd-none'}>
                     <h1>Something went wrong! Your comment was not submitted :(</h1>
                </div>
           </div>
