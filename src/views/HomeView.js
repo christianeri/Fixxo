@@ -3,14 +3,13 @@ import NavigationSection from '../sections/NavigationSection'
 
 import HeroSection from '../sections/HeroSection';
 import SplitBanner from '../sections/SplitBanner';
-import FeaturedProducts from '../sections/FeaturedProductsSection';
+import ProductGrid from '../components/ProductGrid';
 import BannerDouble from '../sections/DoubleBannerSection';
 import OurSpeciality from '../sections/CustomerInformationPromoSection';
 import ShowcaseGrid from '../sections/ShowcaseGridSection';
 import BannerSingle from '../sections/SingleBannerSection';
 import ShowcaseColumns from '../sections/ProductTopListsSection';
 import CustomerInformation from '../sections/CustomerInformationSection';
-import FeaturedProductsSection from '../sections/FeaturedProductsSection';
 
 import FooterSection from '../sections/FooterSection';
 
@@ -58,7 +57,7 @@ const HomeView = () => {
       <SplitBanner/>
       {/* <BannerDouble/> */}
       {/* <OurSpeciality/> */}
-      <FeaturedProductsSection title='Featured Products' products={products}/>
+      <ProductGrid title='Featured Products' sectionName='featured-products' products={products}/>
       {/* <BannerSingle/> */}
       {/* <ShowcaseColumns/> */}
       {/* <CustomerInformation/> */}

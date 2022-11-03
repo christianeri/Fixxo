@@ -4,7 +4,6 @@ import './App.css';
 
 import HomeView from './views/HomeView';
 import CategoriesView from './views/CategoriesView';
-import ProductsView from './views/ProductsView';
 import ProductDetailsView from './views/ProductDetailsView';
 import ContactView from './views/ContactView';
 
@@ -23,7 +22,6 @@ function App() {
 
         <Route path="/" element={<HomeView/>} />
         <Route path="/categories" element={<CategoriesView/>} />
-        <Route path="/products" element={<ProductsView/>} />
         <Route path="/products/:id" element={<ProductDetailsView/>} />
         <Route path="/contact" element={<ContactView/>} />
         
