@@ -7,8 +7,8 @@ const BannerDouble = () => {
   return (
     <div>
           <section className='double-banner'>               
-               <div className='__container-wide'>
-                    <div className='__left'>
+               <div className='container-wide'>
+                    <div className='left'>
                          <img src={Showcase_3} alt="silouette"/>
                          <div className="banner-textbox">
                               <h2>Pamela Reif's</h2>
@@ -16,7 +16,7 @@ const BannerDouble = () => {
                               <FixxoButton label='shop now' color='dark'/>
                          </div>
                     </div>
-                    <div className='__right'>
+                    <div className='right'>
                          <img src={Showcase_4} alt="silouette"/>
                          <div className="banner-textbox">
                               <h2>Let's be</h2>

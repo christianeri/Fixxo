@@ -1,5 +1,5 @@
 footer {
-     height: 100px;
+     height: 120px;
      width: 100%;
 
      /* position: fixed;
@@ -10,6 +10,7 @@ footer {
      border-top: 1px solid var(--fixxo-grey-2);
 }
      footer .container {
+          width: 100%;
           display: block;
           text-align: center;
      }
@@ -24,7 +25,13 @@ footer {
                          color: var(--fixxo-theme);
                          transform: scale(1.1);
                     }
+.social-media-links {
+     display: flex;
+     justify-content: center;
+     gap: 1rem;
+     padding-top: 2rem;
 
-          footer span > * {
-               font-size: var(--size-20);
-          }
+}
+.social-media-links i {
+     font-size: var(--size-35);
+}

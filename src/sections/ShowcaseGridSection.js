@@ -2,44 +2,31 @@ import React from 'react'
 import ProductCard from '../components/ProductCard'
 import FixxoButton from '../components/FixxoButton'
 
-const ShowcaseGrid = () => {
+const ShowcaseGrid = ({products}) => {
   return (
-      <div>
-          <section className='__showcase-grid'>
-                    <div className='__container-wide'>
-                         <div className='__showcase-container-1x1'>
-                              <div className='__showcase-textbox'>
+ 
+     <section className='showcase-grid'>
+          <div className='container-wide'>
+               <div className='left br'>
+                    <div className='showcase-container-1x1 by'>                   
+                    <div className='showcase-textbox'>
                                    <h2>2 FOR USD $29</h2>
                                    <FixxoButton label='flash sale' color='light'/>
                               </div>
-                         </div>
-                         <div className='__showcase-container-2x2' id='showcase-container-2x2-upper'>
-                              <div className='__grid'>
-                                   <ProductCard orientation='vertical' id='grid-tile-sm-tl'/>   
-                                   <ProductCard orientation='vertical' id='grid-tile-sm-tr'/>
-                                   <ProductCard orientation='vertical' id='grid-tile-sm-bl'/>
-                                   <ProductCard orientation='vertical' id='grid-tile-sm-br'/>
-                              </div>
+                    </div>
+               </div>
+               <div>
+                    <div className='right'>
+                         <div className='row row-cols-1 row-cols-md-2 row-cols-lg-2 g-0'>
+                              {
+                                   products.map(product => <ProductCard key={product.id} orientation='vertical' item={product}/>)
+                              }
                          </div>
                     </div>
-                    <div className='__container-wide'> 
-                         <div className='__showcase-container-2x2' id='showcase-container-2x2-lower'>
-                              <div className='__grid'>
-                                   <ProductCard orientation='vertical' id='grid-tile-sm-tl'/>   
-                                   <ProductCard orientation='vertical' id='grid-tile-sm-tr'/>
-                                   <ProductCard orientation='vertical' id='grid-tile-sm-bl'/>
-                                   <ProductCard orientation='vertical' id='grid-tile-sm-br'/>
-                              </div>
-                         </div>
-                         <div className='__showcase-container-1x1'>
-                              <div className='__showcase-textbox'>
-                                   <h2>2 FOR USD $49</h2>
-                                   <FixxoButton label='flash sale' color='light'/>
-                              </div>
-                         </div>
-                    </div>               
-          </section>
-      </div>
+               </div>
+          </div>
+     </section>
+
   )
 }
 

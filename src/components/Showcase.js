@@ -1,14 +1,10 @@
 import React from 'react'
-import Showcase_5 from '../img/img-5.svg'
-import Showcase_6 from '../img/img-6.svg'
-import FixxoButton from '../components/FixxoButton'
 
-const SplitBanner = () => {
+const Showcase = (sectionName) => {
   return (
-
-     <section className='split-banner d-none d-sm-flex'>
-          <div className='container-wide'>
-               <div className='left'>
+     <section className={sectionName}>
+          <div className='__container-wide'>
+               <div className='__left'>
                     <img src={Showcase_5} alt="silouette" className=''/>
                     <div className="banner-textbox">
                          <h2>Winter Clearance</h2>
@@ -19,7 +15,7 @@ const SplitBanner = () => {
                          <FixxoButton label='shop now' color='dark'/>
                     </div>
                </div>
-               <div className='right'>
+               <div className='__right'>
                     <img src={Showcase_6} alt="silouette"/>
                     <div className="banner-textbox">
                          <h2>New</h2>
@@ -28,8 +24,8 @@ const SplitBanner = () => {
                     </div>
                </div>
           </div>
-     </section>
+     </section>     
   )
 }
 
-export default SplitBanner
+export default Showcase

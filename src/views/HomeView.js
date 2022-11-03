@@ -55,12 +55,13 @@ const HomeView = () => {
       <NavigationSection/>
       <HeroSection/>
       <SplitBanner/>
-      {/* <BannerDouble/> */}
-      {/* <OurSpeciality/> */}
       <ProductGrid title='Featured Products' sectionName='featured-products' products={products}/>
+      {/* <BannerDouble/> */}
+      <OurSpeciality/>
+      <ShowcaseGrid products={products}/>
       {/* <BannerSingle/> */}
       {/* <ShowcaseColumns/> */}
-      {/* <CustomerInformation/> */}
+      <CustomerInformation/>
       <FooterSection/>
     </>
   )

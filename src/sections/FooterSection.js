@@ -1,11 +1,10 @@
 import React from 'react'
-import { NavLink } from 'react-router-dom'
 
 const FooterSection = () => {
   return (
      <footer>
           <div className='container'>
-               <span>
+               <span className='social-media-links'>
                     <a href="https://facebook.com" target="_blank"><i className="fa-brands fa-facebook-f"></i></a>
                     <a href="https://instagram.com" target="_blank"><i className="fa-brands fa-instagram"></i></a>
                     <a href="https://twtter.com" target="_blank"><i className="fa-brands fa-twitter"></i></a>

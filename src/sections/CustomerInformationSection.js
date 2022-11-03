@@ -3,13 +3,12 @@ import InfoBox from '../components/InfoBox'
 
 const CustomerInformation = () => {
   return (
-    <div>
-          <section className='__customer-information'>
+          <section className='customer-info'>
                <div className='container'>
-                    <div className='__infobox'>
+                    <div className='infobox'>
                          
                               <a href="">
-                                   <button className="__navbar-button" id="share">
+                                   <button className="navbar-button" id="share">
                                         <i class="fa-regular fa-headset"></i>
                                    </button>                              
                                    <h3>customer support</h3>
@@ -17,10 +16,10 @@ const CustomerInformation = () => {
                               </a>
                          
                     </div>
-                    <div className='__infobox'>
+                    <div className='infobox'>
                          
                               <a href="">
-                                   <button className="__navbar-button" id="share">
+                                   <button className="navbar-button" id="share">
                                         <i class="fa-regular fa-credit-card"></i>
                                    </button>                              
                                    <h3>secure payment</h3>
@@ -28,10 +27,10 @@ const CustomerInformation = () => {
                               </a>
                          
                     </div>
-                    <div className='__infobox'>
+                    <div className='infobox'>
                          
                               <a href="">
-                                   <button className="__navbar-button" id="share">
+                                   <button className="navbar-button" id="share">
                                         <i class="fa-solid fa-person-carry-box"></i>
                                    </button>                              
                                    <h3>free home delivery</h3>
@@ -39,10 +38,10 @@ const CustomerInformation = () => {
                               </a>
                          
                     </div>
-                    <div className='__infobox'>
+                    <div className='infobox'>
                          
                               <a href="">
-                                   <button className="__navbar-button" id="share">
+                                   <button className="navbar-button" id="share">
                                         <i class="fa-solid fa-rotate-left"></i>
                                    </button>                              
                                    <h3>30 day returns</h3>
@@ -52,7 +51,6 @@ const CustomerInformation = () => {
                     </div>
                </div>
           </section> 
-    </div>
   )
 }
 

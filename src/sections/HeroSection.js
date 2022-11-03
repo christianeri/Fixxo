@@ -7,16 +7,16 @@ const Hero = () => {
   return (
      <div>
           <section className='hero-section'>
-               <div className='__container-wide'>
-                    <img src={Hero_2} alt="silouette" className='__left'/>
-                    <div className='__center'>
+               <div className='container-wide'>
+                    <img src={Hero_2} alt="silouette" className='left'/>
+                    <div className='center'>
                          <h1>sale up</h1>
                          <h1>to 50% off</h1>
                          <p>Online shopping free home delivery over $100</p>
                          {/* <button className='__fixxo-button __button-theme'>shop now</button> */}
                          <FixxoButton label='shop now' color='theme'/>
                     </div>
-                    <img src={Hero_1} alt="" className='__right'/>
+                    <img src={Hero_1} alt="" className='right'/>
                </div>
           </section>
      </div>
