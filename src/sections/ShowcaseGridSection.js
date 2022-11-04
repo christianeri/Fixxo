@@ -1,8 +1,12 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import ProductCard from '../components/ProductCard'
 import FixxoButton from '../components/FixxoButton'
+import {ProductContext} from '../contexts/contexts'
 
-const ShowcaseGrid = ({products}) => {
+const ShowcaseGrid = () => {
+
+     const products = useContext(ProductContext);
+
   return (
  
      <section className='showcase-grid'>
@@ -19,7 +23,8 @@ const ShowcaseGrid = ({products}) => {
                     <div className='showcase-container-4x4'>
                          <div className='row row-cols-1 row-cols-md-1 row-cols-lg-2 row-cols-xl-2 g-0'>
                               {
-                                   products.map(product => <ProductCard key={product.id} orientation='vertical' item={product}/>)
+                                   products.productGridProducts4.map(product => 
+                                   <ProductCard key={product.articleNumber} orientation='vertical' item={product}/>)
                               }
                          </div>
                     </div>

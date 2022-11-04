@@ -24,7 +24,7 @@ const ProductCard = ({orientation, item}) => {
      <div className='card'>
           <div className={`${orientation}-card`}>
                <div className='card-img'>
-                    <img src={item.imgURL} alt={item.productName}/>
+                    <img src={item.imageName} alt={item.name}/>
                </div>               
                <div className='card-overlay'></div>
                <ul className='card-overlay-menu'>
@@ -44,13 +44,13 @@ const ProductCard = ({orientation, item}) => {
                          </button>
                     </li>
                </ul>
-               <NavLink to={`/products/${item.id}`}>
+               <NavLink to={`/products/${item.name.toLowerCase().replace(/ /gi, "-")}`}>
                     <button className='fixxo-button button-theme'>quick view</button>
                </NavLink>
                
                <div className="card-body">
                     <h5 className='card-title' id="product-category">{item.category}</h5>
-                    <h4 id="product-title">{item.productName}</h4>
+                    <h4 id="product-title">{item.name}</h4>
 
                     <div className="card-rating" id="product-rating">
                          <i className="fa-solid fa-star"></i>
@@ -65,7 +65,7 @@ const ProductCard = ({orientation, item}) => {
                          </h3>
 
                          <h3 className="card-current-price">
-                         {item.currentPrice}
+                         {item.price}
                          </h3>
                     </span>
                </div>

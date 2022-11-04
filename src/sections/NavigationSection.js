@@ -44,10 +44,10 @@ import NavbarButton from '../components/NavbarButton'
                     </button>
                </div>
                <ul className={!showMenu ? "mobile-menu invisible" : "mobile-menu"}>
-                    <li className='br'>
+                    <li>
                          <NavLink to='/'><h3>Home</h3></NavLink>
                     </li>
-                    <li className='br'>
+                    <li>
                          <NavLink to='/categories' end>Categories</NavLink>
                     </li>
                     <li>

@@ -57,8 +57,6 @@
           height: 200px;
           width: 100%;
      }
-          .vertical-card .card-img img {
-          }
 
      .vertical-card .card-body {
           width: 100%;
@@ -140,7 +138,7 @@
                padding-top: 0.5rem;
                padding-bottom: 0.5rem;
 
-               margin-right: 1rem;
+               margin-right: 20px;
           
                transition: 0.3s;
           }
