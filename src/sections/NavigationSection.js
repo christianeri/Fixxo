@@ -43,12 +43,20 @@ import NavbarButton from '../components/NavbarButton'
                     <button onClick={toggleMenu} className="navbar-button triple-bar-button"><i className='fa-regular fa-bars'></i>
                     </button>
                </div>
-               <div className={!showMenu ? "mobile-menu invisible" : "mobile-menu"}>
-                    <NavLink to='/' end>Home</NavLink>
-                    <NavLink to='/categories' end>Categories</NavLink>
-                    <NavLink to='/products' end>Products</NavLink>
-                    <NavLink to='/contact' end>Contact</NavLink>
-               </div>
+               <ul className={!showMenu ? "mobile-menu invisible" : "mobile-menu"}>
+                    <li className='br'>
+                         <NavLink to='/'><h3>Home</h3></NavLink>
+                    </li>
+                    <li className='br'>
+                         <NavLink to='/categories' end>Categories</NavLink>
+                    </li>
+                    <li>
+                         <NavLink to='/products' end>Products</NavLink>
+                    </li>
+                    <li>
+                         <NavLink to='/contact'>Contact</NavLink>
+                    </li>
+               </ul>
           </div>
      </nav>
   )
