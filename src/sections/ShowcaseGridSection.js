@@ -17,7 +17,7 @@ const ShowcaseGrid = ({products}) => {
                </div>
                <div className='d-flex justify-content-start'>
                     <div className='showcase-container-4x4'>
-                         <div className='row row-cols-1 row-cols-md-2 row-cols-lg-2 g-0'>
+                         <div className='row row-cols-1 row-cols-md-1 row-cols-lg-2 row-cols-xl-2 g-0'>
                               {
                                    products.map(product => <ProductCard key={product.id} orientation='vertical' item={product}/>)
                               }
@@ -25,10 +25,10 @@ const ShowcaseGrid = ({products}) => {
                     </div>
                </div>
           </div>
-          <div className='container-wide'>
+          <div className='container-wide d-none d-lg-flex'>
                <div className='d-flex justify-content-end'>
                     <div className='showcase-container-4x4'>                                       
-                         <div className='row row-cols-1 row-cols-md-2 row-cols-lg-2 g-0'>
+                         <div className='row row-cols-1 row-cols-md-1 row-cols-lg-2 row-cols-xl-2 g-0'>
                               {
                                    products.map(product => <ProductCard key={product.id} orientation='vertical' item={product}/>)
                               }
