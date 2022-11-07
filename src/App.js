@@ -24,7 +24,8 @@ function App() {
 
   const [products, setProducts] = useState({
     allProducts: [],
-    featuredProducts: []
+    featuredProducts: [],
+    productShowcaseItems: []
   })
   // const [productGrid, setProductGrid] = useState([])
   // const [showcaseGrid, setShowcaseGrid] = useState([])
@@ -45,6 +46,13 @@ function App() {
       setProducts({...products, featuredProducts: await result.json()})
     }      
     fetchProductGrid()
+
+    const fetchProductShowcaseItems = async () => {
+
+      let result = await fetch('https://win22-webapi.azurewebsites.net/api/products?take=4')
+      setProducts({...products, productShowcaseItems: await result.json()})
+    }      
+    fetchProductShowcaseItems()
 
   }, [setProducts])
 

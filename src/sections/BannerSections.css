@@ -1,13 +1,4 @@
-.banner-box {
-     position: relative;
-}
 
-.banner-textbox {
-     z-index: 2;
-}
-     .banner-textbox p {
-          margin-top: 1rem;
-     }
 
 
 
@@ -15,12 +6,9 @@
 
 /* split banner */
 
-/* .split-banner .container-wide {
-     max-width: 100vw;
-     display: block;
-} */
 
-.split-banner .left {
+
+/* .split-banner .left {
      height: fit-content;
      position: relative;
      background-color: var(--fixxo-purplegray);
@@ -36,10 +24,6 @@
 
 .split-banner .right {
      display: none;
-     /* position: relative;
-     display: flex;
-     justify-content: center;
-     align-items: center; */
 }
      .split-banner .right img {
           position: relative;
@@ -50,45 +34,54 @@
           position: absolute;
           text-align: center;
           padding: 0 1rem;     
-     }
+     } */
 
 
 
 @media (min-width: 1600px) {
 
      .split-banner .container-wide {
-          display: flex;
-          /* max-width: fit-content; */
-          justify-content: center;
+          width: 100%;
+          /* gap: 2rem; */
      }
-
-     .split-banner .left {
-          flex: 6;
-          position: relative;
-     }
-          .split-banner .left img {
-               display: block;
-          }
-          .split-banner .left .banner-textbox {
-               width: 500px;
-               position: absolute;
-               bottom: 7rem;
-               left: 4rem;
-               padding: 0 1rem;      
-          }
      
-     .split-banner .right {
-          display: block;
-          flex: 4;
+     .split-banner .container-wide > div {
           position: relative;
-     }   
-          .split-banner .right .banner-textbox {
-               position: absolute;
-               bottom: 7rem;
-               left: 3rem;
-               text-align: start;     
+          height: 560px; 
+          width: 100%;
+          /* flex: 1; */
+     }
+     
+     .split-banner > div img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+     }
+     
+          .split-banner .left {
+               flex: 6;
           }
+               .split-banner .left .banner-textbox {
+                    max-width: 500px;
+                    position: absolute;
+                    bottom: 6rem;
+                    left: 4rem;
+               }
+          
+          .split-banner .right {
+               flex: 4;
+          }
+               .split-banner .right .banner-textbox {
+                    position: absolute;
+                    bottom: 6rem;
+                    left: 4rem;
+               }
 }
+
+
+
+
+
 
 
 
@@ -107,22 +100,29 @@
 }
 
 .double-banner .container-wide {
+     width: 100%;
      gap: 2rem;
 }
 
-.double-banner .left {
+.double-banner .container-wide > div {
      position: relative;
+     /* height: 350px; */
+     width: 100%;
+     flex: 1;
 }
+
+.double-banner > div img {
+     width: 100%;
+     height: 100%;
+     object-fit: cover;
+}
+
      .double-banner .left .banner-textbox {
-          width: max-content;
           position: absolute;
           bottom: 6rem;
           right: 4rem;
-     }
+          }
 
-.double-banner .right {
-     position: relative;
-}
      .double-banner .right .banner-textbox {
           position: absolute;
           bottom: 6rem;
@@ -133,19 +133,20 @@
 
 /* single-banner */
 
-.single-banner {
-     height: 326px;
-}
+.single-banner .container {
+     width: 100%;
+     height: 350px;
 
-.single-banner .container-wide {
-     height: 100%;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+
      background-color: var(--fixxo-grey-1);
 }
-
 .single-banner .banner-textbox {
-     display: block;
-     position: relative;
      text-align: center;
-     left: 0;
      color: var(--color-white);
 }
+     .banner-textbox p {
+          margin-top: 1rem;
+     }

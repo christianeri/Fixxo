@@ -16,7 +16,7 @@ footer {
      }
           footer .container h6 {
                color: var(--fixxo-grey-1);
-               padding-top: 0.5rem;
+               padding-top: 1rem;
           }
                footer .container i {
                     transition: 0.2s;
@@ -28,10 +28,10 @@ footer {
 .social-media-links {
      display: flex;
      justify-content: center;
-     gap: 1rem;
+     gap: 0.5rem;
      padding-top: 2rem;
 
 }
 .social-media-links i {
-     font-size: var(--size-35);
+     font-size: 1.8rem;
 }

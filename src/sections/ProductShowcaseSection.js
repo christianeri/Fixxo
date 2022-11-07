@@ -3,7 +3,7 @@ import ProductCard from '../components/ProductCard'
 import FixxoButton from '../components/FixxoButton'
 import {ProductContext} from '../contexts/contexts'
 
-const ShowcaseGrid = () => {
+const ShowcaseGrid = ({items = []}) => {
 
      const products = useContext(ProductContext);
 
@@ -22,10 +22,9 @@ const ShowcaseGrid = () => {
                <div className='d-flex justify-content-start'>
                     <div className='showcase-container-4x4'>
                          <div className='row row-cols-1 row-cols-md-1 row-cols-lg-2 row-cols-xl-2 g-0'>
-                              {
-                                   products.productGridProducts4.map(product => 
-                                   <ProductCard key={product.articleNumber} orientation='vertical' item={product}/>)
-                              }
+                         {
+                              items.map(product => <ProductCard key={product.articleNumber} orientation='vertical' item={product}/>)
+                         } 
                          </div>
                     </div>
                </div>
@@ -34,9 +33,9 @@ const ShowcaseGrid = () => {
                <div className='d-flex justify-content-end'>
                     <div className='showcase-container-4x4'>                                       
                          <div className='row row-cols-1 row-cols-md-1 row-cols-lg-2 row-cols-xl-2 g-0'>
-                              {
-                                   products.map(product => <ProductCard key={product.id} orientation='vertical' item={product}/>)
-                              }
+                         {
+                              items.map(product => <ProductCard key={product.articleNumber} orientation='vertical' item={product}/>)
+                         }         
                          </div>            
                     </div>
                </div>

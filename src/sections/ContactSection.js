@@ -200,7 +200,7 @@ const ContactSection = () => {
 
                                    <div className='error-message' id='commentErrorMsg'>{formErrors.comments}</div>                                   
                               </div>
-                              <button type='submit' >Post Comments</button>
+                              <button type='submit' className='fixxo-button'>Post Comments</button>
                          </div>
                     </form>
                </div>         

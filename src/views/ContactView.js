@@ -1,7 +1,7 @@
 import React from 'react'
 import NavigationSection from '../sections/NavigationSection'
 import ContactSection from '../sections/ContactSection'
-import FooterSection from '../sections/FooterSection'
+import Footer from '../sections/Footer'
 
 const ContactView = () => {
 
@@ -11,7 +11,7 @@ const ContactView = () => {
     <>
       <NavigationSection/>
       <ContactSection/>
-      <FooterSection/>
+      <Footer/>
     </>
   )
 }

@@ -2,7 +2,7 @@
 import ProductCard from './ProductCard'
 
 
-const ProductGrid = ({title, sectionName, items = []}) => {
+const ProductCardGrid = ({title, sectionName, items = []}) => {
 
   return (
      <>
@@ -20,4 +20,4 @@ const ProductGrid = ({title, sectionName, items = []}) => {
   )
 }
 
-export default ProductGrid
+export default ProductCardGrid

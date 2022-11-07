@@ -69,6 +69,8 @@ section {
      align-items: center;
      margin: auto;
      padding: 0;
+
+     border: 1px solid red;
 }
 
 .flex-center {
@@ -78,10 +80,10 @@ section {
 }
 
 .section-title {
-     height: 6rem ;
+     height: 4rem ;
      text-align: center;
      margin: auto;
-     padding-top: 3rem;
+     padding-top: 2rem; 
 }
 
 .invisible {

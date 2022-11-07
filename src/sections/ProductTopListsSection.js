@@ -3,7 +3,6 @@ import ProductCard from '../components/ProductCard'
 
 const ShowcaseColumns = () => {
   return (
-    <div>
           <section className='showcase-columns'>
                <div className='container'>
                     <div className='column-left'>
@@ -26,7 +25,6 @@ const ShowcaseColumns = () => {
                     </div>
                </div>
           </section>
-    </div>
   )
 }
 

@@ -12,7 +12,7 @@ const Breadcrumb = ({currentPage}) => {
                          </NavLink> 
                     </li>
                     <li>
-                         <NavLink>
+                         <NavLink to="/" end>
                               <h4 className='active'>{currentPage}</h4>
                          </NavLink>
                     </li>

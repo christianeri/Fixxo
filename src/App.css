@@ -6,25 +6,39 @@
 
 /* sections */
 
-@import "./assets/css/sections/NavigationSection.css";
+/* @import "./assets/css/sections/NavigationSection.css";
 @import "./assets/css/sections/ContactSection.css";
-@import "./assets/css/sections/HeroSection.css";
 @import "./assets/css/sections/HeroSection.css";
 @import "./assets/css/sections/BannerSections.css";
 @import "./assets/css/sections/ShowcaseSections.css";
-@import "./sections/CustomerInfoSections.css";
-@import "./assets/css/sections/FooterSection.css";
+@import ".assets/css/sections/CustomerInfo.css";
+@import "./assets/css/sections/Footer.css"; */
+
+@import "./sections/NavigationSection.css";
+@import "./sections/ContactSection.css";
+@import "./sections/HeroSection.css";
+@import "./sections/HeroSection.css";
+@import "./sections/BannerSections.css";
+@import "./sections/ShowcaseSections.css";
+@import "./sections/CustomerInfo.css";
+@import "./sections/Footer.css";
 
 /* components */
 
-@import "./assets/css/components/Breadcrumb.css";
+/* @import "./assets/css/components/Breadcrumb.css";
 @import "./assets/css/components/FixxoButton.css";
-/* @import "./assets/css/components/ProductCard.css"; */
+@import "./assets/css/components/ProductCard.css";
+@import "./assets/css/components/ProductCardGrid.css";
+@import "./assets/css/components/NavbarButton.css";
+@import "./assets/css/components/NotFound.css"; */
+
+@import "./components/Breadcrumb.css";
+@import "./components/FixxoButton.css";
 @import "./components/ProductCard.css";
-@import "./assets/css/components/ProductGrid.css";
-@import "./assets/css/components/NavbarButton.css";
-@import "./assets/css/components/NavbarButton.css";
-@import "./assets/css/components/NotFound.css";
+@import "./components/ProductCardGrid.css";
+@import "./components/NavbarButton.css";
+@import "./components/NotFound.css";
+@import "./components/InfoCard.css";
 
 
 /*   fixa                                                     

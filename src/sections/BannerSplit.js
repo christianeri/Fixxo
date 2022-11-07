@@ -8,7 +8,7 @@ const SplitBanner = () => {
 
      <section className='split-banner d-none d-sm-flex'>
           <div className='container-wide'>
-               <div className='left'>
+               <div className='left bl'>
                     <img src={Showcase_5} alt="silouette" className=''/>
                     <div className="banner-textbox">
                          <h2>Winter Clearance</h2>
@@ -19,7 +19,7 @@ const SplitBanner = () => {
                          <FixxoButton label='shop now' color='dark'/>
                     </div>
                </div>
-               <div className='right'>
+               <div className='right bl'>
                     <img src={Showcase_6} alt="silouette"/>
                     <div className="banner-textbox">
                          <h2>New</h2>
