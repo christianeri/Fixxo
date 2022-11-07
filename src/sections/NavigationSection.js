@@ -29,12 +29,28 @@ import NavbarButton from '../components/NavbarButton'
                          <h1 className="logo">Fixxo.</h1>
                     </NavLink>                    
                </div>
-               <div className='center'>
-                    <NavLink to='/' end>Home</NavLink>
-                    <NavLink to='/categories' end>Categories</NavLink>
-                    <NavLink to='/products'>Products</NavLink>
-                    <NavLink to='/contact' end>Contact</NavLink>
-               </div>
+               <ul className='center'>
+                    <li>
+                         <NavLink to='/' end>
+                              <h4>Home</h4>                              
+                         </NavLink>                         
+                    </li>
+                    <li>
+                         <NavLink to='/categories' end>
+                              <h4>Categories</h4>                              
+                         </NavLink>
+                    </li>
+                    <li>
+                         <NavLink to='/products'>
+                              <h4>Products</h4>                              
+                         </NavLink>
+                    </li>
+                    <li>
+                         <NavLink to='/contact' end>
+                              <h4>Contact</h4>                              
+                         </NavLink>
+                    </li>
+               </ul>
                <div className="right">
                     <NavbarButton to='/search' icon='fa-regular fa-magnifying-glass'/>
                     <NavbarButton to='/compare' icon='fa-solid fa-retweet' hideOnMobile={true}/>

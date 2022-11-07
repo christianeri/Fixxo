@@ -7,10 +7,14 @@ const Breadcrumb = ({currentPage}) => {
           <div className='breadcrumb'>
                <ul>
                     <li>
-                         <NavLink to="/" end>Home /&nbsp;</NavLink> 
+                         <NavLink to="/" end>
+                              <h4>Home /&nbsp;</h4>
+                         </NavLink> 
                     </li>
-                    <li className='active'>
-                         <NavLink>{currentPage}</NavLink>
+                    <li>
+                         <NavLink>
+                              <h4 className='active'>{currentPage}</h4>
+                         </NavLink>
                     </li>
                </ul>
           </div>

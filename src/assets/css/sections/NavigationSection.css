@@ -15,7 +15,7 @@
      .top-navbar .left {
           width: fit-content;
           display: flex;
-          margin-left: 0.5rem;
+          margin-left: 1rem;
      }
 
      .top-navbar .right {
@@ -92,16 +92,23 @@
           }
      
           .top-navbar .center {
-               justify-content: center;              
-               font-size: var(--size-16);
-               font-weight: var(--font-w-medium);
+               display: flex;
+               justify-content: center;
+               gap: 1rem;  
+               
+               list-style: none;
+
                flex: 3;
+               margin: 0;
           }
-     
+               .top-navbar .center li:hover h4 {
+                    color: var(--fixxo-theme);
+               }
+          
           .top-navbar .right {
+               justify-content: flex-end;
                flex: 2;
                gap: 1rem;
-               justify-content: flex-end;
           } 
 
      .triple-bar-button {
@@ -138,5 +145,9 @@
 .logo {
      font-size: var(--size-35);
      font-weight: var(--font-w-bold);
+}
+
+.logo:hover {
+     color: var(--fixxo-theme)
 }
 

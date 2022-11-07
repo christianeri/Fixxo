@@ -7,7 +7,9 @@ import NavigationSection from '../sections/NavigationSection'
 
 const ProductsView = () => {
 
-     const productContext = useContext(ProductContext)
+    window.top.document.title = 'Fixxo | Products'
+    
+    const productContext = useContext(ProductContext)
 
   return (
     <>

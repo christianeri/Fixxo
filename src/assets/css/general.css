@@ -35,7 +35,7 @@ h3 {
 }
 
 h4 {
-     font-size: var(--size-16);
+     font-size: var(--size-18);
      font-weight: var(--font-w-semibold);
      color: var(--fixxo-dark);
      text-transform: capitalize;
