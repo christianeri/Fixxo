@@ -1,5 +1,4 @@
-Fixa active state på Navbar buttons.
+Fixa active state på Navbar buttons och länkar
 Lägg till OnKeyUp validering i Contact Form
-Fixa styling Footer
 Fixa ProductGrid component
 

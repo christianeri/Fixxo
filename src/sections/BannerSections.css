@@ -35,11 +35,8 @@
           text-align: center;
           padding: 0 1rem;     
      } */
-
-
-
-@media (min-width: 1600px) {
-
+@media (min-width: 768px) {
+     
      .split-banner .container-wide {
           width: 100%;
           /* gap: 2rem; */
@@ -67,15 +64,24 @@
                     bottom: 6rem;
                     left: 4rem;
                }
-          
-          .split-banner .right {
-               flex: 4;
+     
+     .split-banner .right {
+          display: none;
+     } 
+
+}
+
+
+@media (min-width: 1600px) {
+
+     .split-banner .right {
+          flex: 4;
+     }
+          .split-banner .right .banner-textbox {
+               position: absolute;
+               bottom: 6rem;
+               left: 4rem;
           }
-               .split-banner .right .banner-textbox {
-                    position: absolute;
-                    bottom: 6rem;
-                    left: 4rem;
-               }
 }
 
 

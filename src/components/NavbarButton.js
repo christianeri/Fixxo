@@ -6,7 +6,7 @@ const NavbarButton = ({to, icon, quantity, hideOnMobile}) => {
      <NavLink to={to} className={`${hideOnMobile ? "d-none d-md-flex" : ""}`} end>
           <button className="navbar-button">
                <i className={icon}></i>
-               <div className="navbar-button-badge">{quantity}</div>
+               {/* <div className="navbar-button-badge">{quantity}</div> */}
           </button>
      </NavLink>
   )

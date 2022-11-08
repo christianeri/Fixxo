@@ -7,6 +7,14 @@
      padding: 1rem 0;
 }
 
+.customer-info-showcase .container-wide {
+     background-color: var(--fixxo-grey-3);
+}
+
+.customer-info-container {
+     display: none;
+}
+
 .infobox {
      padding: 1rem;
 }
@@ -19,7 +27,19 @@
      padding-left: 3rem;
 }
 
+.carousel-item {
+     padding-bottom: 4rem;
+}
+.carousel-container {
+     background-color: var(--fixxo-grey-3);
+}
+
+
 @media (min-width: 768px) {
+
+     .customer-info-container {
+          display: flex;
+     }
 
      .customer-info .container {
           flex-direction: row;
@@ -41,8 +61,6 @@
      .customer-info-container {
           justify-content: space-around;
           align-items: center;
-
-          background-color: var(--fixxo-grey-3);
           gap: 2rem;
           padding: 2rem;
      }
@@ -79,4 +97,8 @@
                     margin-bottom: 1rem;
                     
                }
+
+     .carousel {
+          display: none;
+     }
 }

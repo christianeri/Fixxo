@@ -24,55 +24,64 @@ import NavbarButton from '../components/NavbarButton'
   return (
      <nav className={colorWhite ? 'top-navbar bg-white' : 'top-navbar'}>          
           <div className='container-wide'>
-               <div className="left">
-                    <NavLink to='/' end>
+               <div className="left bl">
+                    <NavLink className='._NavLink' to='/' end>
                          <h1 className="logo">Fixxo.</h1>
                     </NavLink>                    
                </div>
-               <ul className='center'>
-                    <li>
-                         <NavLink to='/' end>
+               <div  className='center bl'>
+                         <NavLink className='_NavLink' to='/' end>
                               <h4>Home</h4>                              
-                         </NavLink>                         
-                    </li>
-                    <li>
-                         <NavLink to='/categories' end>
+                         </NavLink>
+                         <NavLink className='_NavLink' to='/categories' end>
                               <h4>Categories</h4>                              
                          </NavLink>
-                    </li>
-                    <li>
-                         <NavLink to='/products'>
+                         <NavLink className='_NavLink' to='/products'>
                               <h4>Products</h4>                              
                          </NavLink>
-                    </li>
-                    <li>
-                         <NavLink to='/contact' end>
+                         <NavLink className='_NavLink' to='/contact' end>
                               <h4>Contact</h4>                              
                          </NavLink>
-                    </li>
-               </ul>
-               <div className="right">
-                    <NavbarButton to='/search' icon='fa-regular fa-magnifying-glass'/>
-                    <NavbarButton to='/compare' icon='fa-solid fa-retweet' hideOnMobile={true}/>
-                    <NavbarButton to='/wishlist' icon='fa-regular fa-heart'hideOnMobile={true}/>
-                    <NavbarButton to='/shoppingcart' icon='fa-regular fa-bag-shopping' quantity='4'/>
-                    <button onClick={toggleMenu} className="navbar-button triple-bar-button"><i className='fa-regular fa-bars'></i>
-                    </button>
                </div>
                <ul className={!showMenu ? "mobile-menu invisible" : "mobile-menu"}>
                     <li>
-                         <NavLink to='/'><h3>Home</h3></NavLink>
+
+                         <NavLink className='_NavLink' to='/'>
+                              <h4>Home</h4>
+                         </NavLink>
                     </li>
                     <li>
-                         <NavLink to='/categories' end>Categories</NavLink>
+                         <NavLink className='_NavLink' to='/categories' end>
+                              <h4>Categories</h4>
+                         </NavLink>
                     </li>
                     <li>
-                         <NavLink to='/products' end>Products</NavLink>
+
+                         <NavLink className='_NavLink' to='/products' end>
+                              <h4>Products</h4>
+                         </NavLink>
                     </li>
                     <li>
-                         <NavLink to='/contact'>Contact</NavLink>
+
+                         <NavLink className='_NavLink' to='/contact'>
+                              <h4>Contact</h4>
+                         </NavLink>
                     </li>
                </ul>
+
+               <div className="right bl">
+                    <NavbarButton to='/search' icon='fa-regular fa-magnifying-glass'/>
+                    <NavbarButton to='/compare' icon='fa-solid fa-retweet' hideOnMobile={true}/>
+                    <NavbarButton to='/wishlist' icon='fa-regular fa-heart'hideOnMobile={true}/>
+
+                    <button className="navbar-button">
+                         <i className='fa-regular fa-shopping-cart'></i>
+                         <div className="navbar-button-badge">X</div>
+                    </button>
+
+                    <button onClick={toggleMenu} className="navbar-button triple-bar-button"><i className='fa-regular fa-bars'></i>
+                    </button>
+               </div>
           </div>
      </nav>
   )

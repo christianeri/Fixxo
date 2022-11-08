@@ -12,6 +12,22 @@ const CustomerInfoShowcase = () => {
                   <InfoCard title='Make a Return'/>
                   <InfoCard title='Request a Price Adjustment'/> 
             </div>
+            <div className='carousel-container'>
+                  <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                              <div class="carousel-item active">
+                                    <InfoCard title='Track Your Order'/>
+                              </div>
+                              <div class="carousel-item">
+                              <InfoCard title='Make a Return'/>
+                              </div>
+                              <div class="carousel-item">
+                              <InfoCard title='Request a Price Adjustment'/> 
+                              </div>
+                        </div>
+                  </div>
+            </div>
+
       </section>
   )
 }
