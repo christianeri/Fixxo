@@ -3,25 +3,25 @@ import InfoCard from '../components/InfoCard'
 
 const CustomerInfoShowcase = () => {
   return (
-      <section className='customer-info-showcase'>
+      <section className='customer-info-showcase  br'>
             <div className='container-wide'>
                   <h3 className='section-title'>Our Speciality</h3>
             </div>
             <div className='container-wide customer-info-container'>
-                  <InfoCard title='Track Your Order'/>
                   <InfoCard title='Make a Return'/>
+                  <InfoCard title='Track Your Order'/>                            
                   <InfoCard title='Request a Price Adjustment'/> 
             </div>
-            <div className='carousel-container'>
-                  <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
-                        <div class="carousel-inner">
-                              <div class="carousel-item active">
+            <div className='carousel-container by'>
+                  <div id="carouselExampleSlidesOnly" className="carousel slide" data-bs-ride="carousel">
+                        <div className="carousel-inner">
+                              <div className="carousel-item active">
                                     <InfoCard title='Track Your Order'/>
                               </div>
-                              <div class="carousel-item">
+                              <div className="carousel-item">
                               <InfoCard title='Make a Return'/>
                               </div>
-                              <div class="carousel-item">
+                              <div className="carousel-item">
                               <InfoCard title='Request a Price Adjustment'/> 
                               </div>
                         </div>

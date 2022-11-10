@@ -6,13 +6,16 @@
 
 /* sections */
 
-/* @import "./assets/css/sections/MainNavigation.css";
+/* 
+@import "./assets/css/sections/MainNavigation.css";
 @import "./assets/css/sections/ContactSection.css";
 @import "./assets/css/sections/HeroSection.css";
 @import "./assets/css/sections/Banners.css";
 @import "./assets/css/sections/ProductPromoShowcase.css";
 @import ".assets/css/sections/CustomerInfo.css";
-@import "./assets/css/sections/Footer.css"; */
+@import "./sections/ProductTopLists.css";
+@import "./assets/css/sections/Footer.css"; 
+*/
 
 @import "./sections/MainNavigation.css";
 @import "./sections/ContactSection.css";
@@ -22,6 +25,7 @@
 @import "./sections/ProductPromoShowcase.css";
 @import "./sections/CustomerInfo.css";
 @import "./sections/Footer.css";
+@import "./sections/ProductTopLists.css";
 
 /* components */
 

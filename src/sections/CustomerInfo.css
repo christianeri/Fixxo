@@ -7,7 +7,12 @@
      padding: 1rem 0;
 }
 
-.customer-info-showcase .container-wide {
+.customer-info-showcase {
+     background-color: var(--fixxo-grey-3);
+}
+
+.customer-info-showcase .section-title {
+     width: var(--wsxga);
      background-color: var(--fixxo-grey-3);
 }
 
@@ -27,48 +32,16 @@
      padding-left: 3rem;
 }
 
-.carousel-item {
-     padding-bottom: 4rem;
-}
 .carousel-container {
      background-color: var(--fixxo-grey-3);
+     max-width: 570px;
+     margin: auto;
 }
 
-
 @media (min-width: 768px) {
-
-     .customer-info-container {
-          display: flex;
-     }
-
+     
      .customer-info .container {
           flex-direction: row;
-     }
-
-     .infobox h3 {
-          display: block;
-          padding-left: 0;
-     }
-     .infobox p {
-          padding-left: 0;
-     }
-          
-     .customer-info-showcase .section-title {
-          width: var(--wsxga);
-          background-color: var(--fixxo-grey-3);
-     }
-
-     .customer-info-container {
-          justify-content: space-around;
-          align-items: center;
-          gap: 2rem;
-          padding: 2rem;
-     }
-
-     /* customer information */
-
-     .customer-info .container {
-          /* height: 300px; */
           border-top: 1px solid var(--fixxo-grey-2);
      }
 
@@ -81,6 +54,8 @@
           padding-top: 3rem;
      }
           .infobox h3 {
+               display: block;
+               padding-left: 0;
                text-transform: capitalize;
           }
           .infobox .navbar-button {
@@ -91,14 +66,29 @@
           }
           .infobox p {
                color: var(--fixxo-grey-2);
+               padding-left: 0;
           }
 
                .infobox a > * {
                     margin-bottom: 1rem;
                     
                }
+}
+
+@media (min-width: 1140px) {
 
      .carousel {
           display: none;
+     }
+     .customer-info-showcase {
+          background-color: var(--color-white);
+     }
+
+     .customer-info-container {
+          display: flex;
+          justify-content: space-around;
+          align-items: center;
+          gap: 2rem;
+          padding: 2rem;
      }
 }

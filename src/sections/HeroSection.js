@@ -2,11 +2,11 @@
 // import Hero_1 from '../img/img-1.svg'
 import FixxoButton from '../components/FixxoButton'
 
-const Hero = () => {
+const HeroShowcase = () => {
      
   return (
      <div>
-          <section className='hero-section'>
+          <section className='hero-showcase'>
                <div className='container-wide'>
                     {/* <img src={Hero_2} alt="silouette" className='left'/> */}
                     <img src='https://win22imgstorage.blob.core.windows.net/images/showcase-img-1.png' alt="female model" className='left'/>
@@ -25,4 +25,4 @@ const Hero = () => {
   )
 }
 
-export default Hero
+export default HeroShowcase

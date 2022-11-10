@@ -8,7 +8,7 @@ import DoubleBanner from '../sections/BannerDouble';
 import CustomerInfoShowcase from '../sections/CustomerInfoShowcase';
 import ProductPromoShowcase from '../sections/ProductPromoShowcase';
 import SingleBanner from '../sections/BannerSingle';
-import ShowcaseColumns from '../sections/ProductTopListsSection';
+import ProductTopLists from '../sections/ProductTopLists';
 import CustomerInfoMenu from '../sections/CustomerInfoMenu';
 
 import Footer from '../sections/Footer';
@@ -32,7 +32,7 @@ const HomeView = () => {
       <CustomerInfoShowcase/>
       <ProductPromoShowcase items={productContext.productShowcaseItems}/>
       <SingleBanner/>
-      {/* <ShowcaseColumns/> */}
+      <ProductTopLists items={productContext.productShowcaseItems}/>
       <CustomerInfoMenu/>
       <Footer/>
     </>
