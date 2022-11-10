@@ -1,7 +1,9 @@
-import ProductCard from './ProductCard'
+import ProductCard from "../components/ProductCard"
 
 
-const ProductCardGrid = ({title, sectionName, items = []}) => {
+
+
+const FeaturedProductsSection = ({title, sectionName, items = []}) => {
 
   return (
      <>
@@ -19,4 +21,4 @@ const ProductCardGrid = ({title, sectionName, items = []}) => {
   )
 }
 
-export default ProductCardGrid
+export default FeaturedProductsSection

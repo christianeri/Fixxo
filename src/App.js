@@ -1,5 +1,6 @@
 
 import { BrowserRouter, Routes, Route } from 'react-router-dom'; 
+import { useEffect, useState } from 'react';
 import { ProductContext } from './contexts/contexts';
 
 import './App.css';
@@ -15,8 +16,9 @@ import CompareView from './views/CompareView';
 import WishListView from './views/WishListView';
 import ShoppingCartView from './views/ShoppingCartView';
 
+import OnSaleView from './views/OnSaleView';
+
 import NotFoundView from './views/NotFoundView';
-import { useEffect, useState } from 'react';
 
 
 
@@ -74,6 +76,8 @@ function App() {
           <Route path="/compare" element={<CompareView/>} />
           <Route path="/wishlist" element={<WishListView/>} />
           <Route path="/shoppingcard" element={<ShoppingCartView/>} />
+
+          <Route path="/sale" element={<OnSaleView/>} />
 
           <Route path="*" element={<NotFoundView/>} />
 

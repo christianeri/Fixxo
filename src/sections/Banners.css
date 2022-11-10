@@ -1,80 +1,40 @@
-
-
-
-
-
-
 /* split banner */
 
-
-
-/* .split-banner .left {
-     height: fit-content;
-     position: relative;
-     background-color: var(--fixxo-purplegray);
-}
-     .split-banner .left img {
-          display: none;
-     }
-     .split-banner .left .banner-textbox {
-          width: 100vw;
-          position: relative;
-          padding: 2rem 1rem;     
-     }
-
-.split-banner .right {
-     display: none;
-}
-     .split-banner .right img {
-          position: relative;
-          top: 0;
-          left: 0;
-     }
-     .split-banner .right .banner-textbox {
-          position: absolute;
-          text-align: center;
-          padding: 0 1rem;     
-     } */
-@media (min-width: 768px) {
-     
-     .split-banner .container-wide {
+.split-banner .container-wide {
           width: 100%;
-          /* gap: 2rem; */
      }
-     
      .split-banner .container-wide > div {
           position: relative;
           height: 560px; 
           width: 100%;
           /* flex: 1; */
      }
-     
+
      .split-banner > div img {
           width: 100%;
           height: 100%;
           object-fit: cover;
      }
      
-          .split-banner .left {
-               flex: 6;
+     .split-banner .left {
+          flex: 6;
+     }
+          .split-banner .left .banner-textbox {
+               max-width: 500px;
+               position: absolute;
+               bottom: 6rem;
+               left: 4rem;
           }
-               .split-banner .left .banner-textbox {
-                    max-width: 500px;
-                    position: absolute;
-                    bottom: 6rem;
-                    left: 4rem;
-               }
-     
+
      .split-banner .right {
           display: none;
      } 
 
-}
 
 
-@media (min-width: 1600px) {
-
+@media (min-width: 992px) {
      .split-banner .right {
+          display: flex;
           flex: 4;
      }
           .split-banner .right .banner-textbox {

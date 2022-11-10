@@ -3,7 +3,7 @@ import { NavLink } from 'react-router-dom'
 import NavbarButton from '../components/NavbarButton'
 
      // change color of navbar when scrolling 
-     const NavigationSection = () => {
+     const MainNavigation = () => {
 
           let [colorWhite, setColorWhite] = useState(false)
           let changeColorWhite = () => {
@@ -87,4 +87,4 @@ import NavbarButton from '../components/NavbarButton'
   )
 }
 
-export default NavigationSection
+export default MainNavigation

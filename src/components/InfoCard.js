@@ -7,7 +7,7 @@ const InfoCard = ({title}) => {
             <div className='left'>
                   <div className='infocard-textbox'>
                         <h3>{title}</h3>                              
-                        <NavLink className='_NavLink' to="/" end>
+                        <NavLink className='_NavLink' to="/info/*" end>
                               <h4>
                                     Get Started<i className="fa-solid fa-chevron-right"></i>
                               </h4>

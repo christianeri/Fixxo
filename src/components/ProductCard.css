@@ -80,11 +80,11 @@
           }
 
           .vertical-card .fixxo-button {
-               width: calc(100% - 2rem);
+               width: calc(100% - 34px);
                border: none;
                position: absolute;
-               left: 0;      
-               bottom: 0;
+               left: 1px;      
+               bottom: 2px;
                z-index: 1;
                transition: 0.3s;
                margin: 0 1rem 1rem 1rem;

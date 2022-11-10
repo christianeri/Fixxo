@@ -1,12 +1,12 @@
 import React, { useContext } from 'react'
-import NavigationSection from '../sections/NavigationSection'
+import MainNavigation from '../sections/MainNavigation'
 
 import HeroSection from '../sections/HeroSection';
 import SplitBanner from '../sections/BannerSplit';
-import ProductGrid from '../components/ProductCardGrid';
+import FeaturedProductsSection from '../sections/FeaturedProductsSection';
 import DoubleBanner from '../sections/BannerDouble';
 import CustomerInfoShowcase from '../sections/CustomerInfoShowcase';
-import ShowcaseGrid from '../sections/ProductShowcaseSection';
+import ProductPromoShowcase from '../sections/ProductPromoShowcase';
 import SingleBanner from '../sections/BannerSingle';
 import ShowcaseColumns from '../sections/ProductTopListsSection';
 import CustomerInfoMenu from '../sections/CustomerInfoMenu';
@@ -24,13 +24,13 @@ const HomeView = () => {
 
   return (
     <>
-      <NavigationSection/>
+      <MainNavigation/>
       <HeroSection/>
       <SplitBanner/>
-      <ProductGrid title='Featured Products' sectionName='featured-products' items={productContext.featuredProducts}/>
+      {/* <FeaturedProductsSection title='Featured Products' sectionName='featured-products' items={productContext.featuredProducts}/> */}
       <DoubleBanner/>
       <CustomerInfoShowcase/>
-      <ShowcaseGrid items={productContext.productShowcaseItems}/>
+      <ProductPromoShowcase items={productContext.productShowcaseItems}/>
       <SingleBanner/>
       {/* <ShowcaseColumns/> */}
       <CustomerInfoMenu/>

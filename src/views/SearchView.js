@@ -1,11 +1,11 @@
 import React from 'react'
 import NotFound from '../components/NotFound'
-import NavigationSection from '../sections/NavigationSection'
+import MainNavigation from '../sections/MainNavigation'
 
 const SearchView = () => {
   return (
     <>
-      <NavigationSection/>
+      <MainNavigation/>
       <NotFound/>
     </>
   )

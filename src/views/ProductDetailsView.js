@@ -1,6 +1,6 @@
 import React from 'react'
 import { useParams } from 'react-router-dom'
-import NavigationSection from '../sections/NavigationSection'
+import MainNavigation from '../sections/MainNavigation'
 import FooterSection from '../sections/FooterSection'
 
 
@@ -10,7 +10,7 @@ const ProductDetailsView = () => {
 
   return (
      <>
-          <NavigationSection/>
+          <MainNavigation/>
                <div className='container mt-10'>
                     <h1>{params.id}</h1>
                </div>               

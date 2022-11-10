@@ -1,9 +1,9 @@
 import React, { useContext } from 'react'
 import Breadcrumb from '../components/Breadcrumb'
-import ProductGrid from '../components/ProductCardGrid'
+import FeaturedProductsSection from '../sections/FeaturedProductsSection'
 import { ProductContext } from '../contexts/contexts'
 import Footer from '../sections/Footer'
-import NavigationSection from '../sections/NavigationSection'
+import MainNavigation from '../sections/MainNavigation'
 
 const ProductsView = () => {
 
@@ -13,9 +13,9 @@ const ProductsView = () => {
 
   return (
     <>
-     <NavigationSection/>
+     <MainNavigation/>
      <Breadcrumb currentPage='Products'/>
-     <ProductGrid title='All Products' sectionName='all-products' items={productContext.allProducts}/>
+     <FeaturedProductsSection title='All Products' sectionName='all-products' items={productContext.allProducts}/>
      <Footer/>
     </>
   )

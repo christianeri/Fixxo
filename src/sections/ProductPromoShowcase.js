@@ -3,7 +3,7 @@ import ProductCard from '../components/ProductCard'
 import FixxoButton from '../components/FixxoButton'
 import {ProductContext} from '../contexts/contexts'
 
-const ShowcaseGrid = ({items = []}) => {
+const ProductPromoShowcase = ({items = []}) => {
 
      const products = useContext(ProductContext);
 
@@ -12,15 +12,15 @@ const ShowcaseGrid = ({items = []}) => {
      <section className='showcase-grid'>
           <div className='container-wide'>
                <div>
-                    <div className='showcase-container-1x1'>                   
+                    <div className='showcase-container-1x1 bl'>                   
                          <div className='showcase-textbox'>
                               <h2>2 FOR USD $29</h2>
-                              <FixxoButton label='flash sale' color='light'/>
+                              <FixxoButton label='flash sale' color='light' to='/sale'/>
                          </div>
                     </div>
                </div>
                <div className='d-flex justify-content-start'>
-                    <div className='showcase-container-4x4'>
+                    <div className='showcase-container-4x4 bg'>
                          <div className='row row-cols-1 row-cols-md-1 row-cols-lg-2 row-cols-xl-2 g-0'>
                          {
                               items.map(product => <ProductCard key={product.articleNumber} orientation='vertical' item={product}/>)
@@ -43,7 +43,7 @@ const ShowcaseGrid = ({items = []}) => {
                     <div className='showcase-container-1x1'>
                          <div className='showcase-textbox'>
                               <h2>2 FOR USD $29</h2>
-                              <FixxoButton label='flash sale' color='light'/>
+                              <FixxoButton label='flash sale' color='light' to='/sale'/>
                          </div>
                     </div>
                </div>
@@ -53,4 +53,4 @@ const ShowcaseGrid = ({items = []}) => {
   )
 }
 
-export default ShowcaseGrid
+export default ProductPromoShowcase

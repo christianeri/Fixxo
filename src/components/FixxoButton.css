@@ -49,11 +49,17 @@
      background-color: var(--fixxo-theme);
      color: var(--color-white);
 }
+     .button-theme ._NavLink {
+          color: var(--color-white);
+     }
 
 .button-dark {
      background-color: var(--fixxo-dark);
      color: var(--color-white);
 }
+     .button-dark ._NavLink {
+          color: var(--color-white);
+     }
 
 .button-light {
      background-color: var(--color-white);
@@ -67,4 +73,7 @@
      .button-light::after {
           border-bottom: 2px solid var(--fixxo-dark);
           border-right: 2px solid var(--fixxo-dark);
+     }
+     .button-light ._NavLink {
+          color: var(--fixxo-dark);
      }

@@ -1,5 +1,5 @@
 import React from 'react'
-import NavigationSection from '../sections/NavigationSection'
+import MainNavigation from '../sections/MainNavigation'
 import ContactSection from '../sections/ContactSection'
 import Footer from '../sections/Footer'
 
@@ -9,7 +9,7 @@ const ContactView = () => {
 
   return (
     <>
-      <NavigationSection/>
+      <MainNavigation/>
       <ContactSection/>
       <Footer/>
     </>
