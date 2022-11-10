@@ -2,12 +2,12 @@ import ProductCard from "../components/ProductCard"
 
 
 
-const FeaturedProductsSection = ({title, sectionName, items = []}) => {
+const FeaturedProducts = ({title, sectionName, items = []}) => {
 
   return (
      <>
      <section className='featured-products'>     
-          <div className='container br'>
+          <div className='container'>
                <h3>Featured Products</h3>
                <div className='row row-cols-1 row-cols-md-3 row-cols-lg-4 g-0'>
                     {
@@ -20,4 +20,4 @@ const FeaturedProductsSection = ({title, sectionName, items = []}) => {
   )
 }
 
-export default FeaturedProductsSection
+export default FeaturedProducts

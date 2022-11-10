@@ -1,19 +1,19 @@
 import React, { useContext } from 'react'
-import MainNavigation from '../sections/MainNavigation'
 
+import MainNavigation from '../sections/MainNavigation'
 import HeroSection from '../sections/HeroSection';
 import SplitBanner from '../sections/BannerSplit';
-import FeaturedProductsSection from '../sections/FeaturedProductsSection';
+import FeaturedProducts from '../sections/FeaturedProducts';
 import DoubleBanner from '../sections/BannerDouble';
 import CustomerInfoShowcase from '../sections/CustomerInfoShowcase';
 import ProductPromoShowcase from '../sections/ProductPromoShowcase';
 import SingleBanner from '../sections/BannerSingle';
-import ProductTopLists from '../sections/ProductTopLists';
+import ProductToplistShowcase from '../sections/ProductToplistShowcase';
 import CustomerInfoMenu from '../sections/CustomerInfoMenu';
-
 import Footer from '../sections/Footer';
 
 import {ProductContext} from '../contexts/contexts'
+
 
 
 const HomeView = () => {
@@ -27,12 +27,12 @@ const HomeView = () => {
       <MainNavigation/>
       <HeroSection/>
       <SplitBanner/>
-      {/* <FeaturedProductsSection title='Featured Products' sectionName='featured-products' items={productContext.featuredProducts}/> */}
+      <FeaturedProducts title='Featured Products' sectionName='featured-products' items={productContext.featuredProducts}/>
       <DoubleBanner/>
       <CustomerInfoShowcase/>
       <ProductPromoShowcase items={productContext.productShowcaseItems}/>
       <SingleBanner/>
-      <ProductTopLists items={productContext.productShowcaseItems}/>
+      <ProductToplistShowcase items={productContext.productShowcaseItems}/>
       <CustomerInfoMenu/>
       <Footer/>
     </>

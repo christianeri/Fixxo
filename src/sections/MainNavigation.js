@@ -1,8 +1,8 @@
 import React, { useState } from 'react'
 import { NavLink } from 'react-router-dom'
-import NavbarButton from '../components/NavbarButton'
+import NavButton from '../components/NavButton'
 
-     // change color of navbar when scrolling 
+     // change color of Nav when scrolling 
      const MainNavigation = () => {
 
           let [colorWhite, setColorWhite] = useState(false)
@@ -24,12 +24,12 @@ import NavbarButton from '../components/NavbarButton'
   return (
      <nav className={colorWhite ? 'top-navbar bg-white' : 'top-navbar'}>          
           <div className='container-wide'>
-               <div className="left bl">
+               <div className="left">
                     <NavLink className='._NavLink' to='/' end>
                          <h1 className="logo">Fixxo.</h1>
                     </NavLink>                    
                </div>
-               <div  className='center bl'>
+               <div  className='center'>
                          <NavLink className='_NavLink' to='/' end>
                               <h4>Home</h4>                              
                          </NavLink>
@@ -45,7 +45,6 @@ import NavbarButton from '../components/NavbarButton'
                </div>
                <ul className={!showMenu ? "mobile-menu invisible" : "mobile-menu"}>
                     <li>
-
                          <NavLink className='_NavLink' to='/'>
                               <h4>Home</h4>
                          </NavLink>
@@ -56,30 +55,28 @@ import NavbarButton from '../components/NavbarButton'
                          </NavLink>
                     </li>
                     <li>
-
                          <NavLink className='_NavLink' to='/products' end>
                               <h4>Products</h4>
                          </NavLink>
                     </li>
                     <li>
-
                          <NavLink className='_NavLink' to='/contact'>
                               <h4>Contact</h4>
                          </NavLink>
                     </li>
                </ul>
 
-               <div className="right bl">
-                    <NavbarButton to='/search' icon='fa-regular fa-magnifying-glass'/>
-                    <NavbarButton to='/compare' icon='fa-solid fa-retweet' hideOnMobile={true}/>
-                    <NavbarButton to='/wishlist' icon='fa-regular fa-heart'hideOnMobile={true}/>
+               <div className="right">
+                    <NavButton to='/search' icon='fa-regular fa-magnifying-glass' size='nav-button-small'/>
+                    <NavButton to='/compare' icon='fa-solid fa-retweet' hideOnMobile={true} size='nav-button-small'/>
+                    <NavButton to='/wishlist' icon='fa-regular fa-heart' hideOnMobile={true} size='nav-button-small'/>
 
-                    <button className="navbar-button">
+                    <button className="nav-button nav-button-small">
                          <i className='fa-regular fa-shopping-cart'></i>
-                         <div className="navbar-button-badge">X</div>
+                         <div className="nav-button-badge">X</div>
                     </button>
 
-                    <button onClick={toggleMenu} className="navbar-button triple-bar-button"><i className='fa-regular fa-bars'></i>
+                    <button onClick={toggleMenu} className="nav-button triple-bar-button nav-button-small"><i className='fa-regular fa-bars'></i>
                     </button>
                </div>
           </div>

@@ -1,4 +1,3 @@
-Fixa active state på Navbar buttons och länkar
 Lägg till OnKeyUp validering i Contact Form
 Fixa ProductGrid component
 

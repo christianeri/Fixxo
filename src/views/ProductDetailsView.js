@@ -6,6 +6,8 @@ import FooterSection from '../sections/FooterSection'
 
 const ProductDetailsView = () => {
 
+     window.top.document.title = 'Fixxo | {params.id}'
+
      const params = useParams()
 
   return (

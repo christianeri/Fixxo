@@ -12,16 +12,27 @@
           .breadcrumb li {
                display: inline-block;
           }
-               .breadcrumb li:hover {
-                    color: var(--fixxo-dark);
-               }
-     .breadcrumb .active {
+
+     .breadcrumb .previous h4 {
+          display: inline;
+     }
+
+     .breadcrumb .separator {
+          color: var(--fixxo-dark);
+     } 
+
+     .breadcrumb .page h4 {
+          transition: 0.3s;
+     } 
+
+     .breadcrumb .page:hover h4 {
+          color: var(--fixxo-theme);
+     }
+     
+     .breadcrumb .page .active h4 {
           color: var(--fixxo-theme);
      }
 
-     .breadcrumb li:hover h4 {
-          color: var(--fixxo-theme);
-     }
 
      
      /* kolla */

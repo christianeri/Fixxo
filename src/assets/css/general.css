@@ -62,7 +62,7 @@ section {
      margin: auto;
      padding: 0;
 
-     border: 1px solid red;
+     /* border: 1px solid red; */
 }
 
 .container-wide {
@@ -73,7 +73,7 @@ section {
      padding: 0;
      /* padding: 0 1rem; */
 
-     border: 1px solid red;
+     /* border: 1px solid red; */
 }
 
 .flex-center {
@@ -86,7 +86,7 @@ section {
      height: 4rem ;
      text-align: center;
      margin: auto;
-     padding-top: 2rem; 
+     padding-top: 1.5rem; 
 }
 
 /* .invisible {

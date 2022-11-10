@@ -9,7 +9,7 @@ const SingleBanner = () => {
                <div className='banner-textbox'>
                     <h2>Up to 70% off*</h2>
                     <p>Women's, Men's & Kids' Winter Fashion</p>
-                    <FixxoButton label='flash sale' color='light'/>
+                    <FixxoButton label='flash sale' color='light' to='/sale'/>
                </div>
           </div>
      </section> 

@@ -6,14 +6,17 @@ const Breadcrumb = ({currentPage}) => {
      <div className='container'>
           <div className='breadcrumb'>
                <ul>
-                    <li>
+                    <li className='page previous'>
                          <NavLink to="/" end>
-                              <h4>Home /&nbsp;</h4>
+                              <h4>Home</h4>
                          </NavLink> 
                     </li>
-                    <li>
-                         <NavLink to="/" end>
-                              <h4 className='active'>{currentPage}</h4>
+                    <li className='separator'>
+                         <h4>&nbsp;/&nbsp;</h4>
+                    </li>
+                    <li className='page current'>
+                         <NavLink>
+                              <h4>{currentPage}</h4>
                          </NavLink>
                     </li>
                </ul>

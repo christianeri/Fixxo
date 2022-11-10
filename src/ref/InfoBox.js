@@ -5,9 +5,9 @@ const InfoBox = ({link}, {icon}, {title}, {text}) => {
     <div>
           <div className='__infobox'>
                <a href={link}>
-                    <button className="__navbar-button" id="share">
+                    <button className="nav-button" id="share">
                          <i className={icon}></i>
-                         <div className="__navbar-button-badge"></div>
+                         <div className="nav-button-badge"></div>
                     </button>
                </a>
                <h4>{title}</h4>

@@ -4,6 +4,7 @@ import FooterSection from '../sections/Footer'
 import MainNavigation from '../sections/MainNavigation'
 
 const OnSaleView = () => {
+  
   return (
     <>
       <MainNavigation/>

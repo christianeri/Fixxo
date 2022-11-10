@@ -1,10 +1,11 @@
 /* our speciality */
 
-.customer-info .container {
+.customer-info-menu .container {
      display: flex;
      flex-direction: column;
-     justify-content: space-around;
-     padding: 1rem 0;
+     justify-content: flex-start;
+     align-items: flex-start;
+     padding: 1rem;
 }
 
 .customer-info-showcase {
@@ -21,58 +22,43 @@
 }
 
 .infobox {
-     padding: 1rem;
+     display: flex;
+     text-transform: capitalize;
 }
+     .infobox div {
+          padding: 0.5rem;
+     }
 
-.infobox h3 {
-     display: inline;
-     padding-left: 0.7rem;
-}
-.infobox p {
-     padding-left: 3rem;
-}
+     .infobox h3 {
+          padding-top: 6px;
+     }
+     .infobox p {
+          color: var(--fixxo-grey-2);
+     }
+
 
 .carousel-container {
      background-color: var(--fixxo-grey-3);
      max-width: 570px;
      margin: auto;
+     padding-bottom: 4rem;
 }
 
 @media (min-width: 768px) {
      
-     .customer-info .container {
+     .customer-info-menu .container {
           flex-direction: row;
           border-top: 1px solid var(--fixxo-grey-2);
      }
 
      .infobox {
-          display: flex;
-          justify-content: center;
-          align-items: center;
+          display: block;
           text-align: center;
-          
-          padding-top: 3rem;
+          padding-top: 3rem ;
      }
           .infobox h3 {
                display: block;
-               padding-left: 0;
-               text-transform: capitalize;
           }
-          .infobox .navbar-button {
-               width: 60px;
-               height: 60px;
-               box-shadow: 0px 7px 10px var(--fixxo-grey-2);
-               margin-bottom: 1.5rem; 
-          }
-          .infobox p {
-               color: var(--fixxo-grey-2);
-               padding-left: 0;
-          }
-
-               .infobox a > * {
-                    margin-bottom: 1rem;
-                    
-               }
 }
 
 @media (min-width: 1140px) {
@@ -80,6 +66,10 @@
      .carousel {
           display: none;
      }
+     .carousel-container {
+          display: none;
+     }
+     
      .customer-info-showcase {
           background-color: var(--color-white);
      }
@@ -89,6 +79,7 @@
           justify-content: space-around;
           align-items: center;
           gap: 2rem;
-          padding: 2rem;
+          background-color: var(--fixxo-grey-3);
+          padding: 2rem 2rem 4rem 2rem;
      }
 }
