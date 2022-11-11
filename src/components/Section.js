@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Section = ({title, sectionIdentifier, container, brpSM, brpMD, brpLG, body}) => {
+const Section = ({title, sectionIdentifier, container, breakSM, breakMD, breakLG, breakXL, body}) => {
 
      return (
         <>
@@ -10,7 +10,7 @@ const Section = ({title, sectionIdentifier, container, brpSM, brpMD, brpLG, body
                     <h3 className='section-title pt-0'>{title}</h3>
                </div>
                <div className={container}>
-                    <div className={`row row-cols-${brpSM} row-cols-md-${brpMD} row-cols-lg-${brpLG} g-0`}>
+                    <div className={`row row-cols-sm-${breakSM} row-cols-md-${breakMD} row-cols-lg-${breakLG} row-cols-xl-${breakXL} g-0`}>
                          {body}
                     </div>
                </div>

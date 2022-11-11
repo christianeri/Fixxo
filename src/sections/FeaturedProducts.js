@@ -4,7 +4,7 @@ import ProductCard from "../components/ProductCard"
 const FeaturedProducts = ({title, sectionName, items = []}) => {
 
   return (
-     <>
+     <>          
           <section className='featured-products'>     
                <div className='container'>
                     <h3>Featured Products</h3>
