@@ -33,8 +33,6 @@ const ContactSection = () => {
           setFormErrors({...formErrors, [id]: validate(event)})
      }
 
-
-
      const validate = (event, form = null) => {
           
           if (event.type === 'submit') {               
@@ -95,9 +93,7 @@ const ContactSection = () => {
                } else
 
                return null
-          }
-
-          
+          }          
 
           const submitData = async (url, method, data, contentType = 'application/json') => {
 
@@ -113,8 +109,6 @@ const ContactSection = () => {
                     return true                
                } return false
           }
-
-
       
      const handleSubmit = async (event) => {
           event.preventDefault()
@@ -172,7 +166,7 @@ const ContactSection = () => {
                                         placeholder='Your name' 
                                         value={name} 
                                         onChange={handleChange}
-                                        // onKeyUp={validate(event)} 
+                                        onKeyUp={validateName} 
                                         className={formErrors.name ? "error" : ""}/>
 
                               <div className='error-message' id='nameErrorMsg'>{formErrors.name}</div>
@@ -183,7 +177,7 @@ const ContactSection = () => {
                                         placeholder='Your email' 
                                         value={email} 
                                         onChange={handleChange}
-                                        // onKeyUp={validate(event)} 
+                                        onKeyUp={validateEmail} 
                                         className={formErrors.email ? "error" : ""}/> 
                               
                               <div className='error-message' id='emailErrorMsg'>{formErrors.email}</div>
@@ -195,7 +189,7 @@ const ContactSection = () => {
                                              placeholder='Your message' 
                                              value={comments} 
                                              onChange={handleChange}
-                                             // onKeyUp={validate(event)} 
+                                             onKeyUp={validateComments} 
                                              className={formErrors.comments ? "error" : ""}/> 
 
                                    <div className='error-message' id='commentErrorMsg'>{formErrors.comments}</div>                                   
