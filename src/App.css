@@ -25,8 +25,8 @@
 @import "./sections/FeaturedProducts.css";
 @import "./sections/ProductPromoShowcase.css";
 @import "./sections/CustomerInfo.css";
-@import "./sections/Footer.css";
 @import "./sections/ProductToplistShowcase.css";
+@import "./sections/Footer.css";
 
 /* components */
 
@@ -37,16 +37,18 @@
 @import "./assets/css/components/ProductCardGrid.css";
 @import "./assets/css/components/NavButton.css";
 @import "./assets/css/components/NotFound.css";
+@import "./assets/css/components/Section.css";
 @import "./components/Promo.css"; 
 */
 
 @import "./components/Breadcrumb.css";
 @import "./components/FixxoButton.css";
 @import "./components/ProductCard.css";
-/* @import "./components/ProductCardGrid.css"; */
+@import "./components/ProductCardGrid.css";
 @import "./components/NavButton.css";
 @import "./components/NotFound.css";
 @import "./components/InfoCard.css";
+@import "./components/Section.css";
 @import "./components/Promo.css";
 
 

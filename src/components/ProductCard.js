@@ -44,7 +44,8 @@ const ProductCard = ({orientation, item}) => {
                          </button>
                     </li>
                </ul>
-               <NavLink to={`/products/${item.name.toLowerCase().replace(/ /gi, "-")}`}>
+               {/* <NavLink to={`/products/${item.name.toLowerCase().replace(/ /gi, "-")}`}> */}
+               <NavLink to='/QuickView'>
                     <button className='fixxo-button button-theme'>quick view</button>
                </NavLink>
                

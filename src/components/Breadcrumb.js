@@ -3,7 +3,7 @@ import { NavLink } from 'react-router-dom'
 
 const Breadcrumb = ({currentPage}) => {
   return (
-     <div className='container'>
+     <div className='container br'>
           <div className='breadcrumb'>
                <ul>
                     <li className='page previous'>

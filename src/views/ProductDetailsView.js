@@ -1,7 +1,9 @@
 import React from 'react'
 import { useParams } from 'react-router-dom'
 import MainNavigation from '../sections/MainNavigation'
-import FooterSection from '../sections/FooterSection'
+import Breadcrumb from '../components/Breadcrumb'
+import ProductDetails from '../sections/ProductDetails'
+import FooterSection from '../sections/Footer'
 
 
 const ProductDetailsView = () => {
@@ -13,9 +15,11 @@ const ProductDetailsView = () => {
   return (
      <>
           <MainNavigation/>
-               <div className='container mt-10'>
+          <Breadcrumb currentPage='Contact'/>
+          {/* <ProductDetails/> */}
+               {/* <div className='container mt-10'>
                     <h1>{params.id}</h1>
-               </div>               
+               </div>                */}
           <FooterSection/>
     </>   
   )
