@@ -4,14 +4,17 @@ const Section = ({title, sectionIdentifier, container, brpSM, brpMD, brpLG, body
 
      return (
         <>
-        <section className={sectionIdentifier}>     
-             <div className={`section-${container}`}>
-                  <h3 className='section-title'>{title}</h3>
-                  <div className={`row row-cols-${brpSM} row-cols-md-${brpMD} row-cols-lg-${brpLG} g-0`}>
+          <section className={sectionIdentifier}>     
+               {/* <div className={`section-${container}`}> */}
+               <div className={container}>
+                    <h3 className='section-title pt-0'>{title}</h3>
+               </div>
+               <div className={container}>
+                    <div className={`row row-cols-${brpSM} row-cols-md-${brpMD} row-cols-lg-${brpLG} g-0`}>
                          {body}
-                  </div>
-             </div>
-        </section>
+                    </div>
+               </div>
+          </section>
         </>
      )
    }

@@ -14,14 +14,9 @@ const ProductCardGrid = ({amount, orientation}) => {
 
   return (
      <>
-          <div className='productcard-container br'>
-
-               {
-                    productCollection.map(product => <ProductCard key={product.articleNumber} orientation={orientation} item={product}/>)
-               }
-
-          </div>
-
+          {
+               productCollection.map(product => <ProductCard key={product.articleNumber} orientation={orientation} item={product}/>)
+          }
      </>
   )
 }

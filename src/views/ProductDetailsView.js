@@ -15,7 +15,7 @@ const ProductDetailsView = () => {
   return (
      <>
           <MainNavigation/>
-          <Breadcrumb currentPage='Contact'/>
+          <Breadcrumb currentPage={params.id}/>
           {/* <ProductDetails/> */}
                {/* <div className='container mt-10'>
                     <h1>{params.id}</h1>

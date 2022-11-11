@@ -82,13 +82,6 @@ section {
      align-items: center;
 }
 
-.section-title {
-     height: 4rem ;
-     text-align: center;
-     margin: auto;
-     padding-top: 1.5rem; 
-}
-
 /* .invisible {
      visibility: hidden;
 }
