@@ -1,7 +1,5 @@
 
 import { BrowserRouter, Routes, Route } from 'react-router-dom'; 
-import { useEffect, useState } from 'react';
-import { ProductContext } from './contexts/contexts';
 
 import './App.css';
 
@@ -31,7 +29,7 @@ function App() {
         <Routes>
 
           <Route path="/" element={<HomeView/>} />
-          <Route path="/categories" element={<ProductDetailsView/>} />
+          <Route path="/categories" element={<CategoriesView/>} />
           <Route path="/products" element={<ProductsView/>} />
 
           <Route path="/product/:params" element={<ProductDetailsView/>} />

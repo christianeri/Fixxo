@@ -45,7 +45,7 @@ import NavButton from '../components/NavButton'
                </div>
                <ul className={!showMenu ? "mobile-menu invisible" : "mobile-menu"}>
                     <li>
-                         <NavLink className='_NavLink' to='/'>
+                         <NavLink className='_NavLink' to='/' end>
                               <h4>Home</h4>
                          </NavLink>
                     </li>
