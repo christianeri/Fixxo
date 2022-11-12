@@ -27,6 +27,7 @@
 @import "./sections/CustomerInfo.css";
 @import "./sections/ProductToplistShowcase.css";
 @import "./sections/Footer.css";
+@import "./sections/ProductDetails.css";
 
 /* components */
 
@@ -38,7 +39,8 @@
 @import "./assets/css/components/NavButton.css";
 @import "./assets/css/components/NotFound.css";
 @import "./assets/css/components/Section.css";
-@import "./components/Promo.css"; 
+@import "./assets/css/components/Promo.css"; 
+@import "./assets/css/components/Size.css";
 */
 
 @import "./components/Breadcrumb.css";
@@ -50,6 +52,7 @@
 @import "./components/InfoCard.css";
 @import "./components/Section.css";
 @import "./components/Promo.css";
+@import "./components/Size.css";
 
 
 /*   fixa                                                     

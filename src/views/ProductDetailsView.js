@@ -12,27 +12,25 @@ import { useProductContext } from '../contexts/ProductContext'
 
 const ProductDetailsView = () => {
 
-     window.top.document.title = 'Fixxo | {params.id}'
-
+     window.top.document.title = 'Fixxo | Product'
+     
      const { params } = useParams()
-
-     console.log(params);
-
-
-
-
-
+     
+     // console.log('Content of "params": ' + params);  
+     
+     
      const {product, getProduct} = useProductContext()
-
+     
      useEffect (() => {
-       getProduct(params)
+          getProduct(params)
      }, [])
+
 
   return (
      <>
           <MainNavigation/>
-          <Breadcrumb currentPage=''/>
-          <ProductDetails items={product}/>
+          <Breadcrumb currentPage={product.name}/>
+          <ProductDetails item={product}/>
               
           <FooterSection/>
     </>   
