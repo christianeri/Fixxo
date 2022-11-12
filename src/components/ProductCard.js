@@ -1,5 +1,6 @@
 import React from 'react'
-import { NavLink } from 'react-router-dom'
+import { NavLink, Route } from 'react-router-dom'
+
 
 const ProductCard = ({orientation, item}) => {
 
@@ -12,11 +13,7 @@ const ProductCard = ({orientation, item}) => {
      }
      const addToShoppingCart = (event) => {
           console.log('Added to Shopping Cart')
-     }
-
-     
-
-     
+     }  
 
 
   return (
@@ -45,7 +42,7 @@ const ProductCard = ({orientation, item}) => {
                     </li>
                </ul>
                {/* <NavLink to={`/products/${item.name.toLowerCase().replace(/ /gi, "-")}`}> */}
-               <NavLink to='/QuickView'>
+               <NavLink to={`/product/${item.articleNumber}`}>
                     <button className='fixxo-button button-theme'>quick view</button>
                </NavLink>
                
@@ -75,6 +72,7 @@ const ProductCard = ({orientation, item}) => {
                </div>
           </div>
      </div>
+
   )
 }
 

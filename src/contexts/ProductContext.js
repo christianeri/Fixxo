@@ -22,7 +22,7 @@ export const ProductProvider = ({children}) => {
      
 
      const getProduct = async (articleNumber) => {
-          const result = await fetch(url + ` /${articleNumber}`)
+          const result = await fetch(url + `/${articleNumber}`)
           setProduct(await result.json())
      }
 

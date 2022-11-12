@@ -1,25 +1,39 @@
-import React from 'react'
+import React, { useEffect } from 'react'
+
 import { useParams } from 'react-router-dom'
+
 import MainNavigation from '../sections/MainNavigation'
 import Breadcrumb from '../components/Breadcrumb'
 import ProductDetails from '../sections/ProductDetails'
 import FooterSection from '../sections/Footer'
+
+import { useProductContext } from '../contexts/ProductContext'
 
 
 const ProductDetailsView = () => {
 
      window.top.document.title = 'Fixxo | {params.id}'
 
-     const params = useParams()
+     const { params } = useParams()
+
+     console.log(params);
+
+
+
+
+
+     const {product, getProduct} = useProductContext()
+
+     useEffect (() => {
+       getProduct(params)
+     }, [])
 
   return (
      <>
           <MainNavigation/>
-          <Breadcrumb currentPage={params.id}/>
-          {/* <ProductDetails/> */}
-               {/* <div className='container mt-10'>
-                    <h1>{params.id}</h1>
-               </div>                */}
+          <Breadcrumb currentPage=''/>
+          <ProductDetails items={product}/>
+              
           <FooterSection/>
     </>   
   )
