@@ -53,7 +53,7 @@ export const ShoppingCartProvider = ({children}) => {
 
           setCartItems(items => {
                if (items.find(item => item.articleNumber === articleNumber) == null) {
-                    return [ ...items, { articleNumber, product, quantity: 1 }]
+                    return [ ...items, { articleNumber, product, quantity: 1 + count }]
                 
                } else {
                     return items.map(item => {

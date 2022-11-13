@@ -3,7 +3,7 @@ import Iframe from 'react-iframe'
 // import Breadcrumb from '../components/Breadcrumb'
 
 
-const ContactSection = () => {
+const Contact = () => {
 
      const [name, setName] = useState('')
      const [email, setEmail] = useState('')
@@ -203,4 +203,4 @@ const ContactSection = () => {
   )
 }
 
-export default ContactSection
+export default Contact

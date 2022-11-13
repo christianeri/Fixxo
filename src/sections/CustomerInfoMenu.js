@@ -1,6 +1,4 @@
 import React from 'react'
-import { NavLink } from 'react-router-dom'
-import InfoBox from '../ref/InfoBox'
 import NavButton from '../components/NavButton'
 
 const CustomerInformation = () => {

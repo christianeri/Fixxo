@@ -4,7 +4,7 @@ import React, { useEffect } from 'react'
 // import ProductCardGrid from '../components/ProductCardGrid';
 
 import MainNavigation from '../sections/MainNavigation'
-import HeroSection from '../sections/HeroSection';
+import Hero from '../sections/Hero';
 import SplitBanner from '../sections/BannerSplit';
 import FeaturedProducts from '../sections/FeaturedProducts';
 import DoubleBanner from '../sections/BannerDouble';
@@ -43,7 +43,7 @@ const HomeView = () => {
   return (
     <>
       <MainNavigation/>
-      <HeroSection/>
+      <Hero/>
       <SplitBanner/>
         {/* <Section title='All Products' body={<ProductCardGrid orientation='vertical' amount='8'/>} container='container' breakSM="1" breakMD="2" breakLG="4" breakXL="4"/> */}
       <FeaturedProducts title='Featured Products' sectionName='featured-products' items={featuredProducts}/>
