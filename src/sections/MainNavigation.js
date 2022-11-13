@@ -1,6 +1,11 @@
+
 import React, { useState } from 'react'
 import { NavLink } from 'react-router-dom'
+
 import NavButton from '../components/NavButton'
+
+import { useShoppingCart } from '../contexts/ShoppingCartContext'
+
 
      // change color of Nav when scrolling 
      const MainNavigation = () => {
@@ -15,6 +20,10 @@ import NavButton from '../components/NavButton'
           }
           window.addEventListener('scroll', changeColorWhite)
           // console.log(window.scrollY);
+
+
+          const { cartQuantity } = useShoppingCart()
+
 
           const [showMenu, setShowMenu] = useState(false)
           const toggleMenu = () => {
@@ -71,9 +80,10 @@ import NavButton from '../components/NavButton'
                     <NavButton to='/compare' icon='fa-solid fa-retweet' hideOnMobile={true} size='nav-button-small'/>
                     <NavButton to='/wishlist' icon='fa-regular fa-heart' hideOnMobile={true} size='nav-button-small'/>
 
-                    <button className="nav-button nav-button-small">
+                    <button className="nav-button nav-button-small" type='button' data-bs-toggle='offcanvas' data-bs-target='#shoppingCart' aria-controls='shoppingCart'>
                          <i className='fa-regular fa-shopping-cart'></i>
-                         <div className="nav-button-badge">X</div>
+
+                         <div className="nav-button-badge">{cartQuantity}</div>
                     </button>
 
                     <button onClick={toggleMenu} className="nav-button triple-bar-button nav-button-small"><i className='fa-regular fa-bars'></i>

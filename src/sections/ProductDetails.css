@@ -34,7 +34,7 @@
      .product-details .fixxo-button {
           height: 50px;
           width: 170px;
-          margin-top: 0;     
+          margin-top: 0;
      }
 
      .product-details .img-lg {
@@ -48,7 +48,7 @@
      .product-details .right .left {
           width: 80px;
      }
-
+     
      .product-details .right .right {
           width: 170px;
           margin-right: 2rem;
@@ -63,29 +63,36 @@
 
 .size-value {
      width: 32px;
-     border: 2px solid black;
+     border: 2px solid var(--fixxo-dark);
      text-align: center;
 }
 
 .color-value {
      width: fit-content;
-     border: 2px solid black;
+     border: 2px solid var(--fixxo-dark);
      text-align: center;
      padding: 0 5px;
 }
 
-.quantity-value {
-     border: 2px solid black;
-     text-align: center;
+.product-details .item-quantity {
+     width: 170px;
+     display: flex;
+     border: 2px solid var(--fixxo-dark);
+     margin-right: 1rem;
 }
-     .quantity-value > div {
-          display: flex;
-          justify-content: center;
-          align-items: center;
+
+     .product-details .item-quantity > * {
+          flex: 1;
      }
-     .quantity-value .center {
-          border-right: 2px solid black;
-          border-left: 2px solid black;
+
+     .product-details .item-quantity button {
+          background-color: var(--color-white);
+          border: none;
+     }
+
+     .product-details .item-quantity .center {
+          border-right: 2px solid var(--fixxo-dark);
+          border-left: 2px solid var(--fixxo-dark);
      }
 
 .round-button {

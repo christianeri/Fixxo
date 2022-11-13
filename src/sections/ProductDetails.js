@@ -1,8 +1,25 @@
 
+import { useState } from "react"
 import Breadcrumb from "../components/Breadcrumb"
 import { NavLink } from "react-router-dom"
 
+import { useShoppingCart } from '../contexts/ShoppingCartContext'
+
+
 const ProductDetails = ({item = []}) => {
+
+     const { incrementQuantity, incrementQuantityCount, decrementQuantity, removeItem } = useShoppingCart()
+     
+     
+     const [count, setCount] = useState(0)
+
+     const Add = () => {
+          setCount(count + 1)
+     }
+     const Subtract = () => {
+          setCount(count - 1)
+     }
+
 
   return (
     <>
@@ -89,15 +106,17 @@ const ProductDetails = ({item = []}) => {
                                                   <div className='color-value'>Choose an Option</div>
                                              </div>
                                         </div>
+
                                         <div className='row mt-4'>
                                              <div className='left'>Qty:</div>                                   
-                                             <div className='right d-flex br quantity-value'>
-                                                  <div>-</div>
-                                                  <div className='center'>1</div>
-                                                  <div>+</div>                                                  
+                                             <div className='item-quantity px-0'>
+                                                  <button onClick={Subtract}>-</button>
+                                                  <div className='center flex-center'>{count}</div>
+                                                  <button onClick={Add}>+</button>
                                              </div>
-                                             <button className='fixxo-button button-theme d-none d-lg-block'>Add to Cart</button>
+                                             <button onClick={() => incrementQuantityCount(item, count)} className='fixxo-button button-theme d-none d-lg-block'>Add to Cart</button>
                                         </div>
+
                                         <div className='row mt-3'>
                                              <div className='left'></div>                                   
                                              <button className='right fixxo-button button-theme d-lg-none'>Add to Cart</button>                                             
@@ -125,7 +144,7 @@ const ProductDetails = ({item = []}) => {
                                    </div>
                               </div>
                               <div className='tab-body'>
-                                   <p>Way extensive and dejection get delivered deficient sincerity gentleman age. Too end instrument possession contrasted motionless. Calling offence six joy feeling. Coming merits and was talent enough far. Sir joy northward sportsmen education. Discovery incommode earnestly no he commanded if. Put still any about manor heard.                                                           
+                                   <p>Way extensive and dejection get delivered deficient sincerity gentleman age. Too end instrument possession contrasted motionless. Calling offence six joy feeling. Coming merits and was talent enough far. Sir joy northward sportsmen education. Discovery incommode earnestly no he commanded if. Put still any about manor heard.</p>                                                           
 
                                    <ul className="mt-3">
                                         <li>* Village did removed enjoyed explain nor ham saw calling talking.</li>
@@ -137,7 +156,7 @@ const ProductDetails = ({item = []}) => {
                                         <li>* Joy horrible moreover man feelings own shy.</li>
                                    </ul>
 
-                                   On even feet time have an no at. Relation so in confined smallest children unpacked delicate. Why sir end believe uncivil respect. Always get adieus nature day course for common. My little garret repair to desire he esteem. 
+                                   <p>On even feet time have an no at. Relation so in confined smallest children unpacked delicate. Why sir end believe uncivil respect. Always get adieus nature day course for common. My little garret repair to desire he esteem. 
                                    </p>
                               </div>
                          </div>

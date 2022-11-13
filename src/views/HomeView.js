@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react'
 
-import Section from '../components/Section';
-import ProductCardGrid from '../components/ProductCardGrid';
+// import Section from '../components/Section';
+// import ProductCardGrid from '../components/ProductCardGrid';
 
 import MainNavigation from '../sections/MainNavigation'
 import HeroSection from '../sections/HeroSection';

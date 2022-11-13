@@ -1,12 +1,16 @@
+
 import React, { useContext } from 'react'
-import ProductCard from '../components/ProductCard'
-import FixxoButton from '../components/FixxoButton'
-import {ProductContext} from '../contexts/contexts'
+
+// import ProductCard from '../components/ProductCard'
 import ProductCardGrid from '../components/ProductCardGrid'
+import FixxoButton from '../components/FixxoButton'
+
+import { useProductContext } from '../contexts/ProductContext'
+
 
 const ProductPromoShowcase = ({items = []}) => {
 
-     const products = useContext(ProductContext);
+     const products = useContext(useProductContext);
 
   return (
  

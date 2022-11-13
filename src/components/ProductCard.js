@@ -1,8 +1,12 @@
+
 import React from 'react'
 import { NavLink, Route } from 'react-router-dom'
+import { useShoppingCart } from '../contexts/ShoppingCartContext'
 
 
 const ProductCard = ({orientation, item}) => {
+
+     const { incrementQuantity } = useShoppingCart()
 
 
      const addToWishlist = (event) => {
@@ -11,9 +15,7 @@ const ProductCard = ({orientation, item}) => {
      const addToCompare = (event) => {
           console.log('Added to Compare list')
      }
-     const addToShoppingCart = (event) => {
-          console.log('Added to Shopping Cart')
-     }  
+
 
 
   return (
@@ -36,7 +38,10 @@ const ProductCard = ({orientation, item}) => {
                          </button>
                     </li>
                     <li>
-                         <button className="nav-button nav-button-small" onClick={addToShoppingCart}>
+                         <button className="nav-button nav-button-small" 
+                         onClick={() => incrementQuantity(
+                              {articleNumber: item.articleNumber, product: item})}>
+                              
                               <i className="fa-regular fa-bag-shopping"></i>  
                          </button>
                     </li>

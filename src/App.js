@@ -18,6 +18,7 @@ import OnSaleView from './views/OnSaleView';
 
 import NotFoundView from './views/NotFoundView';
 import { ProductProvider } from './contexts/ProductContext';
+import { ShoppingCartProvider } from './contexts/ShoppingCartContext';
 
 
 function App() {
@@ -25,27 +26,29 @@ function App() {
   return (
     <BrowserRouter>
 
-      <ProductProvider>
-        <Routes>
+      <ShoppingCartProvider>
+        <ProductProvider>
+          <Routes>
 
-          <Route path="/" element={<HomeView/>} />
-          <Route path="/categories" element={<CategoriesView/>} />
-          <Route path="/products" element={<ProductsView/>} />
+            <Route path="/" element={<HomeView/>} />
+            <Route path="/categories" element={<CategoriesView/>} />
+            <Route path="/products" element={<ProductsView/>} />
 
-          <Route path="/product/:params" element={<ProductDetailsView/>} />
-          
-          <Route path="/contact" element={<ContactView/>} />
-          <Route path="/search" element={<SearchView/>} />
-          <Route path="/compare" element={<CompareView/>} />
-          <Route path="/wishlist" element={<WishListView/>} />
-          <Route path="/shoppingcard" element={<ShoppingCartView/>} />
+            <Route path="/product/:params" element={<ProductDetailsView/>} />
+            
+            <Route path="/contact" element={<ContactView/>} />
+            <Route path="/search" element={<SearchView/>} />
+            <Route path="/compare" element={<CompareView/>} />
+            <Route path="/wishlist" element={<WishListView/>} />
+            <Route path="/shoppingcard" element={<ShoppingCartView/>} />
 
-          <Route path="/sale" element={<OnSaleView/>} />
+            <Route path="/sale" element={<OnSaleView/>} />
 
-          <Route path="*" element={<NotFoundView/>} />
+            <Route path="*" element={<NotFoundView/>} />
 
-        </Routes>
-      </ProductProvider>
+          </Routes>
+        </ProductProvider>
+      </ShoppingCartProvider>
       
     </BrowserRouter>
   );
