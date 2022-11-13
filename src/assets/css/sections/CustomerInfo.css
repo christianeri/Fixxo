@@ -8,6 +8,13 @@
      padding: 1rem;
 }
 
+.customer-info-showcase .section-title {
+     text-align: center;
+     margin: auto;
+     padding-top: 2rem; 
+     padding-bottom: 2rem; 
+}
+
 .customer-info-showcase {
      background-color: var(--fixxo-grey-3);
 }
