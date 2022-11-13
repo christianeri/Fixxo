@@ -46,20 +46,22 @@ export const ShoppingCartProvider = ({children}) => {
           })
      }
 
-
-
      const incrementQuantityCount = (cartItem, count) => {
           const {articleNumber, product} = cartItem
+          console.log(count);
 
           setCartItems(items => {
                if (items.find(item => item.articleNumber === articleNumber) == null) {
-                    return [ ...items, { articleNumber, product, quantity: 1 + count }]
+                    return [ ...items, { articleNumber, product, quantity: count }]
                 
+
                } else {
                     return items.map(item => {
                          if (item.articleNumber === articleNumber) {
+                              
                               return { ...item, quantity: item.quantity + count }
-                         } else {
+                         } 
+                         else {
                               return item
                          }
                     })

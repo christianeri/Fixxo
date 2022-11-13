@@ -16,7 +16,7 @@ const ShoppingCartItem = ({item}) => {
                <div className='bottom'>
                     <div className='item-quantity'>
                          <button onClick={() => incrementQuantity(item)}>+</button>
-                         <div className='center d-flex justify-content-center align-items-center'>{item.quantity}</div>
+                         <div className='center d-flex justify-content-center align-items-center' data-testid="item.quantity">{item.quantity}</div>
                          <button onClick={() => decrementQuantity(item)}>-</button>  
                     </div>
                          <button onClick={() => removeItem(item.articleNumber)}>

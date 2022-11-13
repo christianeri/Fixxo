@@ -8,18 +8,24 @@ import { useShoppingCart } from '../contexts/ShoppingCartContext'
 
 const ProductDetails = ({item = []}) => {
 
-     const { incrementQuantity, incrementQuantityCount, decrementQuantity, removeItem } = useShoppingCart()
+     const { incrementQuantity, incrementQuantityCount } = useShoppingCart()
      
      
      const [count, setCount] = useState(0)
 
      const Add = () => {
-          setCount(count + 1)
+          Number(setCount(count + 1))
+          
      }
      const Subtract = () => {
-          setCount(count - 1)
+          if (count > 0) {
+          Number(setCount(count - 1))
+          } else {
+               Number(setCount(0))
+          }
      }
-
+     console.log('value of count at ProductDetails: ' + count)
+     
 
   return (
     <>
@@ -114,7 +120,9 @@ const ProductDetails = ({item = []}) => {
                                                   <div className='center flex-center'>{count}</div>
                                                   <button onClick={Add}>+</button>
                                              </div>
-                                             <button onClick={() => incrementQuantityCount(item, count)} className='fixxo-button button-theme d-none d-lg-block'>Add to Cart</button>
+                                             <button onClick={
+                                                       () => incrementQuantityCount({articleNumber: item.articleNumber, product: item})} 
+                                                            className='fixxo-button button-theme d-none d-lg-block'>Add to Cart</button>
                                         </div>
 
                                         <div className='row mt-3'>
