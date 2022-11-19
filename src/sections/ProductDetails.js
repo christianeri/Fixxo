@@ -8,9 +8,8 @@ import { useShoppingCart } from '../contexts/ShoppingCartContext'
 
 const ProductDetails = ({item = []}) => {
 
-     const { incrementQuantity, incrementQuantityCount } = useShoppingCart()
-     
-     
+     const { incrementQuantityCount } = useShoppingCart()
+          
      const [count, setCount] = useState(0)
 
      const Add = () => {
@@ -121,7 +120,7 @@ const ProductDetails = ({item = []}) => {
                                                   <button onClick={Add}>+</button>
                                              </div>
                                              <button onClick={
-                                                       () => incrementQuantityCount({articleNumber: item.articleNumber, product: item})} 
+                                                       () => incrementQuantityCount({articleNumber: item.articleNumber, product: item, count: count})} 
                                                             className='fixxo-button button-theme d-none d-lg-block'>Add to Cart</button>
                                         </div>
 

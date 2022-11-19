@@ -46,8 +46,8 @@ export const ShoppingCartProvider = ({children}) => {
           })
      }
 
-     const incrementQuantityCount = (cartItem, count) => {
-          const {articleNumber, product} = cartItem
+     const incrementQuantityCount = (cartItem) => {
+          const {articleNumber, product, count} = cartItem
           console.log(count);
 
           setCartItems(items => {
