@@ -1,10 +1,12 @@
-import React from 'react'
+import { useEffect } from 'react'
 import NotFound from '../components/NotFound'
 import MainNavigation from '../sections/MainNavigation'
 
-const NotFoundView = () => {
+const NotFoundView: React.FC = () => {
   
-  window.top.document.title = 'Fixxo | Not Found'
+    useEffect(() => {
+    document.title = "Fixxo | Home"
+ }, []);
 
   return (
     <>

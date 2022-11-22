@@ -1,6 +1,10 @@
-import React from 'react'
 
-const Promo = ({header1, header2}) => {
+interface Props {
+     header1?: string
+     header2?: string
+}
+
+const Promo: React.FC<Props> = ({header1, header2}) => {
   return (
      <div className='promo'>
           <h1>{header1}</h1><h2>{header2}</h2>    

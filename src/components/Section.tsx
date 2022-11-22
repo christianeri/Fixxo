@@ -1,6 +1,19 @@
-import React from 'react'
+import React from "react"
 
-const Section = ({sectionIdentifier, container, classHeader, title, breakSM, breakMD, breakLG, breakXL, body}) => {
+interface Props {
+
+     sectionIdentifier?:string
+     container:string
+     classHeader?:string
+     title?:string
+     breakSM?:string
+     breakMD?:string
+     breakLG?:string
+     breakXL?:string
+     body?:any
+}
+
+const Section: React.FC<Props> = ({sectionIdentifier, container, classHeader, title, breakSM, breakMD, breakLG, breakXL, body}) => {
 
      return (
         <>

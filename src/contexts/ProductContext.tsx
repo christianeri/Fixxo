@@ -1,56 +1,37 @@
-// context/todoContext.tsx
-
-
-
-
-const TodoProvider: React.FC<React.ReactNode> = ({ children }) => {
-  const [todos, setTodos] = React.useState<ITodo[]>([
-    {
-      id: 1,
-      title: 'post 1',
-      description: 'this is a description',
-      status: false,
-    },
-    {
-      id: 2,
-      title: 'post 2',
-      description: 'this is a description',
-      status: true,
-    },
-  ]);
-
-
-
-
-
-//   import * as React from 'react';
 
 import { useContext, useState } from 'react';
-import {createContext} from 'react';
+import { createContext } from 'react';
+import { IProduct } from '../models/productModel';
 
-//   import { TodoContextType, ITodo } from '../@types/todo';
-import { ProductContextType, IProduct } from '../@types/product'
+export type ProductContextType = {
+     
+     url: string
 
+     product: IProduct  
 
-
-
-interface IChildren {
-     children: any
+     getProduct: (articleNumber:string) => void
+     featuredProducts: IProduct[]
+     getFeaturedProducts: (take:number) => void
+     showcaseProducts: IProduct[]
+     getShowcaseProducts: (take:number) => void
+     toplistProducts: IProduct[]
+     getToplistProducts: (take:number) => void
+     productCollection: IProduct[]
+     getProductCollection: (take:number) => void
 }
 
-// export const TodoContext = React.createContext<TodoContextType | null>(null);
-export const ProductContext = React.createContext<IProductContextType|null>(null);
+export const ProductContext = createContext<ProductContextType | null>(null);
 
-export const useProductContext = () => {
-     return useContext(ProductContext)
-}
+// export const ProductContext = () => {
+//      return useContext(ProductContext)
+// }
 
-export const ProductProvider = ({children}:IChildren) => {
+export const ProductProvider = ({children}:any) => {
+
 
      const url = 'https://win22-webapi.azurewebsites.net/api/products'
 
      const [product, setProduct] = useState({})
-     // const [products, setProducts] = useState([])
 
      const [featuredProducts, setFeaturedProducts] = useState([])
      const [showcaseProducts, setShowcaseProducts] = useState([])

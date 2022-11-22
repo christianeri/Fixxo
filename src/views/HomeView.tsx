@@ -1,7 +1,5 @@
-import React, { useEffect } from 'react'
 
-// import Section from '../components/Section';
-// import ProductCardGrid from '../components/ProductCardGrid';
+import React, { useEffect } from 'react'
 
 import MainNavigation from '../sections/MainNavigation'
 import Hero from '../sections/Hero';
@@ -15,8 +13,7 @@ import ProductToplistShowcase from '../sections/ProductToplistShowcase';
 import CustomerInfoMenu from '../sections/CustomerInfoMenu';
 import Footer from '../sections/Footer';
 
-import { useProductContext } from '../contexts/ProductContext';
-import { IProductContext } from '../contexts/ProductContext'
+import { ProductContextType, ProductContext } from '../contexts/ProductContext';
 
 
 
@@ -29,7 +26,7 @@ const HomeView: React.FC = () => {
   // const productContext = useContext(ProductContext);
 
   const {featuredProducts, getFeaturedProducts, showcaseProducts, getShowcaseProducts, toplistProducts, getToplistProducts} = 
-  React.useContext(ProductContext)
+  React.useContext(ProductContext) as ProductContextType
 
   useEffect (() => {
     getFeaturedProducts(8)

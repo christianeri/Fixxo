@@ -12,7 +12,7 @@ import ContactView from './views/ContactView';
 
 import SearchView from './views/SearchView';
 import CompareView from './views/CompareView';
-import WishListView from './views/WishListView';
+import WishListView from './ref/WishListView';
 import ShoppingCartView from './views/ShoppingCartView';
 
 import OnSaleView from './views/OnSaleView';
@@ -20,18 +20,14 @@ import OnSaleView from './views/OnSaleView';
 import NotFoundView from './views/NotFoundView';
 import { ProductProvider } from './contexts/ProductContext';
 import { ShoppingCartProvider } from './contexts/ShoppingCartContext';
-import { TodoProvider } from './ref/TodoContext';
+
 
 
 const App: React.FC = () => {
 
-    const [todo, setTodo] = useState<string>('')
-    const [todos, setTodos] = useState<Todo[]>([])
-
   return (
     <BrowserRouter>
 
-    <TodoProvider>
       <ShoppingCartProvider>
         <ProductProvider>
           <Routes>
@@ -55,7 +51,6 @@ const App: React.FC = () => {
           </Routes>
         </ProductProvider>
       </ShoppingCartProvider>
-    </TodoProvider>
       
     </BrowserRouter>
   );

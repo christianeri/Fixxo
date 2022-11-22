@@ -5,8 +5,14 @@ import { NavLink } from "react-router-dom"
 
 import { useShoppingCart } from '../contexts/ShoppingCartContext'
 
+import { IProduct } from '../models/productModel'
 
-const ProductDetails = ({item = []}) => {
+
+interface Props {
+     item: IProduct
+}
+
+const ProductDetails: React.FC<Props> = ({item = []}) => {
 
      const { incrementQuantityCount } = useShoppingCart()
           

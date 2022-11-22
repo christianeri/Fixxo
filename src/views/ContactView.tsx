@@ -1,12 +1,14 @@
-import React from 'react'
+import { useEffect } from 'react'
 import MainNavigation from '../sections/MainNavigation'
 import Breadcrumb from '../components/Breadcrumb'
 import Contact from '../sections/Contact'
 import Footer from '../sections/Footer'
 
-const ContactView = () => {
+const ContactView: React.FC = () => {
 
-  window.top.document.title = 'Fixxo | Contact'
+     useEffect(() => {
+          document.title = "Fixxo | Contact"
+       }, []);
 
   return (
     <>
