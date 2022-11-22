@@ -1,25 +1,63 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { BrowserRouter, Routes, Route } from 'react-router-dom'; 
 
-function App() {
+import React, { useState } from 'react';
+import './App.css';
+import { Todo } from './models/todoModel';
+
+import HomeView from './views/HomeView';
+import CategoriesView from './views/CategoriesView';
+import ProductsView from './views/ProductsView';
+import ProductDetailsView from './views/ProductDetailsView';
+import ContactView from './views/ContactView';
+
+import SearchView from './views/SearchView';
+import CompareView from './views/CompareView';
+import WishListView from './views/WishListView';
+import ShoppingCartView from './views/ShoppingCartView';
+
+import OnSaleView from './views/OnSaleView';
+
+import NotFoundView from './views/NotFoundView';
+import { ProductProvider } from './contexts/ProductContext';
+import { ShoppingCartProvider } from './contexts/ShoppingCartContext';
+import { TodoProvider } from './ref/TodoContext';
+
+
+const App: React.FC = () => {
+
+    const [todo, setTodo] = useState<string>('')
+    const [todos, setTodos] = useState<Todo[]>([])
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <BrowserRouter>
+
+    <TodoProvider>
+      <ShoppingCartProvider>
+        <ProductProvider>
+          <Routes>
+
+            <Route path="/" element={<HomeView/>} />
+            <Route path="/categories" element={<CategoriesView/>} />
+            <Route path="/products" element={<ProductsView/>} />
+
+            <Route path="/product/:params" element={<ProductDetailsView/>} />
+            
+            <Route path="/contact" element={<ContactView/>} />
+            <Route path="/search" element={<SearchView/>} />
+            <Route path="/compare" element={<CompareView/>} />
+            <Route path="/wishlist" element={<WishListView/>} />
+            <Route path="/shoppingcard" element={<ShoppingCartView/>} />
+
+            <Route path="/sale" element={<OnSaleView/>} />
+
+            <Route path="*" element={<NotFoundView/>} />
+
+          </Routes>
+        </ProductProvider>
+      </ShoppingCartProvider>
+    </TodoProvider>
+      
+    </BrowserRouter>
   );
 }
 

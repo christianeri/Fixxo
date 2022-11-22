@@ -1,38 +1,36 @@
-.App {
-  text-align: center;
-}
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
+/* general */
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
+@import "./assets/css/general.css";
+@import "./assets/css/variables.css";
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
 
-.App-link {
-  color: #61dafb;
-}
+/* sections */
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+@import "./assets/css/sections/Banners.css";
+@import "./assets/css/sections/Contact.css";
+@import "./assets/css/sections/CustomerInfo.css";
+@import "./assets/css/sections/FeaturedProducts.css";
+@import "./assets/css/sections/Footer.css";
+@import "./assets/css/sections/Hero.css";
+@import "./assets/css/sections/MainNavigation.css";
+@import "./assets/css/sections/ProductDetails.css";
+@import "./assets/css/sections/ProductPromoShowcase.css";
+@import "./assets/css/sections/ProductToplistShowcase.css";
+
+
+/* components */
+
+@import "./assets/css/components/Breadcrumb.css";
+@import "./assets/css/components/FixxoButton.css";
+@import "./assets/css/components/NavButton.css";
+@import "./assets/css/components/NotFound.css";
+@import "./assets/css/components/InfoCard.css";
+@import "./assets/css/components/ProductCard.css";
+@import "./assets/css/components/ProductCardGrid.css";
+@import "./assets/css/components/Promo.css";
+@import "./assets/css/components/ShoppingCart.css";
+
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700;800&display=swap');
+
