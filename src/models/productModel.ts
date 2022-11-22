@@ -1,4 +1,5 @@
-export interface IProduct {
+
+export type IProduct = {
 
      articleNumber: string|null
      name: string|null

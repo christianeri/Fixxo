@@ -1,13 +1,12 @@
 
-import { useContext, useState } from 'react';
+import { useState } from 'react';
 import { createContext } from 'react';
 import { IProduct } from '../models/productModel';
 
-export type ProductContextType = {
-     
-     url: string
 
-     product: IProduct  
+export type ProductContextType = {
+
+     product: IProduct 
 
      getProduct: (articleNumber:string) => void
      featuredProducts: IProduct[]
@@ -20,24 +19,36 @@ export type ProductContextType = {
      getProductCollection: (take:number) => void
 }
 
-export const ProductContext = createContext<ProductContextType | null>(null);
+
+export const ProductContext = createContext<ProductContextType|null>(null);
 
 // export const ProductContext = () => {
 //      return useContext(ProductContext)
 // }
 
 export const ProductProvider = ({children}:any) => {
+     
+     
+     const url:string = 'https://win22-webapi.azurewebsites.net/api/products'
+
+     // const [product, setProduct] = useState<IProduct>({})
+     const [product, setProduct] = useState<IProduct>
+     ({
+          articleNumber:'',
+          name: '',
+          description: '',
+          category: '',
+          price: null,
+          rating: null,
+          imageName: '',
+     })
 
 
-     const url = 'https://win22-webapi.azurewebsites.net/api/products'
+     const [featuredProducts, setFeaturedProducts] = useState<IProduct[]>([])
+     const [showcaseProducts, setShowcaseProducts] = useState<IProduct[]>([])
+     const [toplistProducts, setToplistProducts] = useState<IProduct[]>([])
 
-     const [product, setProduct] = useState({})
-
-     const [featuredProducts, setFeaturedProducts] = useState([])
-     const [showcaseProducts, setShowcaseProducts] = useState([])
-     const [toplistProducts, setToplistProducts] = useState([])
-
-     const [productCollection, setProductCollection] = useState([])
+     const [productCollection, setProductCollection] = useState<IProduct[]>([])
      
 
      const getProduct = async (articleNumber:string) => {
@@ -69,7 +80,6 @@ export const ProductProvider = ({children}:any) => {
           const result = await fetch(url + `?take=${take}`)
           setProductCollection(await result.json())          
      }
-
 
      return <ProductContext.Provider value={{
                     product, getProduct, 
